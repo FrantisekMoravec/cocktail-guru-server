@@ -1,1 +1,1 @@
-rootProject.name = "com.example.borutoserver"
+rootProject.name = "com.example.drinkserver"
