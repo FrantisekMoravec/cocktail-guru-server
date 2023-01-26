@@ -1,9 +1,9 @@
 package com.example
 
-import com.example.models.ApiResponse
+import com.example.models.DrinkApiResponse
 import com.example.repository.DrinkRepositoryImpl
-import com.example.repository.NEXT_PAGE_KEY
-import com.example.repository.PREVIOUS_PAGE_KEY
+import com.example.repository.NEXT_PAGE_DRINK_KEY
+import com.example.repository.PREVIOUS_PAGE_DRINK_KEY
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
@@ -49,8 +49,8 @@ class ApplicationTest {
                     expected = HttpStatusCode.OK,
                     actual = response.status
                 )
-                val actual = Json.decodeFromString<ApiResponse>(response.bodyAsText())
-                val expected = ApiResponse(
+                val actual = Json.decodeFromString<DrinkApiResponse>(response.bodyAsText())
+                val expected = DrinkApiResponse(
                     success = true,
                     message = "ok",
                     prevPage = calculatePage(page = page)["prevPage"],
@@ -89,11 +89,11 @@ class ApplicationTest {
                 expected = HttpStatusCode.BadRequest,
                 actual = response.status
             )
-            val expected = ApiResponse(
+            val expected = DrinkApiResponse(
                 success = false,
                 message = "Only Numbers Allowed."
             )
-            val actual = Json.decodeFromString<ApiResponse>(response.bodyAsText())
+            val actual = Json.decodeFromString<DrinkApiResponse>(response.bodyAsText())
             assertEquals(
                 expected = expected,
                 actual = actual
@@ -106,7 +106,7 @@ class ApplicationTest {
         testApplication {
             val response = client.get("/drinks/search?name=b52")
             assertEquals(expected = HttpStatusCode.OK, actual = response.status)
-            val actual = Json.decodeFromString<ApiResponse>(response.bodyAsText())
+            val actual = Json.decodeFromString<DrinkApiResponse>(response.bodyAsText())
                 .drinks.size
             assertEquals(expected = 1, actual = actual)
         }
@@ -117,7 +117,7 @@ class ApplicationTest {
         testApplication {
             val response = client.get("/boruto/drinks/search?name=b")
             assertEquals(expected = HttpStatusCode.OK, actual = response.status)
-            val actual = Json.decodeFromString<ApiResponse>(response.bodyAsText())
+            val actual = Json.decodeFromString<DrinkApiResponse>(response.bodyAsText())
                 .drinks.size
             assertEquals(expected = 3, actual = actual)
         }
@@ -128,7 +128,7 @@ class ApplicationTest {
         testApplication {
             val response = client.get("/drinks/search?name=")
             assertEquals(expected = HttpStatusCode.OK, actual = response.status)
-            val actual = Json.decodeFromString<ApiResponse>(response.bodyAsText())
+            val actual = Json.decodeFromString<DrinkApiResponse>(response.bodyAsText())
                 .drinks
             assertEquals(expected = emptyList(), actual = actual)
         }
@@ -139,7 +139,7 @@ class ApplicationTest {
         testApplication {
             val response = client.get("/drinks/search?name=unknown")
             assertEquals(expected = HttpStatusCode.OK, actual = response.status)
-            val actual = Json.decodeFromString<ApiResponse>(response.bodyAsText())
+            val actual = Json.decodeFromString<DrinkApiResponse>(response.bodyAsText())
                 .drinks
             assertEquals(expected = emptyList(), actual = actual)
         }
@@ -168,6 +168,6 @@ class ApplicationTest {
         if (page == 5) {
             nextPage = null
         }
-        return mapOf(PREVIOUS_PAGE_KEY to prevPage, NEXT_PAGE_KEY to nextPage)
+        return mapOf(PREVIOUS_PAGE_DRINK_KEY to prevPage, NEXT_PAGE_DRINK_KEY to nextPage)
     }
 }

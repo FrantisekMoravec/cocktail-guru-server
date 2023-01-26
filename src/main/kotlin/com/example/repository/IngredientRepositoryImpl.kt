@@ -1,7 +1,7 @@
 package com.example.repository
 
-import com.example.models.ApiResponse
 import com.example.models.Ingredient
+import com.example.models.IngredientApiResponse
 
 const val NEXT_PAGE_INGREDIENT_KEY = "nextPage"
 const val PREVIOUS_PAGE_INGREDIENT_KEY = "prevPage"
@@ -123,8 +123,8 @@ class IngredientRepositoryImpl : IngredientRepository {
         )
     )
 
-    override suspend fun getAllIngredients(page: Int): ApiResponse {
-        return ApiResponse(
+    override suspend fun getAllIngredients(page: Int): IngredientApiResponse {
+        return IngredientApiResponse(
             success = true,
             message = "ok",
             prevPage = calculatePage(page = page)[PREVIOUS_PAGE_INGREDIENT_KEY],
@@ -152,8 +152,8 @@ class IngredientRepositoryImpl : IngredientRepository {
         return mapOf(PREVIOUS_PAGE_INGREDIENT_KEY to prevPage, NEXT_PAGE_INGREDIENT_KEY to nextPage)
     }
 
-    override suspend fun searchIngredients(name: String?): ApiResponse {
-        return ApiResponse(
+    override suspend fun searchIngredients(name: String?): IngredientApiResponse {
+        return IngredientApiResponse(
             success = true,
             message = "ok",
             ingredients = findIngredients(query = name)

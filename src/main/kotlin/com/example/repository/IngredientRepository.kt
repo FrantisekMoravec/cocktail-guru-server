@@ -1,7 +1,7 @@
 package com.example.repository
 
-import com.example.models.ApiResponse
 import com.example.models.Ingredient
+import com.example.models.IngredientApiResponse
 
 interface IngredientRepository {
 
@@ -13,7 +13,7 @@ interface IngredientRepository {
     val page4: List<Ingredient>
     val page5: List<Ingredient>
 
-    suspend fun getAllIngredients(page: Int = 1): ApiResponse
-    suspend fun searchIngredients(name: String?): ApiResponse
+    suspend fun getAllIngredients(page: Int = 1): IngredientApiResponse
+    suspend fun searchIngredients(name: String?): IngredientApiResponse
 
 }

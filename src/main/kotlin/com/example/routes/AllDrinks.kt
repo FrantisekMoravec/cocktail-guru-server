@@ -1,6 +1,6 @@
 package com.example.routes
 
-import com.example.models.ApiResponse
+import com.example.models.DrinkApiResponse
 import com.example.repository.DrinkRepository
 import io.ktor.server.application.*
 import io.ktor.http.*
@@ -24,12 +24,12 @@ fun Route.getAllDrinks() {
             )
         } catch (e: NumberFormatException) {
             call.respond(
-                message = ApiResponse(success = false, message = "Only Numbers Allowed."),
+                message = DrinkApiResponse(success = false, message = "Only Numbers Allowed."),
                 status = HttpStatusCode.BadRequest
             )
         } catch (e: IllegalArgumentException) {
             call.respond(
-                message = ApiResponse(success = false, message = "Drinks not Found."),
+                message = DrinkApiResponse(success = false, message = "Drinks not Found."),
                 status = HttpStatusCode.NotFound
             )
         }

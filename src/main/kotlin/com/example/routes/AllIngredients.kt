@@ -1,6 +1,6 @@
 package com.example.routes
 
-import com.example.models.ApiResponse
+import com.example.models.IngredientApiResponse
 import com.example.repository.IngredientRepository
 import io.ktor.server.application.*
 import io.ktor.http.*
@@ -24,12 +24,12 @@ fun Route.getAllIngredients() {
             )
         } catch (e: NumberFormatException) {
             call.respond(
-                message = ApiResponse(success = false, message = "Only Numbers Allowed."),
+                message = IngredientApiResponse(success = false, message = "Only Numbers Allowed."),
                 status = HttpStatusCode.BadRequest
             )
         } catch (e: IllegalArgumentException) {
             call.respond(
-                message = ApiResponse(success = false, message = "ingredients not Found."),
+                message = IngredientApiResponse(success = false, message = "ingredients not Found."),
                 status = HttpStatusCode.NotFound
             )
         }

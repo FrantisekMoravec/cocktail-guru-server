@@ -1,6 +1,6 @@
 package com.example.repository
 
-import com.example.models.ApiResponse
+import com.example.models.DrinkApiResponse
 import com.example.models.Drink
 
 const val NEXT_PAGE_DRINK_KEY = "nextPage"
@@ -248,8 +248,8 @@ class DrinkRepositoryImpl : DrinkRepository {
         )
     )
 
-    override suspend fun getAllDrinks(page: Int): ApiResponse {
-        return ApiResponse(
+    override suspend fun getAllDrinks(page: Int): DrinkApiResponse {
+        return DrinkApiResponse(
             success = true,
             message = "ok",
             prevPage = calculatePage(page = page)[PREVIOUS_PAGE_DRINK_KEY],
@@ -277,8 +277,8 @@ class DrinkRepositoryImpl : DrinkRepository {
         return mapOf(PREVIOUS_PAGE_DRINK_KEY to prevPage, NEXT_PAGE_DRINK_KEY to nextPage)
     }
 
-    override suspend fun searchDrinks(name: String?): ApiResponse {
-        return ApiResponse(
+    override suspend fun searchDrinks(name: String?): DrinkApiResponse {
+        return DrinkApiResponse(
             success = true,
             message = "ok",
             drinks = findDrinks(query = name)

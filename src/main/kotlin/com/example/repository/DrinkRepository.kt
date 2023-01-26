@@ -1,6 +1,6 @@
 package com.example.repository
 
-import com.example.models.ApiResponse
+import com.example.models.DrinkApiResponse
 import com.example.models.Drink
 
 interface DrinkRepository {
@@ -13,7 +13,7 @@ interface DrinkRepository {
     val page4: List<Drink>
     val page5: List<Drink>
 
-    suspend fun getAllDrinks(page: Int = 1): ApiResponse
-    suspend fun searchDrinks(name: String?): ApiResponse
+    suspend fun getAllDrinks(page: Int = 1): DrinkApiResponse
+    suspend fun searchDrinks(name: String?): DrinkApiResponse
 
 }
