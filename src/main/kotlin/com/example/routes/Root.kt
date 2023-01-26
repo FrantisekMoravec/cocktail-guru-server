@@ -8,7 +8,7 @@ import io.ktor.server.routing.*
 fun Route.root() {
     get("/"){
         call.respond(
-            message = "root :)",
+            message = "DrinkApp API",
             status = HttpStatusCode.OK
         )
     }

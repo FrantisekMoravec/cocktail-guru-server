@@ -8,8 +8,12 @@ import io.ktor.server.routing.*
 fun Application.configureRouting() {
     routing {
         root()
+
         getAllDrinks()
         searchDrinks()
+
+        getAllIngredients()
+        searchIngredients()
 
         static("/images/drinks") {
             resources("/images/drinks")

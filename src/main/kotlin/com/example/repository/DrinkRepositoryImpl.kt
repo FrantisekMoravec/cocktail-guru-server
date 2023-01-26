@@ -3,8 +3,8 @@ package com.example.repository
 import com.example.models.ApiResponse
 import com.example.models.Drink
 
-const val NEXT_PAGE_KEY = "nextPage"
-const val PREVIOUS_PAGE_KEY = "prevPage"
+const val NEXT_PAGE_DRINK_KEY = "nextPage"
+const val PREVIOUS_PAGE_DRINK_KEY = "prevPage"
 
 class DrinkRepositoryImpl : DrinkRepository {
 
@@ -252,8 +252,8 @@ class DrinkRepositoryImpl : DrinkRepository {
         return ApiResponse(
             success = true,
             message = "ok",
-            prevPage = calculatePage(page = page)[PREVIOUS_PAGE_KEY],
-            nextPage = calculatePage(page = page)[NEXT_PAGE_KEY],
+            prevPage = calculatePage(page = page)[PREVIOUS_PAGE_DRINK_KEY],
+            nextPage = calculatePage(page = page)[NEXT_PAGE_DRINK_KEY],
             drinks = drinks[page]!!,
             lastUpdated = System.currentTimeMillis()
         )
@@ -274,7 +274,7 @@ class DrinkRepositoryImpl : DrinkRepository {
         if (page == 5) {
             nextPage = null
         }
-        return mapOf(PREVIOUS_PAGE_KEY to prevPage, NEXT_PAGE_KEY to nextPage)
+        return mapOf(PREVIOUS_PAGE_DRINK_KEY to prevPage, NEXT_PAGE_DRINK_KEY to nextPage)
     }
 
     override suspend fun searchDrinks(name: String?): ApiResponse {
