@@ -2,6 +2,7 @@ package com.example.models
 
 import kotlinx.serialization.Serializable
 
+/** tato třída definuje objekt drink */
 @Serializable
 data class Drink(
     val id: Int,

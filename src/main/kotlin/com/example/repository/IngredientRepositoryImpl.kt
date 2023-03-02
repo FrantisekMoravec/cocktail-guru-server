@@ -3,6 +3,8 @@ package com.example.repository
 import com.example.models.Ingredient
 import com.example.models.IngredientApiResponse
 
+/** tato třída slouží k zadání hodnot do repozitáře */
+
 const val NEXT_PAGE_INGREDIENT_KEY = "nextPage"
 const val PREVIOUS_PAGE_INGREDIENT_KEY = "prevPage"
 
@@ -18,6 +20,7 @@ class IngredientRepositoryImpl : IngredientRepository {
         )
     }
 
+    /** zde jsou zadány parametry ingrediencí */
     override val page1 = listOf(
         Ingredient(
             id = 1,
@@ -123,6 +126,7 @@ class IngredientRepositoryImpl : IngredientRepository {
         )
     )
 
+    /** tato metoda říká jak má vypadat odpověď pro každou ingredienci pokud si necháváme poslat údaje o každé ingredinci */
     override suspend fun getAllIngredients(page: Int): IngredientApiResponse {
         return IngredientApiResponse(
             success = true,
@@ -134,6 +138,8 @@ class IngredientRepositoryImpl : IngredientRepository {
         )
     }
 
+    /** tato metoda spočítá jaká stránka je příští a jaká předchozí pro danou ingredienci - předchozí stránka pro první stránku
+     *  musí být null a další stránka pro poslední stránku musí být také null */
     private fun calculatePage(page: Int): Map<String, Int?> {
         var prevPage: Int? = page
         var nextPage: Int? = page
@@ -152,6 +158,7 @@ class IngredientRepositoryImpl : IngredientRepository {
         return mapOf(PREVIOUS_PAGE_INGREDIENT_KEY to prevPage, NEXT_PAGE_INGREDIENT_KEY to nextPage)
     }
 
+    /** tato metoda říká jak má vypadat odpověď pro každou ingredienci co bude mít ve jméně text který uživatel vyhledá */
     override suspend fun searchIngredients(name: String?): IngredientApiResponse {
         return IngredientApiResponse(
             success = true,
@@ -160,6 +167,7 @@ class IngredientRepositoryImpl : IngredientRepository {
         )
     }
 
+    /** tato metoda slouží k vyhledávání ingrediencí */
     private fun findIngredients(query: String?): List<Ingredient> {
         val founded = mutableListOf<Ingredient>()
         return if (!query.isNullOrEmpty()) {

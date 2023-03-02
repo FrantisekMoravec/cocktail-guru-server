@@ -3,8 +3,10 @@ package com.example.repository
 import com.example.models.DrinkApiResponse
 import com.example.models.Drink
 
+/** repozitář drinků - sem se ukládají drinky */
 interface DrinkRepository {
 
+    /** každý drink má přiřazené pořadové číslo */
     val drinks: Map<Int, List<Drink>>
 
     val page1: List<Drink>

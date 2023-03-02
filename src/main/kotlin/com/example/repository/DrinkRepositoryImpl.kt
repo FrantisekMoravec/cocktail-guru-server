@@ -3,6 +3,8 @@ package com.example.repository
 import com.example.models.DrinkApiResponse
 import com.example.models.Drink
 
+/** tato třída slouží k zadání hodnot do repozitáře */
+
 const val NEXT_PAGE_DRINK_KEY = "nextPage"
 const val PREVIOUS_PAGE_DRINK_KEY = "prevPage"
 
@@ -17,7 +19,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             5 to page5
         )
     }
-
+    /** zde jsou zadány parametry drinků */
     override val page1 = listOf(
         Drink(
             id = 1,
@@ -248,6 +250,7 @@ class DrinkRepositoryImpl : DrinkRepository {
         )
     )
 
+    /** tato metoda říká jak má vypadat odpověď pro každý drink pokud si necháváme poslat údaje o každém drinku */
     override suspend fun getAllDrinks(page: Int): DrinkApiResponse {
         return DrinkApiResponse(
             success = true,
@@ -259,6 +262,8 @@ class DrinkRepositoryImpl : DrinkRepository {
         )
     }
 
+    /** tato metoda spočítá jaká stránka je příští a jaká předchozí pro daný drink - předchozí stránka pro první stránku
+     *  musí být null a další stránka pro poslední stránku musí být také null */
     private fun calculatePage(page: Int): Map<String, Int?> {
         var prevPage: Int? = page
         var nextPage: Int? = page
@@ -277,6 +282,7 @@ class DrinkRepositoryImpl : DrinkRepository {
         return mapOf(PREVIOUS_PAGE_DRINK_KEY to prevPage, NEXT_PAGE_DRINK_KEY to nextPage)
     }
 
+    /** tato metoda říká jak má vypadat odpověď pro každý drink co bude mít ve jméně text který uživatel vyhledá */
     override suspend fun searchDrinks(name: String?): DrinkApiResponse {
         return DrinkApiResponse(
             success = true,
@@ -285,6 +291,7 @@ class DrinkRepositoryImpl : DrinkRepository {
         )
     }
 
+    /** tato metoda slouží k vyhledávání drinků */
     private fun findDrinks(query: String?): List<Drink> {
         val founded = mutableListOf<Drink>()
         return if (!query.isNullOrEmpty()) {

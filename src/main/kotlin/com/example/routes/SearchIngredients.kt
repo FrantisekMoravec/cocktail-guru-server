@@ -7,6 +7,9 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import org.koin.ktor.ext.inject
 
+/** tato metoda nám říká jak se vyhledávají ingredience
+ *  server/ingredients/search?name=vod - pokud někdo vylhedá tuto adresu server mu pošle
+ *  všechny drinky které mají v názvu "vod" */
 fun Route.searchIngredients() {
     val ingredientRepository: IngredientRepository by inject()
 
