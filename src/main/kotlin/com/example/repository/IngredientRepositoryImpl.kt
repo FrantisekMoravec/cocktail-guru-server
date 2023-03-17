@@ -8,6 +8,9 @@ import com.example.models.IngredientApiResponse
 const val NEXT_PAGE_INGREDIENT_KEY = "nextPage"
 const val PREVIOUS_PAGE_INGREDIENT_KEY = "prevPage"
 
+private const val imageFormat = ".png"
+private const val imagePath = "/images/ingredients/"
+
 class IngredientRepositoryImpl : IngredientRepository {
 
     override val ingredients: Map<Int, List<Ingredient>> by lazy {
@@ -25,103 +28,103 @@ class IngredientRepositoryImpl : IngredientRepository {
         Ingredient(
             id = 1,
             name = "Vodka",
-            image = "/images/ingredients/vodka.jpg",
+            image = imagePath + "vodka" + imageFormat,
             description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor."
         ),
         Ingredient(
             id = 2,
             name = "Absint",
-            image = "/images/ingredients/absint.jpg",
+            image = imagePath + "absint" + imageFormat,
             description = "Absinth je tradičně destilovaný nápoj s vysokým podílem alkoholu (45%-75% ). Jeho charakteristická zelená barva mu vysloužila přezdívku „zelená víla“, i když může být i jinak zbarvený."
         ),
         Ingredient(
             id = 3,
             name = "Baileys",
-            image = "/images/ingredients/vodka.jpg",
-            description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor."
+            image = imagePath + "baileys" + imageFormat,
+            description = "Baileys popis"
         )
     )
 
     override val page2 = listOf(
         Ingredient(
             id = 4,
-            name = "Vodka",
-            image = "/images/ingredients/vodka.jpg",
-            description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor."
+            name = "Curaçao",
+            image = imagePath + "curaçao" + imageFormat,
+            description = "popis"
         ),
         Ingredient(
             id = 5,
-            name = "Absint",
-            image = "/images/ingredients/absint.jpg",
-            description = "Absinth je tradičně destilovaný nápoj s vysokým podílem alkoholu (45%-75% ). Jeho charakteristická zelená barva mu vysloužila přezdívku „zelená víla“, i když může být i jinak zbarvený."
+            name = "Kahlua",
+            image = imagePath + "kahlua" + imageFormat,
+            description = "popis"
         ),
         Ingredient(
             id = 6,
-            name = "Baileys",
-            image = "/images/ingredients/vodka.jpg",
-            description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor."
+            name = "Citronový džus",
+            image = imagePath + "lemon_juice" + imageFormat,
+            description = "popis"
         )
     )
 
     override val page3 = listOf(
         Ingredient(
             id = 7,
-            name = "Vodka",
-            image = "/images/ingredients/vodka.jpg",
-            description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor."
+            name = "Citronová limonáda",
+            image = imagePath + "lemon_lemonade" + imageFormat,
+            description = "popis"
         ),
         Ingredient(
             id = 8,
-            name = "Absint",
-            image = "/images/ingredients/absint.jpg",
-            description = "Absinth je tradičně destilovaný nápoj s vysokým podílem alkoholu (45%-75% ). Jeho charakteristická zelená barva mu vysloužila přezdívku „zelená víla“, i když může být i jinak zbarvený."
+            name = "Pepř",
+            image = imagePath + "pepper" + imageFormat,
+            description = "popis"
         ),
         Ingredient(
             id = 9,
-            name = "Baileys",
-            image = "/images/ingredients/vodka.jpg",
-            description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor."
+            name = "Sůl",
+            image = imagePath + "salt" + imageFormat,
+            description = "popis"
         )
     )
 
     override val page4 = listOf(
         Ingredient(
             id = 10,
-            name = "Vodka",
-            image = "/images/ingredients/vodka.jpg",
-            description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor."
+            name = "Stroh",
+            image = imagePath + "stroh" + imageFormat,
+            description = "popis"
         ),
         Ingredient(
             id = 11,
-            name = "Absint",
-            image = "/images/ingredients/absint.jpg",
-            description = "Absinth je tradičně destilovaný nápoj s vysokým podílem alkoholu (45%-75% ). Jeho charakteristická zelená barva mu vysloužila přezdívku „zelená víla“, i když může být i jinak zbarvený."
+            name = "Tabasco omáčka",
+            image = imagePath + "tabasco_sauce" + imageFormat,
+            description = "popis"
         ),
         Ingredient(
             id = 12,
-            name = "Baileys",
-            image = "/images/ingredients/vodka.jpg",
-            description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor."
+            name = "Rajčatový džus",
+            image = imagePath + "tomato_juice" + imageFormat,
+            description = "popis"
         )
     )
 
     override val page5 = listOf(
         Ingredient(
             id = 13,
-            name = "Vodka",
-            image = "/images/ingredients/vodka.jpg",
-            description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor."
+            name = "Worcestrovská omáčka",
+            image = imagePath + "worcestr_sauce" + imageFormat,
+            description = "popis"
         ),
         Ingredient(
             id = 14,
             name = "Absint",
-            image = "/images/ingredients/absint.jpg",
+            image = imagePath + "absint" + imageFormat,
             description = "Absinth je tradičně destilovaný nápoj s vysokým podílem alkoholu (45%-75% ). Jeho charakteristická zelená barva mu vysloužila přezdívku „zelená víla“, i když může být i jinak zbarvený."
         ),
         Ingredient(
             id = 15,
             name = "Baileys",
-            image = "/images/ingredients/vodka.jpg",
+            image = imagePath + "baileys" + imageFormat,
             description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor."
         )
     )
