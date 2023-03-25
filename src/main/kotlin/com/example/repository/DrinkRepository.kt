@@ -24,15 +24,12 @@ interface DrinkRepository {
     val page12: List<Drink>
     val page13: List<Drink>
     val page14: List<Drink>
-    /*
     val page15: List<Drink>
     val page16: List<Drink>
     val page17: List<Drink>
     val page18: List<Drink>
     val page19: List<Drink>
     val page20: List<Drink>
-
-     */
 /*
     val page21: List<Drink>
     val page22: List<Drink>
@@ -44,7 +41,6 @@ interface DrinkRepository {
     val page28: List<Drink>
     val page29: List<Drink>
     val page30: List<Drink>
-
     val page31: List<Drink>
     val page32: List<Drink>
     val page33: List<Drink>

@@ -29,16 +29,30 @@ class DrinkRepositoryImpl : DrinkRepository {
             11 to page11,
             12 to page12,
             13 to page13,
-            14 to page14
-            /*
-            ,
+            14 to page14,
             15 to page15,
             16 to page16,
             17 to page17,
             18 to page18,
             19 to page19,
             20 to page20
-             */
+/*
+            ,
+            21 to page21,
+            22 to page22,
+            23 to page23,
+            24 to page24,
+            25 to page25,
+            26 to page26,
+            27 to page27,
+            28 to page28,
+            29 to page29,
+            30 to page30,
+            31 to page31,
+            32 to page32,
+            33 to page33,
+            34 to page34
+ */
         )
     }
     /** zde jsou zadány parametry drinků */
@@ -694,7 +708,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             tutorial = "Do velkého sklenice vložíme led a nalijeme červené víno. Přilijeme kolu a jemně promícháme. Do sklenice můžeme přidat také kousek citronové kůry jako ozdobu. Podáváme s brčkem a můžeme si vychutnat tento jednoduchý, osvěžující a oblíbený drink."
         )
     )
-/*
+
     override val page15 = listOf(
         Drink(
             id = 43,
@@ -712,34 +726,273 @@ class DrinkRepositoryImpl : DrinkRepository {
             tutorial = "Všechny ingredience vlijeme do shakeru a důkladně protřepeme s ledem, dokud se shaker nezachytí ledem zvenčí. Nalijeme přes sítko do koktejlové sklenice a podáváme s kouskem čerstvého ovoce nebo lístkem máty na ozdobu."
         ),
         Drink(
-            id = 41,
-            name = "Drink test",
-            image = "/images/drinks/negroni.jpg",
-            description = "popis",
-            rating = 5.0,
+            id = 44,
+            name = "Lemon Drop",
+            image = "/images/drinks/lemon_drop.jpg",
+            description = "Lemon Drop je osvěžující koktejl s kyselou chutí, který získal své jméno podle cukroví. Jeho základem je vodka, kterou mícháme s citronovou šťávou a jednoduchým sirupem. Koktejl můžeme ozdobit kouskem citronu na okraji sklenice.",
+            rating = 4.6,
             ingredients = listOf(
-                "ingredience 1 (3 cl)",
-                "ingredience 2 (3 cl)",
-                "ingredience 3 (3 cl)"
+                "Vodka (4 cl)",
+                "Citronová šťáva (2 cl)",
+                "Jednoduchý sirup (1,5 cl)",
+                "Kousek citronu",
+                "Led"
             ),
-            tutorial = "návod"
+            tutorial = "Do shakeru naplníme ledem, následně přidáme vodka, citronovou šťávu a jednoduchý sirup. Shaker pevně zavřeme a důkladně protřepeme, aby se vše dobře spojilo. Sklenici naplníme kostkami ledu a koktejl přescedíme do sklenice. Na okraj sklenice můžeme připevnit kousek citronu a hotovo."
         ),
         Drink(
-            id = 42,
-            name = "Drink test",
-            image = "/images/drinks/negroni.jpg",
-            description = "popis",
-            rating = 5.0,
+            id = 45,
+            name = "Lynchburg Lemonade",
+            image = "/images/drinks/lynchburg_lemonade.jpg",
+            description = "Lynchburg Lemonade je koktejl s příjemně osvěžující chutí citrónu a limetky. Jeho základem je bourbon, který se míchá s citronovou limonádou, limetkovou šťávou a trochou jednoduchého sirupu. Nápoj se podává s plátkem citrónu a je ideální na horké letní dny.",
+            rating = 4.9,
             ingredients = listOf(
-                "ingredience 1 (3 cl)",
-                "ingredience 2 (3 cl)",
-                "ingredience 3 (3 cl)"
+                "Bourbon (4 cl)",
+                "Citronová limonáda (12 cl)",
+                "Limetková šťáva (1,5 cl)",
+                "Jednoduchý sirup (1 cl)",
+                "Plátek citronu",
+                "Led"
             ),
-            tutorial = "návod"
+            tutorial = "Do sklenice naplníme kostkami ledu a přidáme bourbon, citronovou limonádu, limetkovou šťávu a jednoduchý sirup. Sklenici důkladně promícháme a do nápoje můžeme přidat plátek citronu. Podáváme s brčkem a ledem."
         )
     )
 
     override val page16 = listOf(
+        Drink(
+            id = 46,
+            name = "Madras",
+            image = "/images/drinks/madras.jpg",
+            description = "Madras je jednoduchý koktejl, který vznikl v 80. letech v USA a nese jméno po stejnojmenném indickém městě. Jeho základem je vodka, která se míchá s dýňovým džusem a brusinkovým džusem. Výsledkem je osvěžující nápoj s lehce kyselou chutí.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Vodka (4 cl)",
+                "Dýňový džus (9 cl)",
+                "Brusinkový džus (3 cl)",
+                "Led"
+            ),
+            tutorial = "Do shakeru naplníme ledem a přidáme vodku, dýňový džus a brusinkový džus. Vše důkladně protřepeme, aby se koktejl dobře propojil. Poté nápoj přecedíme do vysoké sklenice naplněné ledem. Koktejl můžeme ozdobit plátkem citronu nebo pomeranče."
+        ),
+        Drink(
+            id = 47,
+            name = "Mary Pickford",
+            image = "/images/drinks/mary_pickford.jpg",
+            description = "Koktejl Mary Pickford vznikl v 20. letech minulého století a je pojmenován po slavné herečce Mary Pickford, která byla v té době největší hvězdou zlaté éry Hollywoodu. ",
+            rating = 4.5,
+            ingredients = listOf(
+                "Bílý rum (6 cl)",
+                "Ananasová šťáva (6 cl)",
+                "Grenadina (1,5 cl)",
+                "Maraschino (1,5 cl)"
+            ),
+            tutorial = "Do shakeru naplníme kameny ledu a přidáme bílý rum, ananasovou šťávu, grenadinu a maraschino. Silně protřepeme a následně přecedíme do předem připraveného koktejlového skla s ledem. Dozdobíme kouskem ananasu nebo višní. "
+        ),
+        Drink(
+            id = 48,
+            name = "Monkey Gland",
+            image = "/images/drinks/monkey_gland.jpg",
+            description = "Tento koktejl byl vynalezen v roce 1920 Harrym MacElhone v jeho baru v Paříži. Název koktejlu pochází z knihy Serge Voronoffa, který ve své knize popisuje svůj vynález - očkování žláz opičích do lidského těla, čímž by měla být zlepšena sexuální energie. Podobně jako očkování, byl koktejl Monkey Gland spojován s podobnými účinky.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Gin (5 cl)",
+                "Citrónová šťáva (2 cl)",
+                "Pomerančový džus (2 cl)",
+                "Grenadina (1 cl)",
+                "1 kapka absintu"
+            ),
+            tutorial = "Do shakeru vložíme led spolu se všemi ingrediencemi kromě absintu. Dobře protřepeme a slijeme do předem připraveného sklenice na drink. Nakapeme jednu kapku absintu a necháme ji zvolna stékat do drinku. Koktejl můžeme ozdobit pomerančovou kůrou nebo pomerančovým klínkem."
+        )
+    )
+
+    override val page17 = listOf(
+        Drink(
+            id = 49,
+            name = "Paloma",
+            image = "/images/drinks/paloma.jpg",
+            description = "Paloma je oblíbený mexický koktejl, který je velmi osvěžující a snadno se připravuje. Jeho název znamená holubice a legendy říkají, že byl inspirován nádhernou herečkou zlaté éry mexického filmu, která nesla právě jméno Paloma. Koktejl je oblíbený nejen v Mexiku, ale i po celém světě a je často označován za alternativu k Margaritě.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Tequila (4 cl)",
+                "Hroznová soda (12 cl)",
+                "Čerstvá limetka",
+                "Sůl",
+                "Led"
+            ),
+            tutorial = "Nejdříve si okraj sklenice osolíme, přidáme led a zalijeme tequilou. Následně přidáme šťávu z poloviny limetky a doplníme hroznovou sodou. Přidáme plátky limetky do koktejlu a můžeme ihned podávat."
+        ),
+        Drink(
+            id = 50,
+            name = "Planter's Punch",
+            image = "/images/drinks/planters_punch.jpg",
+            description = "Planter's Punch je koktejl původem z Karibiku. Recept na tento osvěžující mix sladkého a kyselého s alkoholovou pálivostí se v průběhu let vyvíjel až k dnešní podobě. Původně se připravoval z tmavého rumu, cukru, citronové šťávy a vody. Dnes se však často místo vody používá ananasová šťáva, což dodá koktejlu sladší chuť a exotickou vůni. Planter's Punch si oblíbili nejen místní obyvatelé Karibiku, ale i návštěvníci této tropické oblasti, kde se stal velmi populárním drinkem.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Tmavý rum (6 cl)",
+                "Ananasová šťáva (6 cl)",
+                "Pomerančová šťáva (4 cl)",
+                "Citrónová šťáva (2 cl)",
+                "Cukrový sirup (2 cl)",
+                "Angostura (2-3 kapky)",
+                "Led"
+            ),
+            tutorial = "Do shakeru vložíme led, tmavý rum, ananasovou šťávu, pomerančovou a citrónovou šťávu a cukrový sirup. Shaker pevně uzavřeme a silně protřepeme, dokud se nevytvoří ledový nápoj. Poté nápoj přecedíme přes jemné sítko do připravené sklenice s kousky ledu. Nakonec do nápoje přidáme několik kapek Angostury, které dodají koktejlu charakteristickou chuť a aroma. Koktejl můžeme ozdobit kouskem ovoce nebo čerstvou mátou."
+        ),
+        Drink(
+            id = 51,
+            name = "Purple Haze",
+            image = "/images/drinks/purple_haze.jpg",
+            description = "Purple Haze je populární koktejl, který byl vytvořen v 60. letech v USA. Jeho název byl inspirován stejnojmennou písní od Jimi Hendrixe. Tento drink se skládá z vodky, malinového likéru, borůvkového džusu a malinového džusu, což mu dává krásnou purpurovou barvu a osvěžující chuť.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Vodka (5 cl)",
+                "Malinový likér (2,5 cl)",
+                "Borůvkový džus (2,5 cl)",
+                "Malinový džus (2,5 cl)",
+                "Led"
+            ),
+            tutorial = "Vezměte si shaker a do něj dejte led. Přidejte vodku, malinový likér, borůvkový džus a malinový džus. Shaker dobře zavřete a silně protřepejte, dokud se nápoj nezchladí a nezměkne. Nalijte do sklenice s ledem a ozdobte malinou nebo borůvkou."
+        )
+    )
+
+    override val page18 = listOf(
+        Drink(
+            id = 52,
+            name = "Red Snapper",
+            image = "/images/drinks/red_snapper.jpg",
+            description = "Red Snapper je originální název pro Bloody Mary s ginem místo vodky. Tento drink vznikl v New Yorku během prohibice, kdy se díky absenci legálního alkoholu musela improvizovat. Gin byl v té době jednou z mála dostupných alkoholických nápojů. Výsledný drink je osvěžující a kořeněný, ideální pro milovníky ginu.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Gin (6 cl)",
+                "Rajčatový džus (12 cl)",
+                "Citronová šťáva (1,5 cl)",
+                "Tabasco (pár kapek)",
+                "Worcestershire omáčka (pár kapek)",
+                "Sůl",
+                "Pepř",
+                "Kůra z citronu (na ozdobení)",
+                "Celer (na ozdobení)",
+                "Led"
+            ),
+            tutorial = "Do shakeru vložíme několik kusů ledu, gin, rajčatový džus, citronovou šťávu, Tabasco, Worcestershire omáčku, sůl a pepř. Shaker dobře zatřepeme, aby se všechny přísady promíchaly a následně slijeme do vysoké sklenice plné kostek ledu. Drink ozdobíme kůrou z citronu a větvičkou celeru a podáváme s brčkem. Sklenici můžeme také vymalovat směsí soli a pepře pro zajímavější vzhled.",
+        ),
+        Drink(
+            id = 53,
+            name = "Scotch Mist",
+            image = "/images/drinks/scotch_mist.jpg",
+            description = "Scotch Mist je velmi jednoduchý nápoj, který se vyznačuje svou jednoduchostí a čistotou. Hlavní složkou je skotská whisky, která je obohacena o vodu a led. Tento drink je oblíbený mezi milovníky skotské whisky, kteří si chtějí vychutnat její chuť a aroma.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Skotská whisky (5 cl)",
+                "Voda (2-3 cl)",
+                "Led"
+            ),
+            tutorial = "Do sklenice naplněné ledem přilijeme skotskou whisky a přidáme 2-3cl vody. Dochutíme dle potřeby. Drink můžeme ozdobit kolečkem citronu nebo pomeranče. Tento drink je ideální pro ty, kteří si chtějí vychutnat skutečnou chuť a aroma skotské whisky bez zbytečných příchutí."
+        ),
+        Drink(
+            id = 54,
+            name = "Shirley Temple",
+            image = "/images/drinks/shirley_temple.jpg",
+            description = "Shirley Temple je nealkoholický koktejl pojmenovaný po slavné americké herečce. Byl vytvořen v roce 1930 v legendárním hotelu The Royal Hawaiian na Havaji, kde byla malá Shirley hostem svých rodičů. Původně se skládal pouze z ginger ale, grenadiny a stroužku citronu, avšak později byly přidávány i další ingredience. Dnes je to oblíbený nápoj pro děti i dospělé, a to zejména na slavnostní příležitosti.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Ginger ale",
+                "Grenadina",
+                "Stroužek citronu",
+                "Led"
+            ),
+            tutorial = "Do sklenice s velkým množstvím ledu nejdříve nalijeme ginger ale. Poté přidáme grenadinu, která by se měla samovolně propadnout ke dnu sklenice, a zároveň jí to dává krásnou barvu. Nakonec přidáme stroužek citronu, kterým sklenici ozdobíme. Některé recepty doporučují také přidat trošku třešňového džusu nebo několik třešňových plodů pro vylepšení chuti a dekoraci."
+        )
+    )
+
+    override val page19 = listOf(
+        Drink(
+            id = 55,
+            name = "Slippery Nipple",
+            image = "/images/drinks/slippery_nipple.jpg",
+            description = "Slippery Nipple je jednoduchý a lahodný koktejl, který si získal mnoho příznivců svou sladkou chutí a jednoduchostí přípravy. Vznikl v 80. letech v USA a jeho název znamená doslova kluzká bradavka.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Baileys (2,5 cl)",
+                "Sambuca (2,5 cl)"
+            ),
+            tutorial = "Slippery Nipple se podává v shot skleničkách. Nejprve nalijeme Sambucu a následně Baileys. Důležité je dodržet pořadí, aby se Baileys netopil v Sambuce. Hotovo!"
+        ),
+        Drink(
+            id = 56,
+            name = "Snowball",
+            image = "/images/drinks/snowball.jpg",
+            description = "Snowball je koktejl, který vznikl v 60. letech 20. století v Anglii a rychle se stal velmi populárním. Jeho název odkazuje na kouli sněhu, neboť díky bílé barvě a textuře shakeru s ledem se koktejl podobá právě této kouli. Připravuje se z advocaat likéru, který je vyroben z žloutků, cukru a brandy, a limonády Schweppes Lemonade.",
+            rating = 3.5,
+            ingredients = listOf(
+                "Advocaat (6 cl)",
+                "Schweppes Lemonade (12 cl)",
+                "Led"
+            ),
+            tutorial = "Do shakeru s ledem nalijeme advocaat likér a limonádu. Následně silně protřepeme, aby se vytvořila koule sněhu podobná textura a aby se všechny ingredience dobře propojily. Poté slijeme do vysokého sklenice a ozdobíme plátkem citronu. Pro zvýšení chuťových vlastností lze do koktejlu přidat i trošku limetové šťávy."
+        ),
+        Drink(
+            id = 57,
+            name = "Spritzer",
+            image = "/images/drinks/spritzer.jpg",
+            description = "Spritzer je osvěžující míchaný nápoj, který se skládá ze suchého bílého vína a perlivé minerální vody. Jeho původ je připisován středoevropské kuchyni, kde byl často podáván jako aperitiv.",
+            rating = 3.5,
+            ingredients = listOf(
+                "Suché bílé víno (10 cl)",
+                "Perlivá minerální voda (10 cl)",
+                "Led",
+                "Citronové kroužky (na ozdobu)"
+            ),
+            tutorial = "Do většího sklenice naplníme kameny ledu, nalijeme suché bílé víno a doplníme perlivou minerální vodou. Sklenici jemně promícháme lžičkou a ozdobíme kroužkem citronu. Podáváme ihned."
+        )
+    )
+
+    override val page20 = listOf(
+        Drink(
+            id = 58,
+            name = "Russian Spring Punch",
+            image = "/images/drinks/russian_spring_punch.jpg",
+            description = "Russian Spring Punch je osvěžující letní koktejl s vodkou, který pochází z Anglie. Byl vytvořen na konci 80. let 20. století v Londýně v hotelu Claridge's. Je inspirován ruskými ingrediencemi, které jsou v něm použity, jako je vodkou a angostura. Tento koktejl se stává stále populárnější nejen v Anglii, ale i po celém světě.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Vodka (5 cl)",
+                "Čerstvě vylisovaný grapefruitový džus (5 cl)",
+                "Angostura (2-3 dash)",
+                "Cukr (1 lžička)",
+                "Soda (asi 10-15 cl)",
+                "Led"
+            ),
+            tutorial = "Vysokou sklenici naplníme ledem a do ní přidáme vodku, grapefruitový džus, angosturu a cukr. Vše důkladně promícháme a dolijeme sodou. Koktejl ozdobíme kolečkem grapefruitu a mátou."
+        ),
+        Drink(
+            id = 59,
+            name = "Stinger",
+            image = "/images/drinks/stinger.jpg",
+            description = "Stinger je elegantní koktejl, který vznikl již v první polovině 20. století. Vychází z klasické kombinace líhoviny a máty, která se používá v mnoha nápojích a likérech. V případě Stingeru se jedná o směs koňaku a crème de menthe, která dodá nápoji svěží a osvěžující chuť.",
+            rating = 4.2,
+            ingredients = listOf(
+                "Koňak (5 cl)",
+                "Crème de menthe (2 cl)"
+            ),
+            tutorial = "Do míchací sklenice s kostkami ledu přidáme koňak a crème de menthe. Koktejl důkladně promícháme a přecedíme přes sítko do vychlazeného koktejlového skla. Koktejl můžeme ozdobit lístkem máty."
+        ),
+        Drink(
+            id = 60,
+            name = "Surfer on Acid",
+            image = "/images/drinks/surfer_on_acid.jpg",
+            description = "Surfer on Acid je silný a osvěžující drink, který se poprvé objevil v 90. letech v kalifornské Santa Monice. Příběh o jeho vzniku není úplně jasný, ale všechny verze se shodují na tom, že byl vytvořen surfaři. Název drinku pochází z jedné z jeho ingrediencí, likéru Jägermeister, jehož logo obsahuje jelena. Ten je známý jako „hirsch“ v němčině, což znamená „jelen“. Recept se rychle rozšířil a dnes je oblíbený po celém světě.",
+            rating = 4.2,
+            ingredients = listOf(
+                "Jägermeister (2 cl)",
+                "Kokosový rum (2 cl)",
+                "Ananasová šťáva (12 cl)",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidáme Jägermeister, kokosový rum a ananasovou šťávu. Přidáme led a silně protřepeme. Nalijeme do sklenice s kostkami ledu a dozdobíme kouskem ananasu nebo jiným ovocem dle chuti. Je připraven k podávání!"
+        )
+    )
+
+/*
+    override val page21 = listOf(
         Drink(
             id = 40,
             name = "Drink test",
@@ -780,7 +1033,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             tutorial = "návod"
         )
     )
-*/
+ */
     /** tato metoda říká jak má vypadat odpověď pro každý drink pokud si necháváme poslat údaje o každém drinku */
     override suspend fun getAllDrinks(page: Int): DrinkApiResponse {
         return DrinkApiResponse(
@@ -799,7 +1052,7 @@ class DrinkRepositoryImpl : DrinkRepository {
         var prevPage: Int? = page
         var nextPage: Int? = page
 
-        val lastPage = 14//34
+        val lastPage = 20//34
         val almostLastPage = lastPage-1
 
         if (page in 1..almostLastPage) {
