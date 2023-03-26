@@ -8,7 +8,7 @@ interface DrinkRepository {
 
     /** každý drink má přiřazené pořadové číslo */
     val drinks: Map<Int, List<Drink>>
-    //TODO přidat stránky
+
     val page1: List<Drink>
     val page2: List<Drink>
     val page3: List<Drink>
@@ -19,7 +19,6 @@ interface DrinkRepository {
     val page8: List<Drink>
     val page9: List<Drink>
     val page10: List<Drink>
-
     val page11: List<Drink>
     val page12: List<Drink>
     val page13: List<Drink>
@@ -30,7 +29,6 @@ interface DrinkRepository {
     val page18: List<Drink>
     val page19: List<Drink>
     val page20: List<Drink>
-/*
     val page21: List<Drink>
     val page22: List<Drink>
     val page23: List<Drink>
@@ -45,7 +43,7 @@ interface DrinkRepository {
     val page32: List<Drink>
     val page33: List<Drink>
     val page34: List<Drink>
-*/
+
     suspend fun getAllDrinks(page: Int = 1): DrinkApiResponse
     suspend fun searchDrinks(name: String?): DrinkApiResponse
 

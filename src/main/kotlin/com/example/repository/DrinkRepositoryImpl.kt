@@ -2,10 +2,7 @@ package com.example.repository
 
 import com.example.models.DrinkApiResponse
 import com.example.models.Drink
-//TODO přidat obrázky drinků s větší kvalitou(výška 1200px)
-//TODO omezit délku popisu drinku
 
-//TODO přidat další stránky
 /** tato třída slouží k zadání hodnot do repozitáře */
 
 const val NEXT_PAGE_DRINK_KEY = "nextPage"
@@ -13,7 +10,6 @@ const val PREVIOUS_PAGE_DRINK_KEY = "prevPage"
 
 class DrinkRepositoryImpl : DrinkRepository {
 
-    //TODO mapnout stránky drinků
     override val drinks: Map<Int, List<Drink>> by lazy {
         mapOf(
             1 to page1,
@@ -35,9 +31,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             17 to page17,
             18 to page18,
             19 to page19,
-            20 to page20
-/*
-            ,
+            20 to page20,
             21 to page21,
             22 to page22,
             23 to page23,
@@ -52,7 +46,6 @@ class DrinkRepositoryImpl : DrinkRepository {
             32 to page32,
             33 to page33,
             34 to page34
- */
         )
     }
     /** zde jsou zadány parametry drinků */
@@ -991,49 +984,672 @@ class DrinkRepositoryImpl : DrinkRepository {
         )
     )
 
-/*
     override val page21 = listOf(
         Drink(
-            id = 40,
-            name = "Drink test",
-            image = "/images/drinks/negroni.jpg",
-            description = "popis",
-            rating = 5.0,
+            id = 61,
+            name = "Swedish Fish",
+            image = "/images/drinks/swedish_fish.jpg",
+            description = "Tento koktejl se inspiroval sladkými cukrovinkami Swedish Fish. Vznikl ve Spojených státech a díky svému sladkému a ovocnému charakteru se stal oblíbeným nápojem na letních party. ",
+            rating = 4.0,
             ingredients = listOf(
-                "ingredience 1 (3 cl)",
-                "ingredience 2 (3 cl)",
-                "ingredience 3 (3 cl)"
+                "Vodka (5 cl)",
+                "Cranberry juice (5 cl)",
+                "Grapefruitová šťáva (2 cl)",
+                "Malinová šťáva (2 cl)",
+                "Led"
             ),
-            tutorial = "návod"
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Nápoj můžeme ozdobit malými cukrovými rybkami Swedish Fish. "
         ),
         Drink(
-            id = 41,
-            name = "Drink test",
-            image = "/images/drinks/negroni.jpg",
-            description = "popis",
-            rating = 5.0,
+            id = 62,
+            name = "Three Wise Men",
+            image = "/images/drinks/three_wise_men.jpg",
+            description = "Tento koktejl nese název po třech nejznámějších amerických whisky – Johnnie Walker, Jack Daniel's a Jim Beam. Je to silný nápoj s výraznou chutí pro opravdové whiskey fanoušky. ",
+            rating = 3.5,
             ingredients = listOf(
-                "ingredience 1 (3 cl)",
-                "ingredience 2 (3 cl)",
-                "ingredience 3 (3 cl)"
+                "Johnnie Walker whisky (2 cl)",
+                "Jack Daniel's whisky (2 cl)",
+                "Jim Beam whisky (2 cl)"
             ),
-            tutorial = "návod"
+            tutorial = "Všechny tři druhy whisky přidáme do shakeru naplněného ledem a důkladně protřepeme. Poté přescedíme do sklenice s ledem a ozdobíme podle chuti. Doporučujeme podávat jako digestif. "
         ),
         Drink(
-            id = 42,
-            name = "Drink test",
-            image = "/images/drinks/negroni.jpg",
-            description = "popis",
-            rating = 5.0,
+            id = 63,
+            name = "Tootsie Roll",
+            image = "/images/drinks/tootsie_roll.jpg",
+            description = "Tootsie Roll je koktejl, který se inspiroval slavnou americkou cukrovinkou Tootsie Roll. Koktejl kombinuje výraznou chuť kakaa s příjemnou sladkostí a alkoholovou silou. Je to skvělý nápoj na oslavu nebo jako dezertní drink.",
+            rating = 4.5,
             ingredients = listOf(
-                "ingredience 1 (3 cl)",
-                "ingredience 2 (3 cl)",
-                "ingredience 3 (3 cl)"
+                "Vodka (3 cl)",
+                "Kakaový likér (3 cl)",
+                "Pomerančový likér (1.5 cl)",
+                "Smetana (1.5 cl)",
+                "Led"
             ),
-            tutorial = "návod"
+            tutorial = "Do shakeru přidáme led, vodku, kakaový likér, pomerančový likér a smetanu. Shaker důkladně protřepeme, až se všechny ingredience spojí. Poté přescedíme do sklenice naplněné ledem. Můžeme ozdobit kouskem čokolády nebo pomerančovou kůrou. "
         )
     )
- */
+
+    override val page22 = listOf(
+        Drink(
+            id = 64,
+            name = "Transfusion",
+            image = "/images/drinks/transfusion.jpg",
+            description = "Transfusion je osvěžující a snadno připravitelný koktejl. Původně byl vytvořen jako nápoj pro golfisty, kteří potřebovali hydratovat a osvěžit se na horkých letních dnech. Dnes se tento koktejl stává stále populárnější volbou pro všechny, kdo hledají snadný a chutný nápoj na oslavu nebo relaxaci.",
+            rating = 4.2,
+            ingredients = listOf(
+                "Vodka (5 cl)",
+                "Hroznová šťáva (10 cl)",
+                "Zázvorové pivo (5 cl)",
+                "Led"
+            ),
+            tutorial = "Do sklenice naplněné ledem postupně nalijeme vodku, hroznovou šťávu a zázvorové pivo. Vše jemně promícháme a ozdobíme plátkem citronu nebo čerstvou hroznovou větví. Podáváme s brčkem."
+        ),
+        Drink(
+            id = 65,
+            name = "Tuxedo",
+            image = "/images/drinks/tuxedo.jpg",
+            description = "Tuxedo je elegantní koktejl, který se řadí mezi klasické a náročné nápoje. Jeho chuťový profil je kořeněný a sladký a koktejl se často pije jako digestiv po jídle. ",
+            rating = 3.9,
+            ingredients = listOf(
+                "Gin (6 cl)",
+                "Bílý vermut (1,5 cl)",
+                "Maraschino likér (0,5 cl)",
+                "Angostura Bitter (1 dash)",
+                "Pomerančová kůra"
+            ),
+            tutorial = "Do míchací sklenice naplněné ledem přidáme všechny ingredience a důkladně mícháme asi 30 sekund. Následně přescedíme do vychlazené koktejlové sklenice a ozdobíme pomerančovou kůrou. "
+        ),
+        Drink(
+            id = 66,
+            name = "Vampiro",
+            image = "/images/drinks/vampiro.jpg",
+            description = "Vampiro je oblíbeným mexickým koktejlem, který je založen na tequile a rajčatové šťávě. Chuťově je pikantní a sladká, což jej dělá ideálním pro ty, kteří si rádi pochutnají na něčem zajímavém. ",
+            rating = 4.2,
+            ingredients = listOf(
+                "Tequila (5 cl)",
+                "Rajčatová šťáva (10 cl)",
+                "Citrónová šťáva (2 cl)",
+                "Cukr (1 lžička)",
+                "Sůl",
+                "Tabasco omáčka",
+                "Worcestershire omáčka",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidáme led, tequilu, rajčatovou a citrónovou šťávu, cukr, špetku soli, pár kapek Tabasco a Worcestershire omáčky. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Nápoj můžeme ozdobit klínkem citronu a posypat solí. "
+        )
+    )
+
+    override val page23 = listOf(
+        Drink(
+            id = 67,
+            name = "Vanilla Sky",
+            image = "/images/drinks/vanilla_sky.jpg",
+            description = "Vanilla Sky je osvěžující a lahodný koktejl, který kombinuje vanilkový likér s citrusy a sodou. Je ideální pro letní dny a vyzkoušet by ho měl každý, kdo má rád sladké nápoje.",
+            rating = 4.3,
+            ingredients = listOf(
+                "Vanilkový likér (3 cl)",
+                "Bílý rum (3 cl)",
+                "Čerstvě vymačkaná limetková šťáva (2 cl)",
+                "Pomerančový džus (6 cl)",
+                "Soda (doplnit dle chuti)",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidáme led a všechny tekuté ingredience kromě sody. Shaker důkladně protřepeme a přescedíme do sklenice s ledem. Přidáme sodu podle chuti. Nápoj můžeme ozdobit plátkem pomeranče a vanilkovou fazolkou. Na zdraví!"
+        ),
+        Drink(
+            id = 68,
+            name = "Velvet Hammer",
+            image = "/images/drinks/velvet_hammer.jpg",
+            description = "Velvet Hammer je sladký koktejl, který kombinuje chuť čokolády a smetany s alkoholovými nápoji. Tento drink je oblíbeným dezertním koktejlem a jeho chuť se bude líbit hlavně těm, kteří mají rádi sladké nápoje.",
+            rating = 3.8,
+            ingredients = listOf(
+                "Smetanová vodka (4 cl)",
+                "Creme de cacao (4 cl)",
+                "Sodovka (2 cl)",
+                "Sahara (2 cl)",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidáme led, smetanovou vodku, creme de cacao, sodovku a saharu. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Drink můžeme ozdobit kakaovým práškem nebo hřebíčkem."
+        ),
+        Drink(
+            id = 69,
+            name = "Vesper",
+            image = "/images/drinks/vesper.jpg",
+            description = "Vesper je koktejl, který se stal známým díky Jamesi Bondovi. Byl představen v románu Casino Royale a později se objevil také ve stejnojmenném filmu. Je to suchý koktejl s vysokou alkoholickou dávkou, který zahrnuje tři různé druhy alkoholu.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Gin (6 cl)",
+                "Vodka (1.5 cl)",
+                "Lillet Blanc (1.5 cl)",
+                "Citron (limetková šťáva, 1 nakrájená kroužek)",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přecedíme do sklenice na martini. Koktejl můžeme ozdobit kouskem citronu."
+        )
+    )
+
+    override val page24 = listOf(
+        Drink(
+            id = 70,
+            name = "Ward Eight",
+            image = "/images/drinks/ward_eight.jpg",
+            description = "Ward Eight je koktejl, který se poprvé objevil v roce 1898 v Bostonu. Podle jedné verze jeho název odkazuje na číslo osmi v okrsku, kde byl vytvořen. Podle jiné verze se jednalo o název předměstí, kde byla hospoda, kde se tento nápoj poprvé podával.",
+            rating = 4.3,
+            ingredients = listOf(
+                "Bourbon (6 cl)",
+                "Čerstvě vymačkaná pomerančová šťáva (2 cl)",
+                "Čerstvě vymačkaná citronová šťáva (2 cl)",
+                "Grenadina (1 cl)",
+                "Angostura kořenová kůra (2 kapky)",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidejte led, bourbon, čerstvě vymačkanou pomerančovou a citronovou šťávu, grenadinu a 2 kapky Angostura kořenové kůry. Shaker důkladně protřepejte a přeceďte do sklenice s ledem. Koktejl můžete ozdobit kůrkou pomeranče a kouskem třešně."
+        ),
+        Drink(
+            id = 71,
+            name = "Americano",
+            image = "/images/drinks/americano.jpg",
+            description = "Americano je lehký a osvěžující koktejl, který se skládá z Campariho, vermouthu a sodovky. Původně byl vytvořen pro americké turisty v Itálii, kteří chtěli mírnější verzi Negroniho. ",
+            rating = 3.9,
+            ingredients = listOf(
+                "Campari (3 cl)",
+                "Vermouth (3 cl)",
+                "Sodovka",
+                "Led"
+            ),
+            tutorial = "Do sklenice naplněného ledem přidáme Campari a vermouth. Doplňujeme sodovkou a mícháme lžičkou. Podáváme s kroužkem pomeranče jako ozdobou. "
+        ),
+        Drink(
+            id = 72,
+            name = "Angel Face",
+            image = "/images/drinks/angel_face.jpg",
+            description = "Angel Face je koktejl vytvořený na počátku 20. století. Jeho jméno odkazuje na jemnou a decentní chuť, kterou tento nápoj poskytuje. Kombinace ginu, brandy a Calvadosu, který se dříve používal jako základ pro mnoho koktejlů, tvoří harmonickou směs ovocných a kořeněných tónů.",
+            rating = 4.2,
+            ingredients = listOf(
+                "Gin (3 cl)",
+                "Brandy (3 cl)",
+                "Calvados (3 cl)"
+            ),
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do koktejlové sklenice naplněné ledem. Nápoj můžeme ozdobit trochou citronové kůry nebo jablka. "
+        )
+    )
+
+    override val page25 = listOf(
+        Drink(
+            id = 73,
+            name = "Aviation Cocktail",
+            image = "/images/drinks/aviation.jpg",
+            description = "Aviation Cocktail je elegantní koktejl s výrazným ovocným aroma a jemnou vůní fialky. Byl vyvinut na počátku 20. století a dodnes patří k ikonickým nápojům v kategorii koktejlů s ginem.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Gin (4,5 cl)",
+                "Creme de Violette (1,5 cl)",
+                "Maraschino likér (1,5 cl)",
+                "Citronová šťáva (1,5 cl)"
+            ),
+            tutorial = "Do shakeru přidejte led a všechny ingredience. Shaker důkladně protřepejte a nápoj přeceďte do ochucené sklenice s kostkami ledu. Můžete ozdobit citrusovou kůrou nebo fialkovými okvětními lístky."
+        ),
+        Drink(
+            id = 74,
+            name = "Bahama Mama",
+            image = "/images/drinks/bahama_mama.jpg",
+            description = "Bahama Mama je populární tropický koktejl s karibskými kořeny. Má sladkou a ovocnou chuť, kterou doplňuje rum a kokosový krém.",
+            rating = 4.2,
+            ingredients = listOf(
+                "Rum tmavý (4 cl)",
+                "Rum bílý (4 cl)",
+                "Ananasová šťáva (4 cl)",
+                "Pomerančová šťáva (4 cl)",
+                "Kokosový krém (2 cl)",
+                "Grenadina (1 cl)",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Na závěr můžeme koktejl ozdobit kousky ovoce, např. pomerančovým kolečkem a ananasovým klíčkem."
+        ),
+        Drink(
+            id = 75,
+            name = "Bay Breeze",
+            image = "/images/drinks/bay_breeze.jpg",
+            description = "Bay Breeze je osvěžující drink se sladkou a kyselou chutí, který je ideální pro letní večery na pláži. Je velmi jednoduchý na přípravu a používá se k němu jen několik běžných ingrediencí.",
+            rating = 3.9,
+            ingredients = listOf(
+                "Vodka (4 cl)",
+                "Ananasová šťáva (6 cl)",
+                "Brusinková šťáva (6 cl)",
+                "Led"
+            ),
+            tutorial = "Do shakeru naplněného ledem přidáme vodku, ananasovou a brusinkovou šťávu. Vše důkladně protřepeme a přecedíme do vysoké sklenice naplněné ledem. Na ozdobu můžeme použít kousek ananasu a brusinky na koktejlové paličce."
+        )
+    )
+
+    override val page26 = listOf(
+        Drink(
+            id = 76,
+            name = "Bee's Knees",
+            image = "/images/drinks/bees_knees.jpg",
+            description = "Bee's Knees je osvěžující koktejl, který v sobě kombinuje sladkou chuť medu a kyselost citronu. Tento drink se datuje do dob prohibice a byl oblíbeným nápojem ve 20. letech minulého století. Dnes se stal populárním znovu díky svému vynikajícímu chuti a snadné přípravě.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Gin (6 cl)",
+                "Čerstvě vymačkaná citronová šťáva (2,5 cl)",
+                "Medový sirup (2,5 cl)",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidejte led a všechny ingredience. Shaker důkladně protřepejte, dokud se nápoj neochladí a nezmíchají se ingredience. Poté přelijte nápoj do sklenice naplněné ledem a ozdobte plátkem citronu nebo kouskem medu."
+        ),
+        Drink(
+            id = 77,
+            name = "Between the Sheets",
+            image = "/images/drinks/between_the_sheets.jpg",
+            description = "Between the Sheets je směsí rumu, brandy, triple sec a citronové šťávy. Tento koktejl se řadí mezi osvěžující a ovocné nápoje s trochou koňaku. Podobně jako u jiných koktejlů z období prohibice, mohou být ingredience přizpůsobeny podle vkusu konzumenta.",
+            rating = 3.8,
+            ingredients = listOf(
+                "Rum (3 cl)",
+                "Brandy (3 cl)",
+                "Triple sec (3 cl)",
+                "Citronová šťáva (2 cl)",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Můžeme ozdobit kouskem citronu nebo pomeranče."
+        ),
+        Drink(
+            id = 78,
+            name = "Blackberry Bramble",
+            image = "/images/drinks/blackberry_bramble.jpg",
+            description = "Blackberry Bramble je osvěžující letní koktejl, který kombinuje silný gin se sladkými a kyselými tóny čerstvých borůvek a citronové šťávy. Tento nápoj se často podává s rozdrceným ledem a zdobí se plátky citronu a malinami.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Gin (6 cl)",
+                "Čerstvé borůvky (10 ks)",
+                "Cukrový sirup (2 cl)",
+                "Čerstvá citronová šťáva (3 cl)",
+                "Led"
+            ),
+            tutorial = "Vložte borůvky, citronovou šťávu a cukrový sirup do shakeru a rozmačkejte je vidličkou. Přidejte gin a led a protřepejte. Nalijte do sklenice plného ledu a ozdobte plátky citronu a malinami. Podávejte s koktejlovou slamkou."
+        )
+    )
+
+    override val page27 = listOf(
+        Drink(
+            id = 79,
+            name = "Blackthorn",
+            image = "/images/drinks/blackthorn.jpg",
+            description = "Blackthorn je koktejl se silnou sladkou chutí, kterou mu dodává sladký vermouth. Jedná se o poměrně silný koktejl, protože obsahuje hned dvě druhy destilátů. ",
+            rating = 4.2,
+            ingredients = listOf(
+                "Plymouth Gin (3 cl)",
+                "Slivovice (3 cl)",
+                "Sladký vermouth (3 cl)",
+                "Angostura kořenová bitters (2 dashes)"
+            ),
+            tutorial = "Do shakeru přidáme gin, slivovici, sladký vermouth a 2 dash Angostura kořenového bitteru. Shaker naplníme ledem a důkladně protřepeme. Koktejl přecedíme do sklenice s ledem a ozdobíme třešní a pomerančovou kůrou. Podáváme se slamkou. "
+        ),
+        Drink(
+            id = 80,
+            name = "Blood and Sand",
+            image = "/images/drinks/blood_and_sand.jpg",
+            description = "Tento koktejl se pojmenoval po stejnojmenném filmu z roku 1922, ve kterém hrál Rudolf Valentino. Je to sladký a ovocný nápoj, který se skládá ze skotské whisky, červeného vermutu, pomerančového džusu a Cherry Heering likéru.",
+            rating = 4.3,
+            ingredients = listOf(
+                "Skotská whisky (3 cl)",
+                "Červený vermut (3 cl)",
+                "Pomerančový džus (3 cl)",
+                "Cherry Heering (3 cl)",
+                "Pomerančová kůra (na ozdobu)"
+            ),
+            tutorial = "Do shakeru přidáme led a všechny ingredience kromě pomerančové kůry. Důkladně protřepeme a přescedíme do sklenice s ledem. Nápoj můžeme ozdobit pomerančovou kůrou. "
+        ),
+        Drink(
+            id = 81,
+            name = "Boulevardier",
+            image = "/images/drinks/boulevardier.jpg",
+            description = "Boulevardier je podobný klasickému koktejlu Negroni, ale místo ginu se používá bourbon nebo rye whisky. Tento elegantní a hořký koktejl vznikl v Paříži v 20. letech 20. století a dodnes patří mezi oblíbené nápoje v barových kruzích.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Bourbon nebo rye whisky (3 cl)",
+                "Cinzano Vermouth Rosso (3 cl)",
+                "Campari (3 cl)",
+                "Kůra z pomeranče"
+            ),
+            tutorial = "Do míchací sklenice naplněné ledem přidáme bourbon nebo rye whisky, Cinzano Vermouth Rosso a Campari. Koktejl důkladně promícháme pomocí míchacího náčiní. Poté nápoj přecedíme do připraveného sklenice a ozdobíme kůrou z pomeranče. "
+        )
+    )
+
+    override val page28 = listOf(
+        Drink(
+            id = 82,
+            name = "Brown Derby",
+            image = "/images/drinks/brown_derby.jpg",
+            description = "Brown Derby je koktejl, který vznikl v Los Angeles v 30. letech minulého století a je pojmenován po restauraci Brown Derby, kde se tento drink poprvé podával. Je to sladký a ovocný nápoj s lehkou chutí grapefruitu.",
+            rating = 3.9,
+            ingredients = listOf(
+                "Bourbon (6 cl)",
+                "Hroznová šťáva (3 cl)",
+                "Grapefruitová šťáva (1,5 cl)",
+                "Medový sirup (1 cl)",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidejte led a všechny ingredience. Shaker důkladně protřepejte a přelijte do sklenice s velkými kousky ledu. Ozdobte plátkem grapefruitu a servírujte. Díky své sladké a ovocné chuti se tento koktejl hodí jako aperitiv nebo jako koktejl k dezertu."
+        ),
+        Drink(
+            id = 83,
+            name = "Cape Codder",
+            image = "/images/drinks/cape_codder.jpg",
+            description = "Cape Codder je osvěžující koktejl, který se skládá ze dvou ingrediencí - vodka a brusinkový džus. Jednoduchý a rychlý recept na letní osvěžení.",
+            rating = 3.8,
+            ingredients = listOf(
+                "Vodka (5 cl)",
+                "Brusinkový džus (10 cl)",
+                "Led",
+            ),
+            tutorial = "Do sklenice plné ledu přidáme vodku a brusinkový džus. Koktejl promícháme a ozdobíme plátkem citronu nebo pomeranče podle chuti."
+        ),
+        Drink(
+            id = 84,
+            name = "Coco Loco",
+            image = "/images/drinks/coco_loco.jpg",
+            description = "Coco Loco je koktejl z tropické Kostariky, který v sobě spojuje chuť kokosového mléka, ananasové šťávy a trochy rumu. Je to vynikající nápoj na osvěžení v horkém letním dni.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Bílý rum (4 cl)",
+                "Hustý kokosový krém (2 cl)",
+                "Ananasová šťáva (2 cl)",
+                "Condensed milk (2 cl)",
+                "Mleté skořice",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Pokud chceme, můžeme nápoj posypat trochou mleté skořice. "
+        )
+    )
+
+    override val page29 = listOf(
+        Drink(
+            id = 85,
+            name = "Corpse Reviver #2",
+            image = "/images/drinks/corpse_reviver_2.jpg",
+            description = "Tento koktejl je založen na originálním nápoji z konce 19. století. Existuje několik verzí tohoto nápoje, ale nejslavnější je Corpse Reviver #2, který je osvěžující a lehký.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Gin (2 cl)",
+                "Lillet Blanc (2 cl)",
+                "Cointreau (2 cl)",
+                "Citronová šťáva (2 cl)",
+                "Absinth (pár kapek)",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidáme led a všechny ingredience kromě absinthu. Shaker důkladně protřepeme a přescedíme do sklenice naplněné ledem. Nakonec přidáme pár kapek absinthu a koktejl ozdobíme kůrkou z citronu. "
+        ),
+        Drink(
+            id = 86,
+            name = "Dirty Banana",
+            image = "/images/drinks/dirty_banana.jpg",
+            description = "Dirty Banana je koktejl z Jamajky, který je oblíbený po celém Karibiku. Tento nápoj má krémovou konzistenci a je plný ovocného a banánového charakteru.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Bílý rum (3 cl)",
+                "Krém banán (3 cl)",
+                "Kokosové mléko (3 cl)",
+                "Šťáva z čerstvého limetky (1 cl)",
+                "Banán (1 ks)",
+                "Led"
+            ),
+            tutorial = "Vložte všechny ingredience do mixéru a důkladně rozmixujte, dokud nezískáte hladkou konzistenci. Nalijte do vysoké sklenice a ozdobte plátkem banánu nebo několika kousky čokolády. Podávejte okamžitě."
+        ),
+        Drink(
+            id = 87,
+            name = "Dragonfly",
+            image = "/images/drinks/dragonfly.jpg",
+            description = "Tento osvěžující koktejl vznikl v 80. letech v San Franciscu a brzy se stal populárním v celých Spojených státech. Jeho základem je gin a kombinuje se s pomerančovou šťávou a zázvorem, čímž vzniká výjimečná chuťová kombinace.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Gin (4 cl)",
+                "Pomerančová šťáva (2 cl)",
+                "Limonáda (2 cl)",
+                "Zázvorový sirup (1 cl)",
+                "Led"
+            ),
+            tutorial = "Do shakeru naplněného ledem přidáme gin, pomerančovou šťávu, limonádu a zázvorový sirup. Důkladně protřepeme a přecedíme do sklenice naplněné lehce rozmixovaným ledem. Koktejl můžeme ozdobit pomerančovými nebo limetkovými kůrkami. "
+        )
+    )
+
+    override val page30 = listOf(
+        Drink(
+            id = 88,
+            name = "Flamingo",
+            image = "/images/drinks/flamingo.jpg",
+            description = "Flamingo je exotický koktejl s vysokou dávkou ovoce a alkoholu, který vás okouzlí svou jemností a lahodným zážitkem.",
+            rating = 4.2,
+            ingredients = listOf(
+                "Bílý rum (4 cl)",
+                "Ananasová šťáva (6 cl)",
+                "Pomerančová šťáva (4 cl)",
+                "Marakuja sirup (1 cl)",
+                "Grenadina (1 cl)",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidejte led a všechny ingredience. Shaker důkladně protřepejte, aby se koktejl dobře promíchal a ochladil. Poté nápoj přeceďte do vysoké sklenice naplněné ledem. Můžete ozdobit plátkem pomeranče nebo ananasu a kousek cukru zvaného kandovaný hřebíček."
+        ),
+        Drink(
+            id = 89,
+            name = "Georgia Peach",
+            image = "/images/drinks/georgia_peach.jpg",
+            description = "Tento osvěžující letní nápoj kombinuje sladké bílé víno, ovocnou broskvovou nektar a svěží citronovou limonádu. Je to ideální nápoj pro letní grilování nebo pikniky s přáteli a rodinou.",
+            rating = 4.5,
+            ingredients = listOf(
+                "Bílé víno (12 cl)",
+                "Broskvový nektar (6 cl)",
+                "Citronová limonáda (3 cl)",
+                "Ice cubes",
+                "Plátky broskve a limetky (na ozdobu)"
+            ),
+            tutorial = "Do sklenice s ledem přidáme bílé víno, broskvový nektar a citronovou limonádu. Všechny ingredience důkladně promícháme. Sklenici můžeme ozdobit plátky čerstvé broskve a limetky. Podáváme okamžitě a užíváme si osvěžující chuť letního nápoje."
+        ),
+        Drink(
+            id = 90,
+            name = "Gibson",
+            image = "/images/drinks/gibson.jpg",
+            description = "Gibson je mírně kořeněný nápoj se silným chutí koření a cibule. Jeho chuť se od ostatních koktejlů liší především tím, že obsahuje cibuli jako ozdobu. ",
+            rating = 3.8,
+            ingredients = listOf(
+                "Vodka (6 cl)",
+                "Vermut (1,5 cl)",
+                "Nakládaná cibule",
+                "Led"
+            ),
+            tutorial = "Do míchací sklenice s ledem přidáme vodku a vermut. Směs důkladně promícháme a poté přecedíme do koktejlové sklenice. Na jeho okraj přidáme nakládanou cibuli jako ozdobu."
+        )
+    )
+
+    override val page31 = listOf(
+        Drink(
+            id = 91,
+            name = "Godmother",
+            image = "/images/drinks/godmother.jpg",
+            description = "Godmother je koktejl, který patří do kategorie short drinků. Je to kombinace dvou ingrediencí, které spolu vytvářejí lahodnou chuť. Jeho jednoduchost a silný alkoholový obsah ho činí oblíbeným nápojem mezi lidmi, kteří preferují tvrdší nápoje.",
+            rating = 3.8,
+            ingredients = listOf(
+                "Vodka (4 cl)",
+                "Amaretto (2 cl)"
+            ),
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice. Nápoj můžeme ozdobit kouskem citronu nebo lístkem máty."
+        ),
+        Drink(
+            id = 92,
+            name = "Gold Rush",
+            image = "/images/drinks/gold_rush.jpg",
+            description = "Gold Rush je koktejl s bourbonem, medem a čerstvou citronovou šťávou. Je to jednoduchý, ale lahodný nápoj, který lze snadno připravit doma. ",
+            rating = 4.2,
+            ingredients = listOf(
+                "Bourbon (6 cl)",
+                "Med (2 cl)",
+                "Čerstvá citronová šťáva (2 cl)",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidáme led, bourbon, med a citronovou šťávu. Shaker důkladně protřepeme a poté přescedíme do sklenice s kousky ledu. Nápoj můžeme ozdobit plátkem citronu. "
+        ),
+        Drink(
+            id = 93,
+            name = "Jamaican Punch",
+            image = "/images/drinks/jamaican_punch.jpg",
+            description = "Jamaican Punch je silný koktejl s ovocnou chutí. Obsahuje tmavý rum, pomerančový a ananasový džus a karamelový sirup. Tento nápoj je velmi populární na Jamajce a může být vychlazený nebo namíchaný s ledem.",
+            rating = 4.2,
+            ingredients = listOf(
+                "Tmavý rum (6 cl)",
+                "Pomerančový džus (3 cl)",
+                "Ananasový džus (3 cl)",
+                "Karamelový sirup (1,5 cl)"
+            ),
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Na dekoraci můžeme použít kousky ananasu nebo pomeranče. "
+        )
+    )
+
+    override val page32 = listOf(
+        Drink(
+            id = 94,
+            name = "Liquid Marijuana",
+            image = "/images/drinks/liquid_marijuana.jpg",
+            description = "Liquid Marijuana je sladký a ovocný koktejl s karibskou chutí. Kombinuje se v něm rum, malibu, blue curaçao, ananasová a limetková šťáva, které dodávají nápoji nejen chuť, ale i krásnou zelenou barvu.",
+            rating = 4.2,
+            ingredients = listOf(
+                "Bílý rum (2 cl)",
+                "Rum Malibu (2 cl)",
+                "Blue curaçao (2 cl)",
+                "Ananasová šťáva (2 cl)",
+                "Limetková šťáva (1 cl)",
+                "Kokosové mléko (1 cl)",
+                "Led"
+            ),
+            tutorial = "Do shakeru přidejte led, bílý rum, rum Malibu, blue curaçao, ananasovou šťávu, limetkovou šťávu a kokosové mléko. Shaker dobře protřepejte a následně slijte do připravené sklenice s ledem. Podávejte ihned a ozdobte plátkem ananasu a kokosovou natí."
+        ),
+        Drink(
+            id = 95,
+            name = "Little Italy",
+            image = "/images/drinks/little_italy.jpg",
+            description = "Little Italy je elegantní nápoj s italskými kořeny. Tento míchaný drink kombinuje bourbon s červeným vínem a koňakem, což vytváří bohatou a komplexní chuť. Zkuste si ho užít s kvalitním jídlem, ideálně italským!",
+            rating = 4.5,
+            ingredients = listOf(
+                "Bourbon (4.5 cl)",
+                "Červené víno (1.5 cl)",
+                "Koňak (1.5 cl)",
+                "Maraschino likér (1.5 cl)",
+                "Angostura kořenová bitters (1 dash)"
+            ),
+            tutorial = "Do shakeru naplněného ledem přidáme bourbon, červené víno, koňak, maraschino likér a dash angostura kořenového bitteru. Shaker důkladně protřepeme a přecedíme do sklenice na drink naplněné ledem. Ozdobíme pomerančovou kůrou."
+        ),
+        Drink(
+            id = 96,
+            name = "Michelada",
+            image = "/images/drinks/michelada.jpg",
+            description = "Michelada je osvěžující a pikantní mexický drink, který se obvykle podává jako lehký způsob, jak se ochladit v horkém dni. Kombinace slaného okraje sklenice, piva, limetky a koření dává Micheladě vynikající chuť.",
+            rating = 4.2,
+            ingredients = listOf(
+                "Pivo (3 cl)",
+                "Čerstvá limetka (1/2)",
+                "Čerstvá chilli paprička (1/2)",
+                "Sůl (1/4 lžičky)",
+                "Černý pepř (1/4 lžičky)",
+                "Worcesterská omáčka (1/2 lžičky)",
+                "Tabasco (5-7 kapky)",
+                "Led"
+            ),
+            tutorial = "Do větší sklenice s okrajem osoleným solí a pepřem přidáme led. Přidáme pivo, limetkovou šťávu a koření (nakrájenou chilli papričku, Worcesterskou omáčku a Tabasco). Vše důkladně promícháme a podáváme."
+        )
+    )
+
+    override val page33 = listOf(
+        Drink(
+            id = 97,
+            name = "Mudslide",
+            image = "/images/drinks/mudslide.jpg",
+            description = "Mudslide je lahodný dezertní koktejl, který kombinuje chuť kávy a čokolády s krémovou texturou. Tento koktejl je velmi oblíbený v Americe a slaví úspěch po celém světě. Je to skvělý způsob, jak si vychutnat koktejl i jako dezert.",
+            rating = 4.8,
+            ingredients = listOf(
+                "Vodka (2 cl)",
+                "Kahlua (2 cl)",
+                "Baileys (2 cl)",
+                "Polotučená smetana (2 cl)",
+                "Mléko (2 cl)",
+                "Čokoládová poleva (na ozdobení)"
+            ),
+            tutorial = "Do shakeru s ledem přidáme vodka, Kahlua, Baileys, smetanu a mléko. Shaker silně protřepeme, až se všechny ingredience dobře propojí. Do sklenice na drink dáme několik kostek ledu a směs přecedíme přes sítko. Ozdobíme čokoládovou polevou a podáváme s kořením."
+        ),
+        Drink(
+            id = 98,
+            name = "Painkiller",
+            image = "/images/drinks/painkiller.jpg",
+            description = "Painkiller je koktejl s exotickou chutí, který vám pomůže odreagovat a relaxovat. Tento drink byl vynalezen na Britských Panenských ostrovech a skládá se ze čtyř ingrediencí - tmavý rum, ananasová šťáva, pomerančová šťáva a kokosové mléko. Je ideálním nápojem pro ty, kteří touží po troše slunce a moře v srdci!",
+            rating = 4.7,
+            ingredients = listOf(
+                "Tmavý rum (6 cl)",
+                "Ananasová šťáva (6 cl)",
+                "Pomerančová šťáva (3 cl)",
+                "Kokosové mléko (6 cl)",
+                "Strouhaný muškátový oříšek (pro zdobení)"
+            ),
+            tutorial = "V shakeru smícháme tmavý rum, ananasovou šťávu, pomerančovou šťávu a kokosové mléko. Přidáme led a důkladně protřepeme. Nalijeme do sklenice naplněné ledem. Pokud chceme, můžeme ozdobit strouhaným muškátovým oříškem."
+        ),
+        Drink(
+            id = 99,
+            name = "Paradise",
+            image = "/images/drinks/paradise.jpg",
+            description = "Paradise je svěží a ovocný koktejl s exotickou chutí. Kombinace ginu, apricot brandy a pomerančového džusu vytváří lahodnou a osvěžující chuťovou paletu, která okouzlí vaše smysly.",
+            rating = 4.2,
+            ingredients = listOf(
+                "Beefeater gin (4.5 cl)",
+                "Apricot brandy (1.5 cl)",
+                "Pomerančový džus (6 cl)",
+                "Maraschino likér (1.5 cl)"
+            ),
+            tutorial = "Do shakeru naplněného ledem přidáme Beefeater gin, apricot brandy, pomerančový džus a maraschino likér. Shaker důkladně protřepeme a přecedíme do sklenice na drink naplněné ledem. Ozdobíme pomerančovou kůrou nebo ananasovým klinem."
+        )
+    )
+
+    override val page34 = listOf(
+        Drink(
+            id = 100,
+            name = "Penicillin",
+            image = "/images/drinks/penicillin.jpg",
+            description = "Penicilin je moderní nápoj, který vytvořil skotský bartender Sam Ross. Tento koktejl kombinuje skotskou whisky, med, čerstvě vymačkanou citronovou šťávu a zázvorový sirup, což vytváří silnou, ale vyváženou chuť. Koktejl je poté dokončen rašelinou whisky, která mu dodává hloubku a složitost.",
+            rating = 4.8,
+            ingredients = listOf(
+                "Skotská whisky (6 cl)",
+                "Citronová šťáva (2 cl)",
+                "Medový sirup (1.5 cl)",
+                "Zázvorový sirup (1.5 cl)",
+                "Rašelinná whisky (float, 1.5 cl)"
+            ),
+            tutorial = "Do shakeru naplněného ledem přidáme skotskou whisky, citronovou šťávu, medový sirup a zázvorový sirup. Shaker důkladně protřepeme a přecedíme do sklenice s velkým kamenem ledu. Nakonec přidáme rašelinovou whisky na float a ozdobíme kůrou z citronu."
+        ),
+        Drink(
+            id = 101,
+            name = "Sea Breeze",
+            image = "/images/drinks/sea_breeze.jpg",
+            description = "Sea Breeze je osvěžující a snadno připravitelný koktejl, který kombinuje vodku, grepový a brusinkový džus. Jeho název odkazuje na mořskou svěžest a čistotu. Tento koktejl je ideální volbou pro teplé letní dny.",
+            rating = 4.2,
+            ingredients = listOf(
+                "Vodka (4.5 cl)",
+                "Brusinkový džus (9 cl)",
+                "Grepový džus (3 cl)"
+            ),
+            tutorial = "Do vysoké sklenice naplněného ledem nalijeme 4,5 cl vodky. Poté přidáme 9 cl brusinkového džusu a 3 cl grepového džusu. Vše důkladně promícháme a ozdobíme kouskem citronu nebo limetky."
+        ),
+        Drink(
+            id = 102,
+            name = "Sidecar",
+            image = "/images/drinks/sidecar.jpg",
+            description = "Sidecar je klasický koktejl s koňakem a pomerančovým likérem Cointreau. Tento elegantní nápoj byl poprvé podáván v Paříži v průběhu první světové války a dodnes si zachovává svou popularitu díky svému bohatému a vyváženému chuťovému profilu.",
+            rating = 4.6,
+            ingredients = listOf(
+                "Koňak (5 cl)",
+                "Cointreau (2 cl)",
+                "Čerstvě stlačená citronová šťáva (2 cl)",
+                "Kůra z citronu"
+            ),
+            tutorial = "Do shakeru s ledem přidáme koňak, Cointreau a čerstvě stlačenou citronovou šťávu. Shaker pečlivě protřepeme a přecedíme do vychlazeného sklenice na koktejly. Ozdobíme kůrou z citronu a podáváme."
+        )
+    )
+
     /** tato metoda říká jak má vypadat odpověď pro každý drink pokud si necháváme poslat údaje o každém drinku */
     override suspend fun getAllDrinks(page: Int): DrinkApiResponse {
         return DrinkApiResponse(
@@ -1052,7 +1668,7 @@ class DrinkRepositoryImpl : DrinkRepository {
         var prevPage: Int? = page
         var nextPage: Int? = page
 
-        val lastPage = 20//34
+        val lastPage = 34
         val almostLastPage = lastPage-1
 
         if (page in 1..almostLastPage) {

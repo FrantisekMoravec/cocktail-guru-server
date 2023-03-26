@@ -17,7 +17,7 @@ fun Route.getAllDrinks() {
         try {
             val page = call.request.queryParameters["page"]?.toInt() ?: 1
             println("NEW PAGE: $page")
-            require(page in 1..5)
+            require(page in 1..34)
 
             val apiResponse = drinkRepository.getAllDrinks(page = page)
             call.respond(
