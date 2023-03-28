@@ -16,17 +16,12 @@ class DrinkRepositoryImpl : DrinkRepository {
             2 to page2,
             3 to page3,
             4 to page4,
-            5 to page5
-            /*
-            ,
+            5 to page5,
             6 to page6,
             7 to page7,
             8 to page8,
             9 to page9,
-            10 to page10
-            */
-            /*
-            ,
+            10 to page10,
             11 to page11,
             12 to page12,
             13 to page13,
@@ -36,10 +31,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             17 to page17,
             18 to page18,
             19 to page19,
-            20 to page20
-
-             */
-            /*,
+            20 to page20,
             21 to page21,
             22 to page22,
             23 to page23,
@@ -54,8 +46,6 @@ class DrinkRepositoryImpl : DrinkRepository {
             32 to page32,
             33 to page33,
             34 to page34
-
-             */
         )
     }
     /** zde jsou zadány parametry drinků */

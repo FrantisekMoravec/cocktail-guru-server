@@ -41,7 +41,7 @@ class IngredientRepositoryImpl : IngredientRepository {
             id = 3,
             name = "Baileys",
             image = imagePath + "baileys" + imageFormat,
-            description = "Baileys popis"
+            description = "Baileys je alkoholický nápoj na bázi smetany a irské whiskey. Jeho chuť je sladká a krémová, s výrazným aroma kávy a karamelu."
         )
     )
 
@@ -50,13 +50,13 @@ class IngredientRepositoryImpl : IngredientRepository {
             id = 4,
             name = "Curaçao",
             image = imagePath + "curaçao" + imageFormat,
-            description = "popis"
+            description = "Curaçao je ovocný likér, který se vyrábí z pomerančů z ostrova Curaçao v Karibiku. Existuje několik druhů tohoto likéru - modrý, zelený, oranžový a bílý, přičemž každý má odlišnou chuť a využití. Modrý curaçao je nejznámější a má sladkou, ovocnou chuť s nádechem citrusů. Zelený curaçao je o něco hořčejší a oranžový je jemný a aromatický. V našich koktejlech se používá výhradně modrá varianta tohoto likéru."
         ),
         Ingredient(
             id = 5,
             name = "Kahlua",
             image = imagePath + "kahlua" + imageFormat,
-            description = "popis"
+            description = "Kahlua je kávový likér, který se vyrábí v Mexiku. Jeho základem je destilovaná alkoholická báze smíchaná s kávovým extraktem, cukrem a vanilkou. Kahlua má tmavě hnědou barvu a sladkou, kávovou chuť s nádechem karamelu a vanilky."
         ),
         Ingredient(
             id = 6,
@@ -77,13 +77,13 @@ class IngredientRepositoryImpl : IngredientRepository {
             id = 8,
             name = "Pepř",
             image = imagePath + "pepper" + imageFormat,
-            description = "popis"
+            description = ""
         ),
         Ingredient(
             id = 9,
             name = "Sůl",
             image = imagePath + "salt" + imageFormat,
-            description = "popis"
+            description = ""
         )
     )
 
@@ -92,13 +92,13 @@ class IngredientRepositoryImpl : IngredientRepository {
             id = 10,
             name = "Stroh",
             image = imagePath + "stroh" + imageFormat,
-            description = "popis"
+            description = "Stroh je rakouský rumový likér, který se vyrábí z cukrové třtiny. Je pojmenován po rodině, která tento likér vyrábí již od roku 1832. Stroh má tmavě hnědou až mahagonovou barvu a výraznou, kořenitou chuť s nádechem skořice a karamelu. Jeho alkoholový obsah se pohybuje v rozmezí 38 až 80 %, což ho řadí mezi velmi silné alkoholické nápoje."
         ),
         Ingredient(
             id = 11,
             name = "Tabasco omáčka",
             image = imagePath + "tabasco_sauce" + imageFormat,
-            description = "popis"
+            description = "Tabasco je značka pikantní omáčky, která je vyráběna z chilli papriček jalapeño, octa a soli. Omáčka je pojmenována po regionu Tabasco v Mexiku, kde se chilli papričky původně pěstovaly. Tabasco má vysokou úroveň pálivosti a její chuť je ostrá a pikantní s nádechem octa."
         ),
         Ingredient(
             id = 12,
@@ -113,7 +113,7 @@ class IngredientRepositoryImpl : IngredientRepository {
             id = 13,
             name = "Worcestrovská omáčka",
             image = imagePath + "worcestr_sauce" + imageFormat,
-            description = "popis"
+            description = "Worcesterská omáčka, také známá jako worcesterová omáčka, je anglická omáčka, která byla vynalezena v 19. století. Její přesný recept je stále tajemstvím, ale obvykle se vyrábí z octa, cukru, soli, cibule, česneku, křenu, tamarindu, ančoviček a několika koření. Worcesterská omáčka má tmavou barvu a silnou, slanou chuť s nádechem koření a octa."
         ),
         Ingredient(
             id = 14,
