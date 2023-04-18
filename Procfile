@@ -1,1 +1,1 @@
-web: build/install/come.example.drinkserver/bin/come.example.drinkserver
+web: build/install/com.example.drinkserver/bin/com.example.drinkserver
