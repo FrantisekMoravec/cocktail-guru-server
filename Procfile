@@ -1,0 +1,1 @@
+web: build/install/come.example.drinkserver/bin/come.example.drinkserver
