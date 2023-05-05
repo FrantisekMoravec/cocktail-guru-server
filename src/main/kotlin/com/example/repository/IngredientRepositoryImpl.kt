@@ -29,19 +29,22 @@ class IngredientRepositoryImpl : IngredientRepository {
             id = 1,
             name = "Vodka",
             image = imagePath + "vodka" + imageFormat,
-            description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor."
+            description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor.",
+            madeByUser = false
         ),
         Ingredient(
             id = 2,
             name = "Absint",
             image = imagePath + "absint" + imageFormat,
-            description = "Absinth je tradičně destilovaný nápoj s vysokým podílem alkoholu (45%-75% ). Jeho charakteristická zelená barva mu vysloužila přezdívku „zelená víla“, i když může být i jinak zbarvený."
+            description = "Absinth je tradičně destilovaný nápoj s vysokým podílem alkoholu (45%-75% ). Jeho charakteristická zelená barva mu vysloužila přezdívku „zelená víla“, i když může být i jinak zbarvený.",
+            madeByUser = false
         ),
         Ingredient(
             id = 3,
             name = "Baileys",
             image = imagePath + "baileys" + imageFormat,
-            description = "Baileys je alkoholický nápoj na bázi smetany a irské whiskey. Jeho chuť je sladká a krémová, s výrazným aroma kávy a karamelu."
+            description = "Baileys je alkoholický nápoj na bázi smetany a irské whiskey. Jeho chuť je sladká a krémová, s výrazným aroma kávy a karamelu.",
+            madeByUser = false
         )
     )
 
@@ -50,19 +53,22 @@ class IngredientRepositoryImpl : IngredientRepository {
             id = 4,
             name = "Curaçao",
             image = imagePath + "curaçao" + imageFormat,
-            description = "Curaçao je ovocný likér, který se vyrábí z pomerančů z ostrova Curaçao v Karibiku. Existuje několik druhů tohoto likéru - modrý, zelený, oranžový a bílý, přičemž každý má odlišnou chuť a využití. Modrý curaçao je nejznámější a má sladkou, ovocnou chuť s nádechem citrusů. Zelený curaçao je o něco hořčejší a oranžový je jemný a aromatický. V našich koktejlech se používá výhradně modrá varianta tohoto likéru."
+            description = "Curaçao je ovocný likér, který se vyrábí z pomerančů z ostrova Curaçao v Karibiku. Existuje několik druhů tohoto likéru - modrý, zelený, oranžový a bílý, přičemž každý má odlišnou chuť a využití. Modrý curaçao je nejznámější a má sladkou, ovocnou chuť s nádechem citrusů. Zelený curaçao je o něco hořčejší a oranžový je jemný a aromatický. V našich koktejlech se používá výhradně modrá varianta tohoto likéru.",
+            madeByUser = false
         ),
         Ingredient(
             id = 5,
             name = "Kahlua",
             image = imagePath + "kahlua" + imageFormat,
-            description = "Kahlua je kávový likér, který se vyrábí v Mexiku. Jeho základem je destilovaná alkoholická báze smíchaná s kávovým extraktem, cukrem a vanilkou. Kahlua má tmavě hnědou barvu a sladkou, kávovou chuť s nádechem karamelu a vanilky."
+            description = "Kahlua je kávový likér, který se vyrábí v Mexiku. Jeho základem je destilovaná alkoholická báze smíchaná s kávovým extraktem, cukrem a vanilkou. Kahlua má tmavě hnědou barvu a sladkou, kávovou chuť s nádechem karamelu a vanilky.",
+            madeByUser = false
         ),
         Ingredient(
             id = 6,
             name = "Citronový džus",
             image = imagePath + "lemon_juice" + imageFormat,
-            description = "popis"
+            description = "popis",
+            madeByUser = false
         )
     )
 
@@ -71,19 +77,22 @@ class IngredientRepositoryImpl : IngredientRepository {
             id = 7,
             name = "Citronová limonáda",
             image = imagePath + "lemon_lemonade" + imageFormat,
-            description = "popis"
+            description = "popis",
+            madeByUser = false
         ),
         Ingredient(
             id = 8,
             name = "Pepř",
             image = imagePath + "pepper" + imageFormat,
-            description = ""
+            description = "",
+            madeByUser = false
         ),
         Ingredient(
             id = 9,
             name = "Sůl",
             image = imagePath + "salt" + imageFormat,
-            description = ""
+            description = "",
+            madeByUser = false
         )
     )
 
@@ -92,19 +101,22 @@ class IngredientRepositoryImpl : IngredientRepository {
             id = 10,
             name = "Stroh",
             image = imagePath + "stroh" + imageFormat,
-            description = "Stroh je rakouský rumový likér, který se vyrábí z cukrové třtiny. Je pojmenován po rodině, která tento likér vyrábí již od roku 1832. Stroh má tmavě hnědou až mahagonovou barvu a výraznou, kořenitou chuť s nádechem skořice a karamelu. Jeho alkoholový obsah se pohybuje v rozmezí 38 až 80 %, což ho řadí mezi velmi silné alkoholické nápoje."
+            description = "Stroh je rakouský rumový likér, který se vyrábí z cukrové třtiny. Je pojmenován po rodině, která tento likér vyrábí již od roku 1832. Stroh má tmavě hnědou až mahagonovou barvu a výraznou, kořenitou chuť s nádechem skořice a karamelu. Jeho alkoholový obsah se pohybuje v rozmezí 38 až 80 %, což ho řadí mezi velmi silné alkoholické nápoje.",
+            madeByUser = false
         ),
         Ingredient(
             id = 11,
             name = "Tabasco omáčka",
             image = imagePath + "tabasco_sauce" + imageFormat,
-            description = "Tabasco je značka pikantní omáčky, která je vyráběna z chilli papriček jalapeño, octa a soli. Omáčka je pojmenována po regionu Tabasco v Mexiku, kde se chilli papričky původně pěstovaly. Tabasco má vysokou úroveň pálivosti a její chuť je ostrá a pikantní s nádechem octa."
+            description = "Tabasco je značka pikantní omáčky, která je vyráběna z chilli papriček jalapeño, octa a soli. Omáčka je pojmenována po regionu Tabasco v Mexiku, kde se chilli papričky původně pěstovaly. Tabasco má vysokou úroveň pálivosti a její chuť je ostrá a pikantní s nádechem octa.",
+            madeByUser = false
         ),
         Ingredient(
             id = 12,
             name = "Rajčatový džus",
             image = imagePath + "tomato_juice" + imageFormat,
-            description = "popis"
+            description = "popis",
+            madeByUser = false
         )
     )
 
@@ -113,19 +125,22 @@ class IngredientRepositoryImpl : IngredientRepository {
             id = 13,
             name = "Worcestrovská omáčka",
             image = imagePath + "worcestr_sauce" + imageFormat,
-            description = "Worcesterská omáčka, také známá jako worcesterová omáčka, je anglická omáčka, která byla vynalezena v 19. století. Její přesný recept je stále tajemstvím, ale obvykle se vyrábí z octa, cukru, soli, cibule, česneku, křenu, tamarindu, ančoviček a několika koření. Worcesterská omáčka má tmavou barvu a silnou, slanou chuť s nádechem koření a octa."
+            description = "Worcesterská omáčka, také známá jako worcesterová omáčka, je anglická omáčka, která byla vynalezena v 19. století. Její přesný recept je stále tajemstvím, ale obvykle se vyrábí z octa, cukru, soli, cibule, česneku, křenu, tamarindu, ančoviček a několika koření. Worcesterská omáčka má tmavou barvu a silnou, slanou chuť s nádechem koření a octa.",
+            madeByUser = false
         ),
         Ingredient(
             id = 14,
             name = "Absint",
             image = imagePath + "absint" + imageFormat,
-            description = "Absinth je tradičně destilovaný nápoj s vysokým podílem alkoholu (45%-75% ). Jeho charakteristická zelená barva mu vysloužila přezdívku „zelená víla“, i když může být i jinak zbarvený."
+            description = "Absinth je tradičně destilovaný nápoj s vysokým podílem alkoholu (45%-75% ). Jeho charakteristická zelená barva mu vysloužila přezdívku „zelená víla“, i když může být i jinak zbarvený.",
+            madeByUser = false
         ),
         Ingredient(
             id = 15,
             name = "Baileys",
             image = imagePath + "baileys" + imageFormat,
-            description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor."
+            description = "Vodka je tvrdý bezbarvý alkoholický nápoj oblíbený po celém světě. Kvalita a chuť vodky se mohou lišit vlivem různých faktorů. Jedná se o to, že tento alkoholický nápoj se vyrábí z obilí, jehož specifické složení určuje výrobce. Některé druhy namísto obilí obsahují destilaci z brambor.",
+            madeByUser = false
         )
     )
 

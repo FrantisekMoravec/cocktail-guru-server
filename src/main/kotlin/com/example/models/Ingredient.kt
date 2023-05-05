@@ -8,5 +8,6 @@ data class Ingredient(
     val id: Int,
     val name: String,
     val image: String,
-    val description: String
+    val description: String,
+    val madeByUser: Boolean
 )

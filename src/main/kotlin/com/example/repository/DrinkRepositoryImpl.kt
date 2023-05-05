@@ -61,7 +61,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Baileys (2 cl)",
                 "Grand Marnier nebo Absinth nebo Stroh (3 cl)"
             ),
-            tutorial = "Ingredience opatrně nalijte do panáku skrze kávovou lžičku, tak, aby zůstaly nepromíchané. A to přesně v tomto pořadí: 1. likér Kahlúa, 2. likér Baileys, a nakonec 3. Grand Marnier či Absinth nebo Stroh . Těsně před konzumací zapálíme zapalovačem. Podáváme s tlustým brčkem."
+            tutorial = "Ingredience opatrně nalijte do panáku skrze kávovou lžičku, tak, aby zůstaly nepromíchané. A to přesně v tomto pořadí: 1. likér Kahlúa, 2. likér Baileys, a nakonec 3. Grand Marnier či Absinth nebo Stroh . Těsně před konzumací zapálíme zapalovačem. Podáváme s tlustým brčkem.",
+            madeByUser = false
         ),
         Drink(
             id = 2,
@@ -78,7 +79,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Sůl",
                 "Pepř"
             ),
-            tutorial = "Připravíme si sklenicí typu highball, do které nakapeme worcester, tabasco, přidáme špetku soli a pepře. Vložíme několik kostek ledu, nalijeme vodku a džusy v uvedeném množství. Nakonec vše lehce promícháme a ozdobíme plátkem citronu a stonkem celeru. Podáváme s brčkem."
+            tutorial = "Připravíme si sklenicí typu highball, do které nakapeme worcester, tabasco, přidáme špetku soli a pepře. Vložíme několik kostek ledu, nalijeme vodku a džusy v uvedeném množství. Nakonec vše lehce promícháme a ozdobíme plátkem citronu a stonkem celeru. Podáváme s brčkem.",
+            madeByUser = false
         ),
         Drink(
             id = 3,
@@ -91,7 +93,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Likér Curaçao (3 cl)",
                 "Citrónová limonáda (12 cl)"
             ),
-            tutorial = "Nalijte vodku do shakeru společně s Curaçaem a ledem. Důkladně protřepejte a přes sítko slijte do sklenice Highball Glass s ledem. Nakonec dolijte limonádou a ozdobte plátkem citrónu."
+            tutorial = "Nalijte vodku do shakeru společně s Curaçaem a ledem. Důkladně protřepejte a přes sítko slijte do sklenice Highball Glass s ledem. Nakonec dolijte limonádou a ozdobte plátkem citrónu.",
+            madeByUser = false
         )
     )
 
@@ -108,7 +111,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Cukrový sirup (0,5 cl)",
                 "Led"
             ),
-            tutorial = "Ten vyrobíme tak, že smícháme 100g cukru a 1dl studené vody (nebo menší množství, ale ve stejném poměru). Směs důkladně promícháme, pomalu přivedeme k varu a poté necháme vychladnout. Zbytek už je celkem snadný. Všechny ingredience vložíme do shakeru v předepsaném množství, přidáme nadrcený led a důkladně protřepeme. Obsah shakeru přelijeme přes sítko. Daiquiri podáváme s ledem nejlépe v koktejlové sklenici."
+            tutorial = "Ten vyrobíme tak, že smícháme 100g cukru a 1dl studené vody (nebo menší množství, ale ve stejném poměru). Směs důkladně promícháme, pomalu přivedeme k varu a poté necháme vychladnout. Zbytek už je celkem snadný. Všechny ingredience vložíme do shakeru v předepsaném množství, přidáme nadrcený led a důkladně protřepeme. Obsah shakeru přelijeme přes sítko. Daiquiri podáváme s ledem nejlépe v koktejlové sklenici.",
+            madeByUser = false
         ),
         Drink(
             id = 5,
@@ -122,7 +126,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Grenadina (1 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru vložíme několik kostek ledu, přidáme pomerančový džus a tequilu. Vše důkladně promícháme a nalijeme do vysoké úzké sklenice. Poté přichází na řadu grenadina, kterou opatrně přidáme k ostatním ingrediencím. Grenadina se nám krásně usadí na dně. Koktejl podáváme ozdobený plátkem pomeranče."
+            tutorial = "Do shakeru vložíme několik kostek ledu, přidáme pomerančový džus a tequilu. Vše důkladně promícháme a nalijeme do vysoké úzké sklenice. Poté přichází na řadu grenadina, kterou opatrně přidáme k ostatním ingrediencím. Grenadina se nám krásně usadí na dně. Koktejl podáváme ozdobený plátkem pomeranče.",
+            madeByUser = false
         ),
         Drink(
             id = 6,
@@ -136,7 +141,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Kousek limetky",
                 "Led"
             ),
-            tutorial = "Do sklenice, vložte několik kostek ledu a kousků limetky, zalijte rumem a zbytek sklenice dolijte colou."
+            tutorial = "Do sklenice, vložte několik kostek ledu a kousků limetky, zalijte rumem a zbytek sklenice dolijte colou.",
+            madeByUser = false
         )
     )
 
@@ -154,7 +160,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Brusinkový džus (3 cl)",
                 "Led"
             ),
-            tutorial = "Sklenici naplněnou zhruba do třetiny ledem zalijte v shakeru umíchanou směsí z určených ingrediencí, koktejl můžete ozdobit plátkem pomeranče."
+            tutorial = "Sklenici naplněnou zhruba do třetiny ledem zalijte v shakeru umíchanou směsí z určených ingrediencí, koktejl můžete ozdobit plátkem pomeranče.",
+            madeByUser = false
         ),
         Drink(
             id = 8,
@@ -166,7 +173,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Šampaňské (7 cl)",
                 "Pomerančový džus (7 cl)"
             ),
-            tutorial = "Do sklenky na šampaňské nalijte Šampaňské a džus, obojí dobře vychlazené. Zlehka promíchejte. Netřepejte, přišli byste totiž o bublinky. Budete-li chtít Mimosu dotáhnout k dokonalosti, ozdobte ji ještě spirálkou z pomerančové kůry."
+            tutorial = "Do sklenky na šampaňské nalijte Šampaňské a džus, obojí dobře vychlazené. Zlehka promíchejte. Netřepejte, přišli byste totiž o bublinky. Budete-li chtít Mimosu dotáhnout k dokonalosti, ozdobte ji ještě spirálkou z pomerančové kůry.",
+            madeByUser = false
         ),
         Drink(
             id = 9,
@@ -181,7 +189,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Několik lístků máty",
                 "Sodovka"
             ),
-            tutorial = "Do vyšší sklenice vložte lístky máty a třtinový cukr. Vše dobře promněte tloučkem. Poté přidejte vymačkanou šťávu z limetek, trochu sodovky a nadrcený led. Nakonec přidejte kvalitní rum a dolijte opět sodovkou. Ozdobit můžete mátou a plátkem čerstvé limetky."
+            tutorial = "Do vyšší sklenice vložte lístky máty a třtinový cukr. Vše dobře promněte tloučkem. Poté přidejte vymačkanou šťávu z limetek, trochu sodovky a nadrcený led. Nakonec přidejte kvalitní rum a dolijte opět sodovkou. Ozdobit můžete mátou a plátkem čerstvé limetky.",
+            madeByUser = false
         )
     )
 
@@ -198,7 +207,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Plátek citronu",
                 "Led"
             ),
-            tutorial = "Do sklenice vložíme led, nalijeme Becherovku, kterou poté zalijeme tonicem. Přidáme citron, kterým můžeme sklenici rovněž ozdobit."
+            tutorial = "Do sklenice vložíme led, nalijeme Becherovku, kterou poté zalijeme tonicem. Přidáme citron, kterým můžeme sklenici rovněž ozdobit.",
+            madeByUser = false
         ),
         Drink(
             id = 11,
@@ -211,7 +221,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Kahlúa (2 cl)",
                 "Led"
             ),
-            tutorial = "Do sklenice vložíme několik kostek ledu, na které poté nalijeme patřičné množství vodky a kávového likéru."
+            tutorial = "Do sklenice vložíme několik kostek ledu, na které poté nalijeme patřičné množství vodky a kávového likéru.",
+            madeByUser = false
         ),
         Drink(
             id = 12,
@@ -225,7 +236,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Brusinkový džus (4 cl)",
                 "Pár kapek citronové šťávy"
             ),
-            tutorial = "Všechny zmíněné ingredience následně vložíme do shakeru a důkladně protřepeme. Cosmopolitan podáváme v koktejlové skleničce ve tvaru písmena V (tzv. koktejlka), a to zásadně bez ledu. Ten nasypeme do sklenice ještě před podáváním, abychom sklenku vychladily. Led před nalitím drinku odstraníme. Skleničku ozdobíme plátkem citronu, limetky či pomeranče. Nezapomeňte také na brčko, díky kterému je konzumace Cosmopolitanu pohodlnější."
+            tutorial = "Všechny zmíněné ingredience následně vložíme do shakeru a důkladně protřepeme. Cosmopolitan podáváme v koktejlové skleničce ve tvaru písmena V (tzv. koktejlka), a to zásadně bez ledu. Ten nasypeme do sklenice ještě před podáváním, abychom sklenku vychladily. Led před nalitím drinku odstraníme. Skleničku ozdobíme plátkem citronu, limetky či pomeranče. Nezapomeňte také na brčko, díky kterému je konzumace Cosmopolitanu pohodlnější.",
+            madeByUser = false
         )
     )
 
@@ -241,7 +253,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Sladký červený vermut (3 cl)",
                 "Campari (3 cl)"
             ),
-            tutorial = "Do sklenice dejte led, který následně zalijte ginem, vermutem a Campari v předepsaném množství. Na závěr ozdobte kouskem pomeranče. Použijete-li místo pomeranče citrón, jistě nepůjde o zvlášť závažný prohřešek. Negroni pak podávejte nejlépe jako aperitiv. Jeho hořko-sladká chuť totiž skvěle nabudí k jídlu."
+            tutorial = "Do sklenice dejte led, který následně zalijte ginem, vermutem a Campari v předepsaném množství. Na závěr ozdobte kouskem pomeranče. Použijete-li místo pomeranče citrón, jistě nepůjde o zvlášť závažný prohřešek. Negroni pak podávejte nejlépe jako aperitiv. Jeho hořko-sladká chuť totiž skvěle nabudí k jídlu.",
+            madeByUser = false
         ),
         Drink(
             id = 14,
@@ -254,7 +267,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Jablečný likér (1,5 cl)",
                 "Triple sec Contreau (1,5 cl)"
             ),
-            tutorial = "Všechny ingredience nalijte do shakeru. Vše dobře promíchejte a poté nalijte do vychlazené sklenky. Ozdobte kouskem jablka nebo třešní a můžete podávat."
+            tutorial = "Všechny ingredience nalijte do shakeru. Vše dobře promíchejte a poté nalijte do vychlazené sklenky. Ozdobte kouskem jablka nebo třešní a můžete podávat.",
+            madeByUser = false
         ),
         Drink(
             id = 15,
@@ -270,7 +284,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Limetková šťáva (1 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru nalijte všechny ingredience kromě tmavého rumu a přidejte led. Obsah shakeru dobře promíchejte a přes sítko přelijte do vysoké sklenice. Poté pomalu přilijte tmavý rum, ozdobte nejlépe plátkem ananasu a plátkem limetky."
+            tutorial = "Do shakeru nalijte všechny ingredience kromě tmavého rumu a přidejte led. Obsah shakeru dobře promíchejte a přes sítko přelijte do vysoké sklenice. Poté pomalu přilijte tmavý rum, ozdobte nejlépe plátkem ananasu a plátkem limetky.",
+            madeByUser = false
         )
     )
 
@@ -292,7 +307,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "1 střik coca-coly",
                 "Led"
             ),
-            tutorial = "Jelikož je obtížnější sehnat u nás Gomme sirup, lze tuto ingredienci nahradit cukrovým sirupem. Do sklenice vložíme led a poté postupně přilíváme ostatní ingredience. Po přidání coly vše jemně promícháme, přidáme brčko a sklenici ozdobíme plátkem citronu."
+            tutorial = "Jelikož je obtížnější sehnat u nás Gomme sirup, lze tuto ingredienci nahradit cukrovým sirupem. Do sklenice vložíme led a poté postupně přilíváme ostatní ingredience. Po přidání coly vše jemně promícháme, přidáme brčko a sklenici ozdobíme plátkem citronu.",
+            madeByUser = false
         ),
         Drink(
             id = 17,
@@ -306,7 +322,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Led",
                 "Oliva"
             ),
-            tutorial = "Gin a vermut smícháme v mixovací sklenici společně s kostkami ledu a přes sítko přelijeme do sklenice. Ozdobíme jednou či dvěma olivami na napichovátku."
+            tutorial = "Gin a vermut smícháme v mixovací sklenici společně s kostkami ledu a přes sítko přelijeme do sklenice. Ozdobíme jednou či dvěma olivami na napichovátku.",
+            madeByUser = false
         ),
         Drink(
             id = 18,
@@ -319,7 +336,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Sladký červený vermut (2 cl)",
                 "Kapka angostura aromatic bitteru"
             ),
-            tutorial = "Veškeré ledově vychlazené ingredience vložíme do míchací sklenice, zamícháme a přes sítko nalijeme do koktejlové sklenice. Můžeme přiložit třešničku."
+            tutorial = "Veškeré ledově vychlazené ingredience vložíme do míchací sklenice, zamícháme a přes sítko nalijeme do koktejlové sklenice. Můžeme přiložit třešničku.",
+            madeByUser = false
         )
     )
 
@@ -336,7 +354,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Půl limetky",
                 "Led"
             ),
-            tutorial = "Do sklenice prvně vymačkáme polovinu limetky, následně přilejeme vodku. Sklenici naplníme kostkami ledu až po okraj. Nakonec vše zalijeme zázvorovým pivem. Stačí už jen lehce promíchat lžičkou. Mícháme pomalu tak, aby nám nevypadl žádný led a zázvorové pivo nevypěnilo. Koktejl ozdobíme kouskem čerstvé limetky a můžeme přidat i čerstvý plátek zázvoru."
+            tutorial = "Do sklenice prvně vymačkáme polovinu limetky, následně přilejeme vodku. Sklenici naplníme kostkami ledu až po okraj. Nakonec vše zalijeme zázvorovým pivem. Stačí už jen lehce promíchat lžičkou. Mícháme pomalu tak, aby nám nevypadl žádný led a zázvorové pivo nevypěnilo. Koktejl ozdobíme kouskem čerstvé limetky a můžeme přidat i čerstvý plátek zázvoru.",
+            madeByUser = false
         ),
         Drink(
             id = 20,
@@ -350,7 +369,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Čerstvě vymačkaná limetková šťáva (2 cl)",
                 "Led"
             ),
-            tutorial = "Všechny ingredience vložíme do shakeru s kostkami ledu a důkladně promícháme. Margaritu podáváme v připravených sklenicích s okrajem osoleným solí. Sklenice naplníme ledem a přelijeme směsí. Ozdobíme plátkem limetky a podáváme s brčkem."
+            tutorial = "Všechny ingredience vložíme do shakeru s kostkami ledu a důkladně promícháme. Margaritu podáváme v připravených sklenicích s okrajem osoleným solí. Sklenice naplníme ledem a přelijeme směsí. Ozdobíme plátkem limetky a podáváme s brčkem.",
+            madeByUser = false
         ),
         Drink(
             id = 21,
@@ -364,7 +384,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Cukerný sirup (1,5 cl)",
                 "Led"
             ),
-            tutorial = "Všechny ingredience vložíme do shakeru s kostkami ledu a důkladně promícháme. Koktejl podáváme v připravených sklenicích s kostkami ledu. Garnujeme plátkem citronu a případně kořením jako je muškátový oříšek nebo skořice. Pokud chceme koktejl osladit, můžeme přidat trochu cukerného sirupu."
+            tutorial = "Všechny ingredience vložíme do shakeru s kostkami ledu a důkladně promícháme. Koktejl podáváme v připravených sklenicích s kostkami ledu. Garnujeme plátkem citronu a případně kořením jako je muškátový oříšek nebo skořice. Pokud chceme koktejl osladit, můžeme přidat trochu cukerného sirupu.",
+            madeByUser = false
         )
     )
 
@@ -382,7 +403,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Perlivá voda (cca 10 cl)",
                 "Led"
             ),
-            tutorial = "Nejprve do sklenice dáme gin, cukr a citronovou šťávu a zamícháme, dokud se cukr nerozpustí. Následně do sklenice naplníme ledem a dolijeme perlivou vodu až téměř na vrchol. Koktejl ozdobíme kolečkem citronu a máme hotovo."
+            tutorial = "Nejprve do sklenice dáme gin, cukr a citronovou šťávu a zamícháme, dokud se cukr nerozpustí. Následně do sklenice naplníme ledem a dolijeme perlivou vodu až téměř na vrchol. Koktejl ozdobíme kolečkem citronu a máme hotovo.",
+            madeByUser = false
         ),
         Drink(
             id = 23,
@@ -396,6 +418,7 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Čerstvé maliny (několik kusů)"
             ),
             tutorial = "Nejprve do šampaňského poháru (nebo do sklenice na martini) přidáme 2 cl crème de cassis. Následně dolijeme šumivým vínem, nejlépe šampaňským, a to až k okraji sklenice. Nakonec můžeme do sklenice přidat několik čerstvých malin, které nápoj ještě oživí.",
+            madeByUser = false
         ),
         Drink(
             id = 24,
@@ -409,6 +432,7 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Smetana (2 cl)"
             ),
             tutorial = "Do sklenice s kostkami ledu nalijeme vodku a kávu a promícháme. Nakonec přidáme smetanu a lehce promícháme. Můžeme ozdobit kouskem čokolády nebo kávovými zrny. ",
+            madeByUser = false
         )
     )
 
@@ -425,7 +449,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Cukr (2-3 lžičky)",
                 "Led (drcený)"
             ),
-            tutorial = "Limetku omyjeme, očistíme a nakrájíme na menší kousky, které vložíme do sklenice. Přidáme cukr a vidličkou promícháme, dokud se cukr nerozpustí. Přidáme led a zalijeme Cachaçou. Opět promícháme a ozdobíme kousky limetky."
+            tutorial = "Limetku omyjeme, očistíme a nakrájíme na menší kousky, které vložíme do sklenice. Přidáme cukr a vidličkou promícháme, dokud se cukr nerozpustí. Přidáme led a zalijeme Cachaçou. Opět promícháme a ozdobíme kousky limetky.",
+            madeByUser = false
         ),
         Drink(
             id = 26,
@@ -445,7 +470,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Angostura kořenová (1 dash)",
                 "Kostky ledu"
             ),
-            tutorial = "V shakeru smícháme zlatý rum, bílý rum, rum s banánovou příchutí, bílý rum s kokosovou příchutí, pomerančovou, citronovou a ananasovou šťávu a grenadinu. Přidáme kostky ledu a důkladně protřepeme. Koktejl přelijeme přes sítko do vysoké sklenice a přidáme 1 dash Angostura kořenové. Do sklenice přidáme další kostky ledu a podle chuti můžeme ozdobit kouskem ananasu, pomeranče nebo třešní."
+            tutorial = "V shakeru smícháme zlatý rum, bílý rum, rum s banánovou příchutí, bílý rum s kokosovou příchutí, pomerančovou, citronovou a ananasovou šťávu a grenadinu. Přidáme kostky ledu a důkladně protřepeme. Koktejl přelijeme přes sítko do vysoké sklenice a přidáme 1 dash Angostura kořenové. Do sklenice přidáme další kostky ledu a podle chuti můžeme ozdobit kouskem ananasu, pomeranče nebo třešní.",
+            madeByUser = false
         ),
         Drink(
             id = 27,
@@ -466,6 +492,7 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Led"
             ),
             tutorial = "Do shakeru vložíme všechny ingredience kromě sody a angostury a  naplníme ledem. Dobře protřepeme, poté přeslijeme do vysoké sklenice s ledem. Přidáme sodu a angosturu, zakápneme grenadinou a promícháme. Na závěr ozdobíme plátkem ananasu a třešní.",
+            madeByUser = false
         )
     )
 
@@ -481,7 +508,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Pomerančový džus (12 cl)",
                 "Led"
             ),
-            tutorial = "Do vysoké sklenice dáme led a přidáme vodku. Následně dolijeme pomerančový džus a jemně promícháme. Můžeme ozdobit plátkem pomeranče nebo kolečkem citronu."
+            tutorial = "Do vysoké sklenice dáme led a přidáme vodku. Následně dolijeme pomerančový džus a jemně promícháme. Můžeme ozdobit plátkem pomeranče nebo kolečkem citronu.",
+            madeByUser = false
         ),
         Drink(
             id = 29,
@@ -498,7 +526,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Broskve (2 ks)",
                 "Led"
             ),
-            tutorial = "Jablka a broskve nakrájíme na tenké plátky a smícháme s hrozny. Vše vložíme do džbánu. Přidáme brandy a víno a zamícháme. Necháme odležet alespoň hodinu, nejlépe však přes noc, aby se chutě promíchaly. Před podáváním přidáme led a dolijeme citronovou limonádou. Podáváme v miskách nebo velkých sklenicích."
+            tutorial = "Jablka a broskve nakrájíme na tenké plátky a smícháme s hrozny. Vše vložíme do džbánu. Přidáme brandy a víno a zamícháme. Necháme odležet alespoň hodinu, nejlépe však přes noc, aby se chutě promíchaly. Před podáváním přidáme led a dolijeme citronovou limonádou. Podáváme v miskách nebo velkých sklenicích.",
+            madeByUser = false
         ),
         Drink(
             id = 30,
@@ -512,7 +541,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Cukr (1,5 cl)",
                 "Sekt (6 cl)"
             ),
-            tutorial = "Do shakeru naplníme ledem a přidáme gin, citronovou šťávu a cukr. Vše důkladně protřepeme, aby se cukr rozpustil. Poté nápoj přecedíme přes síto do šampaňského poháru a doplníme sekt. Koktejl můžeme ozdobit tenkou plátkem citronu."
+            tutorial = "Do shakeru naplníme ledem a přidáme gin, citronovou šťávu a cukr. Vše důkladně protřepeme, aby se cukr rozpustil. Poté nápoj přecedíme přes síto do šampaňského poháru a doplníme sekt. Koktejl můžeme ozdobit tenkou plátkem citronu.",
+            madeByUser = false
         )
 
     )
@@ -532,7 +562,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Mletý muškátový oříšek (špetka)",
                 "Led"
             ),
-            tutorial = "Vložte všechny ingredience do mixéru a rozmixujte, dokud směs není krémová a hladká. Nalijte do koktejlového skla a posypte nastrouhaným muškátovým oříškem. Podávejte okamžitě."
+            tutorial = "Vložte všechny ingredience do mixéru a rozmixujte, dokud směs není krémová a hladká. Nalijte do koktejlového skla a posypte nastrouhaným muškátovým oříškem. Podávejte okamžitě.",
+            madeByUser = false
         ),
         Drink(
             id = 32,
@@ -546,7 +577,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Lime (1 ks)",
                 "Led"
             ),
-            tutorial = "Do sklenice s ledem nalijeme rum a přidáme šťávu z jedné limetky. Sklenici doplníme zázvorovým pivem a koktejl promícháme. Ozdobíme plátkem limetky a můžeme ihned podávat."
+            tutorial = "Do sklenice s ledem nalijeme rum a přidáme šťávu z jedné limetky. Sklenici doplníme zázvorovým pivem a koktejl promícháme. Ozdobíme plátkem limetky a můžeme ihned podávat.",
+            madeByUser = false
         ),
         Drink(
             id = 33,
@@ -563,7 +595,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Cukr (1 lžička)",
                 "Led"
             ),
-            tutorial = "Hurikán se obvykle připravuje ve speciální sklenici ve tvaru trubice, ale lze jej také podávat v koktejlové sklenici. Do sklenice s kubovým ledem nalijeme světlý a tmavý rum, marakuju, ananasový, pomerančový a limetkový džus a lžičku cukru. Vše důkladně promícháme a ozdobíme kouskem ovoce nebo citrusovou kůrou. Pokud nápoj chceme mírnější, můžeme přidat sodovou vodu nebo více ovocného džusu. Pokud si přejeme větší množství, můžeme použít shaker a ingredience důkladně protřepat s ledem, poté nalijeme přes sítko do sklenice."
+            tutorial = "Hurikán se obvykle připravuje ve speciální sklenici ve tvaru trubice, ale lze jej také podávat v koktejlové sklenici. Do sklenice s kubovým ledem nalijeme světlý a tmavý rum, marakuju, ananasový, pomerančový a limetkový džus a lžičku cukru. Vše důkladně promícháme a ozdobíme kouskem ovoce nebo citrusovou kůrou. Pokud nápoj chceme mírnější, můžeme přidat sodovou vodu nebo více ovocného džusu. Pokud si přejeme větší množství, můžeme použít shaker a ingredience důkladně protřepat s ledem, poté nalijeme přes sítko do sklenice.",
+            madeByUser = false
         )
     )
 
@@ -579,7 +612,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Drambuie (1,5 cl)",
                 "Kostky ledu"
             ),
-            tutorial = "Do sklenice přidáme kostky ledu, whisky a Drambuie. Koktejl mícháme lžičkou, až se všechny ingredience propojí a nápoj získá svou charakteristickou chuť a vůni. Rezavý hřebík se podává v malých sklenicích a je ideální jako digestivum po jídle. Na ozdobu můžeme použít kousek pomeranče nebo citronovou kůru."
+            tutorial = "Do sklenice přidáme kostky ledu, whisky a Drambuie. Koktejl mícháme lžičkou, až se všechny ingredience propojí a nápoj získá svou charakteristickou chuť a vůni. Rezavý hřebík se podává v malých sklenicích a je ideální jako digestivum po jídle. Na ozdobu můžeme použít kousek pomeranče nebo citronovou kůru.",
+            madeByUser = false
         ),
         Drink(
             id = 35,
@@ -594,7 +628,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Ginger Ale",
                 "Kostky ledu"
             ),
-            tutorial = "Do shakeru přidáme tekilu, Crème de Cassis a limetkovou šťávu. Přidáme led a vše důkladně protřepeme. Nalijeme obsah shakeru do vysoké sklenice plné kostek ledu a dolijeme Ginger Ale. Koktejl můžeme ozdobit kouskem limetky nebo nakrájeným kouskem zázvoru."
+            tutorial = "Do shakeru přidáme tekilu, Crème de Cassis a limetkovou šťávu. Přidáme led a vše důkladně protřepeme. Nalijeme obsah shakeru do vysoké sklenice plné kostek ledu a dolijeme Ginger Ale. Koktejl můžeme ozdobit kouskem limetky nebo nakrájeným kouskem zázvoru.",
+            madeByUser = false
         ),
         Drink(
             id = 36,
@@ -609,7 +644,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Sodovka",
                 "Kostky ledu"
             ),
-            tutorial = "Do shakeru přidáme gin, cukr a citronovou šťávu. Přidáme led a vše důkladně protřepeme. Nalijeme obsah shakeru do vysoké sklenice plné kostek ledu a dolijeme sodovkou. Koktejl můžeme ozdobit kouskem citronu nebo limetky."
+            tutorial = "Do shakeru přidáme gin, cukr a citronovou šťávu. Přidáme led a vše důkladně protřepeme. Nalijeme obsah shakeru do vysoké sklenice plné kostek ledu a dolijeme sodovkou. Koktejl můžeme ozdobit kouskem citronu nebo limetky.",
+            madeByUser = false
         )
     )
 
@@ -625,7 +661,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Grapefruitový džus (10 cl)",
                 "Led"
             ),
-            tutorial = "Do vysoké sklenice plné kostek ledu nalijeme vodku a grapefruitový džus. Obsah sklenice promícháme lžičkou. Koktejl můžeme ozdobit kouskem grapefruitu nebo citronu."
+            tutorial = "Do vysoké sklenice plné kostek ledu nalijeme vodku a grapefruitový džus. Obsah sklenice promícháme lžičkou. Koktejl můžeme ozdobit kouskem grapefruitu nebo citronu.",
+            madeByUser = false
         ),
         Drink(
             id = 38,
@@ -638,7 +675,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Pomerančový džus (10 cl)",
                 "Led"
             ),
-            tutorial = "Do sklenice naplněné kostkami ledu nalijeme broskvový likér a pomerančový džus. Koktejl důkladně promícháme lžičkou. Pokud chceme, můžeme ho ozdobit plátkem pomeranče nebo broskví."
+            tutorial = "Do sklenice naplněné kostkami ledu nalijeme broskvový likér a pomerančový džus. Koktejl důkladně promícháme lžičkou. Pokud chceme, můžeme ho ozdobit plátkem pomeranče nebo broskví.",
+            madeByUser = false
         ),
         Drink(
             id = 39,
@@ -652,7 +690,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Citronová šťáva (2 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru naplníme led a přidáme Midori, Cointreau a citronovou šťávu. Důkladně protřepeme a koktejl přelijeme do předem připraveného poháru naplněného ledem. Pokud chceme, můžeme koktejl ozdobit plátkem citronu nebo kouskem melounu."
+            tutorial = "Do shakeru naplníme led a přidáme Midori, Cointreau a citronovou šťávu. Důkladně protřepeme a koktejl přelijeme do předem připraveného poháru naplněného ledem. Pokud chceme, můžeme koktejl ozdobit plátkem citronu nebo kouskem melounu.",
+            madeByUser = false
         )
     )
 
@@ -669,7 +708,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Galliano (1,5 cl)",
                 "Led"
             ),
-            tutorial = "Nejprve do sklenice s kostkami ledu nalijeme vodku a pomerančový džus a důkladně promícháme. Následně přidáme Galliano a opět promícháme. Pokud chceme, můžeme koktejl ozdobit plátkem pomeranče."
+            tutorial = "Nejprve do sklenice s kostkami ledu nalijeme vodku a pomerančový džus a důkladně promícháme. Následně přidáme Galliano a opět promícháme. Pokud chceme, můžeme koktejl ozdobit plátkem pomeranče.",
+            madeByUser = false
         ),
         Drink(
             id = 41,
@@ -684,7 +724,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Sodová voda (12 cl)",
                 "Led"
             ),
-            tutorial = "Do vysokého sklenice vložíme led a přidáme gin, citronovou šťávu a cukr. Přilijeme sodovou vodu a vše opatrně promícháme lžičkou. Koktejl můžeme ozdobit kolečkem citronu nebo pomeranče a podávat s brčkem."
+            tutorial = "Do vysokého sklenice vložíme led a přidáme gin, citronovou šťávu a cukr. Přilijeme sodovou vodu a vše opatrně promícháme lžičkou. Koktejl můžeme ozdobit kolečkem citronu nebo pomeranče a podávat s brčkem.",
+            madeByUser = false
         ),
         Drink(
             id = 42,
@@ -698,7 +739,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Led",
                 "Citronová kůra (na ozdobu)"
             ),
-            tutorial = "Do velkého sklenice vložíme led a nalijeme červené víno. Přilijeme kolu a jemně promícháme. Do sklenice můžeme přidat také kousek citronové kůry jako ozdobu. Podáváme s brčkem a můžeme si vychutnat tento jednoduchý, osvěžující a oblíbený drink."
+            tutorial = "Do velkého sklenice vložíme led a nalijeme červené víno. Přilijeme kolu a jemně promícháme. Do sklenice můžeme přidat také kousek citronové kůry jako ozdobu. Podáváme s brčkem a můžeme si vychutnat tento jednoduchý, osvěžující a oblíbený drink.",
+            madeByUser = false
         )
     )
 
@@ -716,7 +758,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Čerstvá šťáva z limetky (2 cl)",
                 "Kostky ledu"
             ),
-            tutorial = "Všechny ingredience vlijeme do shakeru a důkladně protřepeme s ledem, dokud se shaker nezachytí ledem zvenčí. Nalijeme přes sítko do koktejlové sklenice a podáváme s kouskem čerstvého ovoce nebo lístkem máty na ozdobu."
+            tutorial = "Všechny ingredience vlijeme do shakeru a důkladně protřepeme s ledem, dokud se shaker nezachytí ledem zvenčí. Nalijeme přes sítko do koktejlové sklenice a podáváme s kouskem čerstvého ovoce nebo lístkem máty na ozdobu.",
+            madeByUser = false
         ),
         Drink(
             id = 44,
@@ -731,7 +774,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Kousek citronu",
                 "Led"
             ),
-            tutorial = "Do shakeru naplníme ledem, následně přidáme vodka, citronovou šťávu a jednoduchý sirup. Shaker pevně zavřeme a důkladně protřepeme, aby se vše dobře spojilo. Sklenici naplníme kostkami ledu a koktejl přescedíme do sklenice. Na okraj sklenice můžeme připevnit kousek citronu a hotovo."
+            tutorial = "Do shakeru naplníme ledem, následně přidáme vodka, citronovou šťávu a jednoduchý sirup. Shaker pevně zavřeme a důkladně protřepeme, aby se vše dobře spojilo. Sklenici naplníme kostkami ledu a koktejl přescedíme do sklenice. Na okraj sklenice můžeme připevnit kousek citronu a hotovo.",
+            madeByUser = false
         ),
         Drink(
             id = 45,
@@ -747,7 +791,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Plátek citronu",
                 "Led"
             ),
-            tutorial = "Do sklenice naplníme kostkami ledu a přidáme bourbon, citronovou limonádu, limetkovou šťávu a jednoduchý sirup. Sklenici důkladně promícháme a do nápoje můžeme přidat plátek citronu. Podáváme s brčkem a ledem."
+            tutorial = "Do sklenice naplníme kostkami ledu a přidáme bourbon, citronovou limonádu, limetkovou šťávu a jednoduchý sirup. Sklenici důkladně promícháme a do nápoje můžeme přidat plátek citronu. Podáváme s brčkem a ledem.",
+            madeByUser = false
         )
     )
 
@@ -764,7 +809,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Brusinkový džus (3 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru naplníme ledem a přidáme vodku, dýňový džus a brusinkový džus. Vše důkladně protřepeme, aby se koktejl dobře propojil. Poté nápoj přecedíme do vysoké sklenice naplněné ledem. Koktejl můžeme ozdobit plátkem citronu nebo pomeranče."
+            tutorial = "Do shakeru naplníme ledem a přidáme vodku, dýňový džus a brusinkový džus. Vše důkladně protřepeme, aby se koktejl dobře propojil. Poté nápoj přecedíme do vysoké sklenice naplněné ledem. Koktejl můžeme ozdobit plátkem citronu nebo pomeranče.",
+            madeByUser = false
         ),
         Drink(
             id = 47,
@@ -778,7 +824,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Grenadina (1,5 cl)",
                 "Maraschino (1,5 cl)"
             ),
-            tutorial = "Do shakeru naplníme kameny ledu a přidáme bílý rum, ananasovou šťávu, grenadinu a maraschino. Silně protřepeme a následně přecedíme do předem připraveného koktejlového skla s ledem. Dozdobíme kouskem ananasu nebo višní. "
+            tutorial = "Do shakeru naplníme kameny ledu a přidáme bílý rum, ananasovou šťávu, grenadinu a maraschino. Silně protřepeme a následně přecedíme do předem připraveného koktejlového skla s ledem. Dozdobíme kouskem ananasu nebo višní.",
+            madeByUser = false
         ),
         Drink(
             id = 48,
@@ -793,7 +840,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Grenadina (1 cl)",
                 "1 kapka absintu"
             ),
-            tutorial = "Do shakeru vložíme led spolu se všemi ingrediencemi kromě absintu. Dobře protřepeme a slijeme do předem připraveného sklenice na drink. Nakapeme jednu kapku absintu a necháme ji zvolna stékat do drinku. Koktejl můžeme ozdobit pomerančovou kůrou nebo pomerančovým klínkem."
+            tutorial = "Do shakeru vložíme led spolu se všemi ingrediencemi kromě absintu. Dobře protřepeme a slijeme do předem připraveného sklenice na drink. Nakapeme jednu kapku absintu a necháme ji zvolna stékat do drinku. Koktejl můžeme ozdobit pomerančovou kůrou nebo pomerančovým klínkem.",
+            madeByUser = false
         )
     )
 
@@ -811,7 +859,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Sůl",
                 "Led"
             ),
-            tutorial = "Nejdříve si okraj sklenice osolíme, přidáme led a zalijeme tequilou. Následně přidáme šťávu z poloviny limetky a doplníme hroznovou sodou. Přidáme plátky limetky do koktejlu a můžeme ihned podávat."
+            tutorial = "Nejdříve si okraj sklenice osolíme, přidáme led a zalijeme tequilou. Následně přidáme šťávu z poloviny limetky a doplníme hroznovou sodou. Přidáme plátky limetky do koktejlu a můžeme ihned podávat.",
+            madeByUser = false
         ),
         Drink(
             id = 50,
@@ -828,7 +877,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Angostura (2-3 kapky)",
                 "Led"
             ),
-            tutorial = "Do shakeru vložíme led, tmavý rum, ananasovou šťávu, pomerančovou a citrónovou šťávu a cukrový sirup. Shaker pevně uzavřeme a silně protřepeme, dokud se nevytvoří ledový nápoj. Poté nápoj přecedíme přes jemné sítko do připravené sklenice s kousky ledu. Nakonec do nápoje přidáme několik kapek Angostury, které dodají koktejlu charakteristickou chuť a aroma. Koktejl můžeme ozdobit kouskem ovoce nebo čerstvou mátou."
+            tutorial = "Do shakeru vložíme led, tmavý rum, ananasovou šťávu, pomerančovou a citrónovou šťávu a cukrový sirup. Shaker pevně uzavřeme a silně protřepeme, dokud se nevytvoří ledový nápoj. Poté nápoj přecedíme přes jemné sítko do připravené sklenice s kousky ledu. Nakonec do nápoje přidáme několik kapek Angostury, které dodají koktejlu charakteristickou chuť a aroma. Koktejl můžeme ozdobit kouskem ovoce nebo čerstvou mátou.",
+            madeByUser = false
         ),
         Drink(
             id = 51,
@@ -843,7 +893,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Malinový džus (2,5 cl)",
                 "Led"
             ),
-            tutorial = "Vezměte si shaker a do něj dejte led. Přidejte vodku, malinový likér, borůvkový džus a malinový džus. Shaker dobře zavřete a silně protřepejte, dokud se nápoj nezchladí a nezměkne. Nalijte do sklenice s ledem a ozdobte malinou nebo borůvkou."
+            tutorial = "Vezměte si shaker a do něj dejte led. Přidejte vodku, malinový likér, borůvkový džus a malinový džus. Shaker dobře zavřete a silně protřepejte, dokud se nápoj nezchladí a nezměkne. Nalijte do sklenice s ledem a ozdobte malinou nebo borůvkou.",
+            madeByUser = false
         )
     )
 
@@ -867,6 +918,7 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Led"
             ),
             tutorial = "Do shakeru vložíme několik kusů ledu, gin, rajčatový džus, citronovou šťávu, Tabasco, Worcestershire omáčku, sůl a pepř. Shaker dobře zatřepeme, aby se všechny přísady promíchaly a následně slijeme do vysoké sklenice plné kostek ledu. Drink ozdobíme kůrou z citronu a větvičkou celeru a podáváme s brčkem. Sklenici můžeme také vymalovat směsí soli a pepře pro zajímavější vzhled.",
+            madeByUser = false
         ),
         Drink(
             id = 53,
@@ -879,7 +931,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Voda (2-3 cl)",
                 "Led"
             ),
-            tutorial = "Do sklenice naplněné ledem přilijeme skotskou whisky a přidáme 2-3cl vody. Dochutíme dle potřeby. Drink můžeme ozdobit kolečkem citronu nebo pomeranče. Tento drink je ideální pro ty, kteří si chtějí vychutnat skutečnou chuť a aroma skotské whisky bez zbytečných příchutí."
+            tutorial = "Do sklenice naplněné ledem přilijeme skotskou whisky a přidáme 2-3cl vody. Dochutíme dle potřeby. Drink můžeme ozdobit kolečkem citronu nebo pomeranče. Tento drink je ideální pro ty, kteří si chtějí vychutnat skutečnou chuť a aroma skotské whisky bez zbytečných příchutí.",
+            madeByUser = false
         ),
         Drink(
             id = 54,
@@ -893,7 +946,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Stroužek citronu",
                 "Led"
             ),
-            tutorial = "Do sklenice s velkým množstvím ledu nejdříve nalijeme ginger ale. Poté přidáme grenadinu, která by se měla samovolně propadnout ke dnu sklenice, a zároveň jí to dává krásnou barvu. Nakonec přidáme stroužek citronu, kterým sklenici ozdobíme. Některé recepty doporučují také přidat trošku třešňového džusu nebo několik třešňových plodů pro vylepšení chuti a dekoraci."
+            tutorial = "Do sklenice s velkým množstvím ledu nejdříve nalijeme ginger ale. Poté přidáme grenadinu, která by se měla samovolně propadnout ke dnu sklenice, a zároveň jí to dává krásnou barvu. Nakonec přidáme stroužek citronu, kterým sklenici ozdobíme. Některé recepty doporučují také přidat trošku třešňového džusu nebo několik třešňových plodů pro vylepšení chuti a dekoraci.",
+            madeByUser = false
         )
     )
 
@@ -908,7 +962,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Baileys (2,5 cl)",
                 "Sambuca (2,5 cl)"
             ),
-            tutorial = "Slippery Nipple se podává v shot skleničkách. Nejprve nalijeme Sambucu a následně Baileys. Důležité je dodržet pořadí, aby se Baileys netopil v Sambuce. Hotovo!"
+            tutorial = "Slippery Nipple se podává v shot skleničkách. Nejprve nalijeme Sambucu a následně Baileys. Důležité je dodržet pořadí, aby se Baileys netopil v Sambuce. Hotovo!",
+            madeByUser = false
         ),
         Drink(
             id = 56,
@@ -921,7 +976,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Schweppes Lemonade (12 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru s ledem nalijeme advocaat likér a limonádu. Následně silně protřepeme, aby se vytvořila koule sněhu podobná textura a aby se všechny ingredience dobře propojily. Poté slijeme do vysokého sklenice a ozdobíme plátkem citronu. Pro zvýšení chuťových vlastností lze do koktejlu přidat i trošku limetové šťávy."
+            tutorial = "Do shakeru s ledem nalijeme advocaat likér a limonádu. Následně silně protřepeme, aby se vytvořila koule sněhu podobná textura a aby se všechny ingredience dobře propojily. Poté slijeme do vysokého sklenice a ozdobíme plátkem citronu. Pro zvýšení chuťových vlastností lze do koktejlu přidat i trošku limetové šťávy.",
+            madeByUser = false
         ),
         Drink(
             id = 57,
@@ -935,7 +991,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Led",
                 "Citronové kroužky (na ozdobu)"
             ),
-            tutorial = "Do většího sklenice naplníme kameny ledu, nalijeme suché bílé víno a doplníme perlivou minerální vodou. Sklenici jemně promícháme lžičkou a ozdobíme kroužkem citronu. Podáváme ihned."
+            tutorial = "Do většího sklenice naplníme kameny ledu, nalijeme suché bílé víno a doplníme perlivou minerální vodou. Sklenici jemně promícháme lžičkou a ozdobíme kroužkem citronu. Podáváme ihned.",
+            madeByUser = false
         )
     )
 
@@ -954,7 +1011,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Soda (asi 10-15 cl)",
                 "Led"
             ),
-            tutorial = "Vysokou sklenici naplníme ledem a do ní přidáme vodku, grapefruitový džus, angosturu a cukr. Vše důkladně promícháme a dolijeme sodou. Koktejl ozdobíme kolečkem grapefruitu a mátou."
+            tutorial = "Vysokou sklenici naplníme ledem a do ní přidáme vodku, grapefruitový džus, angosturu a cukr. Vše důkladně promícháme a dolijeme sodou. Koktejl ozdobíme kolečkem grapefruitu a mátou.",
+            madeByUser = false
         ),
         Drink(
             id = 59,
@@ -966,7 +1024,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Koňak (5 cl)",
                 "Crème de menthe (2 cl)"
             ),
-            tutorial = "Do míchací sklenice s kostkami ledu přidáme koňak a crème de menthe. Koktejl důkladně promícháme a přecedíme přes sítko do vychlazeného koktejlového skla. Koktejl můžeme ozdobit lístkem máty."
+            tutorial = "Do míchací sklenice s kostkami ledu přidáme koňak a crème de menthe. Koktejl důkladně promícháme a přecedíme přes sítko do vychlazeného koktejlového skla. Koktejl můžeme ozdobit lístkem máty.",
+            madeByUser = false
         ),
         Drink(
             id = 60,
@@ -980,7 +1039,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Ananasová šťáva (12 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidáme Jägermeister, kokosový rum a ananasovou šťávu. Přidáme led a silně protřepeme. Nalijeme do sklenice s kostkami ledu a dozdobíme kouskem ananasu nebo jiným ovocem dle chuti. Je připraven k podávání!"
+            tutorial = "Do shakeru přidáme Jägermeister, kokosový rum a ananasovou šťávu. Přidáme led a silně protřepeme. Nalijeme do sklenice s kostkami ledu a dozdobíme kouskem ananasu nebo jiným ovocem dle chuti. Je připraven k podávání!",
+            madeByUser = false
         )
     )
 
@@ -998,7 +1058,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Malinová šťáva (2 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Nápoj můžeme ozdobit malými cukrovými rybkami Swedish Fish. "
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Nápoj můžeme ozdobit malými cukrovými rybkami Swedish Fish.",
+            madeByUser = false
         ),
         Drink(
             id = 62,
@@ -1011,7 +1072,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Jack Daniel's whisky (2 cl)",
                 "Jim Beam whisky (2 cl)"
             ),
-            tutorial = "Všechny tři druhy whisky přidáme do shakeru naplněného ledem a důkladně protřepeme. Poté přescedíme do sklenice s ledem a ozdobíme podle chuti. Doporučujeme podávat jako digestif. "
+            tutorial = "Všechny tři druhy whisky přidáme do shakeru naplněného ledem a důkladně protřepeme. Poté přescedíme do sklenice s ledem a ozdobíme podle chuti. Doporučujeme podávat jako digestif.",
+            madeByUser = false
         ),
         Drink(
             id = 63,
@@ -1026,7 +1088,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Smetana (1.5 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidáme led, vodku, kakaový likér, pomerančový likér a smetanu. Shaker důkladně protřepeme, až se všechny ingredience spojí. Poté přescedíme do sklenice naplněné ledem. Můžeme ozdobit kouskem čokolády nebo pomerančovou kůrou. "
+            tutorial = "Do shakeru přidáme led, vodku, kakaový likér, pomerančový likér a smetanu. Shaker důkladně protřepeme, až se všechny ingredience spojí. Poté přescedíme do sklenice naplněné ledem. Můžeme ozdobit kouskem čokolády nebo pomerančovou kůrou.",
+            madeByUser = false
         )
     )
 
@@ -1043,13 +1106,14 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Zázvorové pivo (5 cl)",
                 "Led"
             ),
-            tutorial = "Do sklenice naplněné ledem postupně nalijeme vodku, hroznovou šťávu a zázvorové pivo. Vše jemně promícháme a ozdobíme plátkem citronu nebo čerstvou hroznovou větví. Podáváme s brčkem."
+            tutorial = "Do sklenice naplněné ledem postupně nalijeme vodku, hroznovou šťávu a zázvorové pivo. Vše jemně promícháme a ozdobíme plátkem citronu nebo čerstvou hroznovou větví. Podáváme s brčkem.",
+            madeByUser = false
         ),
         Drink(
             id = 65,
             name = "Tuxedo",
             image = "/images/drinks/tuxedo.jpg",
-            description = "Tuxedo je elegantní koktejl, který se řadí mezi klasické a náročné nápoje. Jeho chuťový profil je kořeněný a sladký a koktejl se často pije jako digestiv po jídle. ",
+            description = "Tuxedo je elegantní koktejl, který se řadí mezi klasické a náročné nápoje. Jeho chuťový profil je kořeněný a sladký a koktejl se často pije jako digestiv po jídle.",
             rating = 3.9,
             ingredients = listOf(
                 "Gin (6 cl)",
@@ -1058,13 +1122,14 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Angostura Bitter (1 dash)",
                 "Pomerančová kůra"
             ),
-            tutorial = "Do míchací sklenice naplněné ledem přidáme všechny ingredience a důkladně mícháme asi 30 sekund. Následně přescedíme do vychlazené koktejlové sklenice a ozdobíme pomerančovou kůrou. "
+            tutorial = "Do míchací sklenice naplněné ledem přidáme všechny ingredience a důkladně mícháme asi 30 sekund. Následně přescedíme do vychlazené koktejlové sklenice a ozdobíme pomerančovou kůrou.",
+            madeByUser = false
         ),
         Drink(
             id = 66,
             name = "Vampiro",
             image = "/images/drinks/vampiro.jpg",
-            description = "Vampiro je oblíbeným mexickým koktejlem, který je založen na tequile a rajčatové šťávě. Chuťově je pikantní a sladká, což jej dělá ideálním pro ty, kteří si rádi pochutnají na něčem zajímavém. ",
+            description = "Vampiro je oblíbeným mexickým koktejlem, který je založen na tequile a rajčatové šťávě. Chuťově je pikantní a sladká, což jej dělá ideálním pro ty, kteří si rádi pochutnají na něčem zajímavém.",
             rating = 4.2,
             ingredients = listOf(
                 "Tequila (5 cl)",
@@ -1076,7 +1141,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Worcestershire omáčka",
                 "Led"
             ),
-            tutorial = "Do shakeru přidáme led, tequilu, rajčatovou a citrónovou šťávu, cukr, špetku soli, pár kapek Tabasco a Worcestershire omáčky. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Nápoj můžeme ozdobit klínkem citronu a posypat solí. "
+            tutorial = "Do shakeru přidáme led, tequilu, rajčatovou a citrónovou šťávu, cukr, špetku soli, pár kapek Tabasco a Worcestershire omáčky. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Nápoj můžeme ozdobit klínkem citronu a posypat solí.",
+            madeByUser = false
         )
     )
 
@@ -1095,7 +1161,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Soda (doplnit dle chuti)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidáme led a všechny tekuté ingredience kromě sody. Shaker důkladně protřepeme a přescedíme do sklenice s ledem. Přidáme sodu podle chuti. Nápoj můžeme ozdobit plátkem pomeranče a vanilkovou fazolkou. Na zdraví!"
+            tutorial = "Do shakeru přidáme led a všechny tekuté ingredience kromě sody. Shaker důkladně protřepeme a přescedíme do sklenice s ledem. Přidáme sodu podle chuti. Nápoj můžeme ozdobit plátkem pomeranče a vanilkovou fazolkou. Na zdraví!",
+            madeByUser = false
         ),
         Drink(
             id = 68,
@@ -1110,7 +1177,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Sahara (2 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidáme led, smetanovou vodku, creme de cacao, sodovku a saharu. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Drink můžeme ozdobit kakaovým práškem nebo hřebíčkem."
+            tutorial = "Do shakeru přidáme led, smetanovou vodku, creme de cacao, sodovku a saharu. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Drink můžeme ozdobit kakaovým práškem nebo hřebíčkem.",
+            madeByUser = false
         ),
         Drink(
             id = 69,
@@ -1125,7 +1193,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Citron (limetková šťáva, 1 nakrájená kroužek)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přecedíme do sklenice na martini. Koktejl můžeme ozdobit kouskem citronu."
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přecedíme do sklenice na martini. Koktejl můžeme ozdobit kouskem citronu.",
+            madeByUser = false
         )
     )
 
@@ -1144,7 +1213,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Angostura kořenová kůra (2 kapky)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidejte led, bourbon, čerstvě vymačkanou pomerančovou a citronovou šťávu, grenadinu a 2 kapky Angostura kořenové kůry. Shaker důkladně protřepejte a přeceďte do sklenice s ledem. Koktejl můžete ozdobit kůrkou pomeranče a kouskem třešně."
+            tutorial = "Do shakeru přidejte led, bourbon, čerstvě vymačkanou pomerančovou a citronovou šťávu, grenadinu a 2 kapky Angostura kořenové kůry. Shaker důkladně protřepejte a přeceďte do sklenice s ledem. Koktejl můžete ozdobit kůrkou pomeranče a kouskem třešně.",
+            madeByUser = false
         ),
         Drink(
             id = 71,
@@ -1158,7 +1228,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Sodovka",
                 "Led"
             ),
-            tutorial = "Do sklenice naplněného ledem přidáme Campari a vermouth. Doplňujeme sodovkou a mícháme lžičkou. Podáváme s kroužkem pomeranče jako ozdobou. "
+            tutorial = "Do sklenice naplněného ledem přidáme Campari a vermouth. Doplňujeme sodovkou a mícháme lžičkou. Podáváme s kroužkem pomeranče jako ozdobou.",
+            madeByUser = false
         ),
         Drink(
             id = 72,
@@ -1171,7 +1242,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Brandy (3 cl)",
                 "Calvados (3 cl)"
             ),
-            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do koktejlové sklenice naplněné ledem. Nápoj můžeme ozdobit trochou citronové kůry nebo jablka. "
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do koktejlové sklenice naplněné ledem. Nápoj můžeme ozdobit trochou citronové kůry nebo jablka.",
+            madeByUser = false
         )
     )
 
@@ -1188,7 +1260,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Maraschino likér (1,5 cl)",
                 "Citronová šťáva (1,5 cl)"
             ),
-            tutorial = "Do shakeru přidejte led a všechny ingredience. Shaker důkladně protřepejte a nápoj přeceďte do ochucené sklenice s kostkami ledu. Můžete ozdobit citrusovou kůrou nebo fialkovými okvětními lístky."
+            tutorial = "Do shakeru přidejte led a všechny ingredience. Shaker důkladně protřepejte a nápoj přeceďte do ochucené sklenice s kostkami ledu. Můžete ozdobit citrusovou kůrou nebo fialkovými okvětními lístky.",
+            madeByUser = false
         ),
         Drink(
             id = 74,
@@ -1205,7 +1278,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Grenadina (1 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Na závěr můžeme koktejl ozdobit kousky ovoce, např. pomerančovým kolečkem a ananasovým klíčkem."
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Na závěr můžeme koktejl ozdobit kousky ovoce, např. pomerančovým kolečkem a ananasovým klíčkem.",
+            madeByUser = false
         ),
         Drink(
             id = 75,
@@ -1219,7 +1293,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Brusinková šťáva (6 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru naplněného ledem přidáme vodku, ananasovou a brusinkovou šťávu. Vše důkladně protřepeme a přecedíme do vysoké sklenice naplněné ledem. Na ozdobu můžeme použít kousek ananasu a brusinky na koktejlové paličce."
+            tutorial = "Do shakeru naplněného ledem přidáme vodku, ananasovou a brusinkovou šťávu. Vše důkladně protřepeme a přecedíme do vysoké sklenice naplněné ledem. Na ozdobu můžeme použít kousek ananasu a brusinky na koktejlové paličce.",
+            madeByUser = false
         )
     )
 
@@ -1236,7 +1311,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Medový sirup (2,5 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidejte led a všechny ingredience. Shaker důkladně protřepejte, dokud se nápoj neochladí a nezmíchají se ingredience. Poté přelijte nápoj do sklenice naplněné ledem a ozdobte plátkem citronu nebo kouskem medu."
+            tutorial = "Do shakeru přidejte led a všechny ingredience. Shaker důkladně protřepejte, dokud se nápoj neochladí a nezmíchají se ingredience. Poté přelijte nápoj do sklenice naplněné ledem a ozdobte plátkem citronu nebo kouskem medu.",
+            madeByUser = false
         ),
         Drink(
             id = 77,
@@ -1251,7 +1327,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Citronová šťáva (2 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Můžeme ozdobit kouskem citronu nebo pomeranče."
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Můžeme ozdobit kouskem citronu nebo pomeranče.",
+            madeByUser = false
         ),
         Drink(
             id = 78,
@@ -1266,7 +1343,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Čerstvá citronová šťáva (3 cl)",
                 "Led"
             ),
-            tutorial = "Vložte borůvky, citronovou šťávu a cukrový sirup do shakeru a rozmačkejte je vidličkou. Přidejte gin a led a protřepejte. Nalijte do sklenice plného ledu a ozdobte plátky citronu a malinami. Podávejte s koktejlovou slamkou."
+            tutorial = "Vložte borůvky, citronovou šťávu a cukrový sirup do shakeru a rozmačkejte je vidličkou. Přidejte gin a led a protřepejte. Nalijte do sklenice plného ledu a ozdobte plátky citronu a malinami. Podávejte s koktejlovou slamkou.",
+            madeByUser = false
         )
     )
 
@@ -1275,7 +1353,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             id = 79,
             name = "Blackthorn",
             image = "/images/drinks/blackthorn.jpg",
-            description = "Blackthorn je koktejl se silnou sladkou chutí, kterou mu dodává sladký vermouth. Jedná se o poměrně silný koktejl, protože obsahuje hned dvě druhy destilátů. ",
+            description = "Blackthorn je koktejl se silnou sladkou chutí, kterou mu dodává sladký vermouth. Jedná se o poměrně silný koktejl, protože obsahuje hned dvě druhy destilátů.",
             rating = 4.2,
             ingredients = listOf(
                 "Plymouth Gin (3 cl)",
@@ -1283,7 +1361,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Sladký vermouth (3 cl)",
                 "Angostura kořenová bitters (2 dashes)"
             ),
-            tutorial = "Do shakeru přidáme gin, slivovici, sladký vermouth a 2 dash Angostura kořenového bitteru. Shaker naplníme ledem a důkladně protřepeme. Koktejl přecedíme do sklenice s ledem a ozdobíme třešní a pomerančovou kůrou. Podáváme se slamkou. "
+            tutorial = "Do shakeru přidáme gin, slivovici, sladký vermouth a 2 dash Angostura kořenového bitteru. Shaker naplníme ledem a důkladně protřepeme. Koktejl přecedíme do sklenice s ledem a ozdobíme třešní a pomerančovou kůrou. Podáváme se slamkou.",
+            madeByUser = false
         ),
         Drink(
             id = 80,
@@ -1298,7 +1377,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Cherry Heering (3 cl)",
                 "Pomerančová kůra (na ozdobu)"
             ),
-            tutorial = "Do shakeru přidáme led a všechny ingredience kromě pomerančové kůry. Důkladně protřepeme a přescedíme do sklenice s ledem. Nápoj můžeme ozdobit pomerančovou kůrou. "
+            tutorial = "Do shakeru přidáme led a všechny ingredience kromě pomerančové kůry. Důkladně protřepeme a přescedíme do sklenice s ledem. Nápoj můžeme ozdobit pomerančovou kůrou.",
+            madeByUser = false
         ),
         Drink(
             id = 81,
@@ -1312,7 +1392,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Campari (3 cl)",
                 "Kůra z pomeranče"
             ),
-            tutorial = "Do míchací sklenice naplněné ledem přidáme bourbon nebo rye whisky, Cinzano Vermouth Rosso a Campari. Koktejl důkladně promícháme pomocí míchacího náčiní. Poté nápoj přecedíme do připraveného sklenice a ozdobíme kůrou z pomeranče. "
+            tutorial = "Do míchací sklenice naplněné ledem přidáme bourbon nebo rye whisky, Cinzano Vermouth Rosso a Campari. Koktejl důkladně promícháme pomocí míchacího náčiní. Poté nápoj přecedíme do připraveného sklenice a ozdobíme kůrou z pomeranče.",
+            madeByUser = false
         )
     )
 
@@ -1330,7 +1411,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Medový sirup (1 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidejte led a všechny ingredience. Shaker důkladně protřepejte a přelijte do sklenice s velkými kousky ledu. Ozdobte plátkem grapefruitu a servírujte. Díky své sladké a ovocné chuti se tento koktejl hodí jako aperitiv nebo jako koktejl k dezertu."
+            tutorial = "Do shakeru přidejte led a všechny ingredience. Shaker důkladně protřepejte a přelijte do sklenice s velkými kousky ledu. Ozdobte plátkem grapefruitu a servírujte. Díky své sladké a ovocné chuti se tento koktejl hodí jako aperitiv nebo jako koktejl k dezertu.",
+            madeByUser = false
         ),
         Drink(
             id = 83,
@@ -1343,7 +1425,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Brusinkový džus (10 cl)",
                 "Led",
             ),
-            tutorial = "Do sklenice plné ledu přidáme vodku a brusinkový džus. Koktejl promícháme a ozdobíme plátkem citronu nebo pomeranče podle chuti."
+            tutorial = "Do sklenice plné ledu přidáme vodku a brusinkový džus. Koktejl promícháme a ozdobíme plátkem citronu nebo pomeranče podle chuti.",
+            madeByUser = false
         ),
         Drink(
             id = 84,
@@ -1359,7 +1442,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Mleté skořice",
                 "Led"
             ),
-            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Pokud chceme, můžeme nápoj posypat trochou mleté skořice. "
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Pokud chceme, můžeme nápoj posypat trochou mleté skořice.",
+            madeByUser = false
         )
     )
 
@@ -1378,7 +1462,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Absinth (pár kapek)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidáme led a všechny ingredience kromě absinthu. Shaker důkladně protřepeme a přescedíme do sklenice naplněné ledem. Nakonec přidáme pár kapek absinthu a koktejl ozdobíme kůrkou z citronu. "
+            tutorial = "Do shakeru přidáme led a všechny ingredience kromě absinthu. Shaker důkladně protřepeme a přescedíme do sklenice naplněné ledem. Nakonec přidáme pár kapek absinthu a koktejl ozdobíme kůrkou z citronu.",
+            madeByUser = false
         ),
         Drink(
             id = 86,
@@ -1394,7 +1479,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Banán (1 ks)",
                 "Led"
             ),
-            tutorial = "Vložte všechny ingredience do mixéru a důkladně rozmixujte, dokud nezískáte hladkou konzistenci. Nalijte do vysoké sklenice a ozdobte plátkem banánu nebo několika kousky čokolády. Podávejte okamžitě."
+            tutorial = "Vložte všechny ingredience do mixéru a důkladně rozmixujte, dokud nezískáte hladkou konzistenci. Nalijte do vysoké sklenice a ozdobte plátkem banánu nebo několika kousky čokolády. Podávejte okamžitě.",
+            madeByUser = false
         ),
         Drink(
             id = 87,
@@ -1409,7 +1495,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Zázvorový sirup (1 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru naplněného ledem přidáme gin, pomerančovou šťávu, limonádu a zázvorový sirup. Důkladně protřepeme a přecedíme do sklenice naplněné lehce rozmixovaným ledem. Koktejl můžeme ozdobit pomerančovými nebo limetkovými kůrkami. "
+            tutorial = "Do shakeru naplněného ledem přidáme gin, pomerančovou šťávu, limonádu a zázvorový sirup. Důkladně protřepeme a přecedíme do sklenice naplněné lehce rozmixovaným ledem. Koktejl můžeme ozdobit pomerančovými nebo limetkovými kůrkami.",
+            madeByUser = false
         )
     )
 
@@ -1428,7 +1515,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Grenadina (1 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidejte led a všechny ingredience. Shaker důkladně protřepejte, aby se koktejl dobře promíchal a ochladil. Poté nápoj přeceďte do vysoké sklenice naplněné ledem. Můžete ozdobit plátkem pomeranče nebo ananasu a kousek cukru zvaného kandovaný hřebíček."
+            tutorial = "Do shakeru přidejte led a všechny ingredience. Shaker důkladně protřepejte, aby se koktejl dobře promíchal a ochladil. Poté nápoj přeceďte do vysoké sklenice naplněné ledem. Můžete ozdobit plátkem pomeranče nebo ananasu a kousek cukru zvaného kandovaný hřebíček.",
+            madeByUser = false
         ),
         Drink(
             id = 89,
@@ -1443,13 +1531,14 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Ice cubes",
                 "Plátky broskve a limetky (na ozdobu)"
             ),
-            tutorial = "Do sklenice s ledem přidáme bílé víno, broskvový nektar a citronovou limonádu. Všechny ingredience důkladně promícháme. Sklenici můžeme ozdobit plátky čerstvé broskve a limetky. Podáváme okamžitě a užíváme si osvěžující chuť letního nápoje."
+            tutorial = "Do sklenice s ledem přidáme bílé víno, broskvový nektar a citronovou limonádu. Všechny ingredience důkladně promícháme. Sklenici můžeme ozdobit plátky čerstvé broskve a limetky. Podáváme okamžitě a užíváme si osvěžující chuť letního nápoje.",
+            madeByUser = false
         ),
         Drink(
             id = 90,
             name = "Gibson",
             image = "/images/drinks/gibson.jpg",
-            description = "Gibson je mírně kořeněný nápoj se silným chutí koření a cibule. Jeho chuť se od ostatních koktejlů liší především tím, že obsahuje cibuli jako ozdobu. ",
+            description = "Gibson je mírně kořeněný nápoj se silným chutí koření a cibule. Jeho chuť se od ostatních koktejlů liší především tím, že obsahuje cibuli jako ozdobu.",
             rating = 3.8,
             ingredients = listOf(
                 "Vodka (6 cl)",
@@ -1457,7 +1546,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Nakládaná cibule",
                 "Led"
             ),
-            tutorial = "Do míchací sklenice s ledem přidáme vodku a vermut. Směs důkladně promícháme a poté přecedíme do koktejlové sklenice. Na jeho okraj přidáme nakládanou cibuli jako ozdobu."
+            tutorial = "Do míchací sklenice s ledem přidáme vodku a vermut. Směs důkladně promícháme a poté přecedíme do koktejlové sklenice. Na jeho okraj přidáme nakládanou cibuli jako ozdobu.",
+            madeByUser = false
         )
     )
 
@@ -1472,13 +1562,14 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Vodka (4 cl)",
                 "Amaretto (2 cl)"
             ),
-            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice. Nápoj můžeme ozdobit kouskem citronu nebo lístkem máty."
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice. Nápoj můžeme ozdobit kouskem citronu nebo lístkem máty.",
+            madeByUser = false
         ),
         Drink(
             id = 92,
             name = "Gold Rush",
             image = "/images/drinks/gold_rush.jpg",
-            description = "Gold Rush je koktejl s bourbonem, medem a čerstvou citronovou šťávou. Je to jednoduchý, ale lahodný nápoj, který lze snadno připravit doma. ",
+            description = "Gold Rush je koktejl s bourbonem, medem a čerstvou citronovou šťávou. Je to jednoduchý, ale lahodný nápoj, který lze snadno připravit doma.",
             rating = 4.2,
             ingredients = listOf(
                 "Bourbon (6 cl)",
@@ -1486,7 +1577,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Čerstvá citronová šťáva (2 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidáme led, bourbon, med a citronovou šťávu. Shaker důkladně protřepeme a poté přescedíme do sklenice s kousky ledu. Nápoj můžeme ozdobit plátkem citronu. "
+            tutorial = "Do shakeru přidáme led, bourbon, med a citronovou šťávu. Shaker důkladně protřepeme a poté přescedíme do sklenice s kousky ledu. Nápoj můžeme ozdobit plátkem citronu.",
+            madeByUser = false
         ),
         Drink(
             id = 93,
@@ -1500,7 +1592,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Ananasový džus (3 cl)",
                 "Karamelový sirup (1,5 cl)"
             ),
-            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Na dekoraci můžeme použít kousky ananasu nebo pomeranče. "
+            tutorial = "Do shakeru přidáme led a všechny ingredience. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Na dekoraci můžeme použít kousky ananasu nebo pomeranče.",
+            madeByUser = false
         )
     )
 
@@ -1520,7 +1613,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Kokosové mléko (1 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidejte led, bílý rum, rum Malibu, blue curaçao, ananasovou šťávu, limetkovou šťávu a kokosové mléko. Shaker dobře protřepejte a následně slijte do připravené sklenice s ledem. Podávejte ihned a ozdobte plátkem ananasu a kokosovou natí."
+            tutorial = "Do shakeru přidejte led, bílý rum, rum Malibu, blue curaçao, ananasovou šťávu, limetkovou šťávu a kokosové mléko. Shaker dobře protřepejte a následně slijte do připravené sklenice s ledem. Podávejte ihned a ozdobte plátkem ananasu a kokosovou natí.",
+            madeByUser = false
         ),
         Drink(
             id = 95,
@@ -1535,7 +1629,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Maraschino likér (1.5 cl)",
                 "Angostura kořenová bitters (1 dash)"
             ),
-            tutorial = "Do shakeru naplněného ledem přidáme bourbon, červené víno, koňak, maraschino likér a dash angostura kořenového bitteru. Shaker důkladně protřepeme a přecedíme do sklenice na drink naplněné ledem. Ozdobíme pomerančovou kůrou."
+            tutorial = "Do shakeru naplněného ledem přidáme bourbon, červené víno, koňak, maraschino likér a dash angostura kořenového bitteru. Shaker důkladně protřepeme a přecedíme do sklenice na drink naplněné ledem. Ozdobíme pomerančovou kůrou.",
+            madeByUser = false
         ),
         Drink(
             id = 96,
@@ -1553,7 +1648,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Tabasco (5-7 kapky)",
                 "Led"
             ),
-            tutorial = "Do větší sklenice s okrajem osoleným solí a pepřem přidáme led. Přidáme pivo, limetkovou šťávu a koření (nakrájenou chilli papričku, Worcesterskou omáčku a Tabasco). Vše důkladně promícháme a podáváme."
+            tutorial = "Do větší sklenice s okrajem osoleným solí a pepřem přidáme led. Přidáme pivo, limetkovou šťávu a koření (nakrájenou chilli papričku, Worcesterskou omáčku a Tabasco). Vše důkladně promícháme a podáváme.",
+            madeByUser = false
         )
     )
 
@@ -1572,7 +1668,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Mléko (2 cl)",
                 "Čokoládová poleva (na ozdobení)"
             ),
-            tutorial = "Do shakeru s ledem přidáme vodka, Kahlua, Baileys, smetanu a mléko. Shaker silně protřepeme, až se všechny ingredience dobře propojí. Do sklenice na drink dáme několik kostek ledu a směs přecedíme přes sítko. Ozdobíme čokoládovou polevou a podáváme s kořením."
+            tutorial = "Do shakeru s ledem přidáme vodka, Kahlua, Baileys, smetanu a mléko. Shaker silně protřepeme, až se všechny ingredience dobře propojí. Do sklenice na drink dáme několik kostek ledu a směs přecedíme přes sítko. Ozdobíme čokoládovou polevou a podáváme s kořením.",
+            madeByUser = false
         ),
         Drink(
             id = 98,
@@ -1587,7 +1684,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Kokosové mléko (6 cl)",
                 "Strouhaný muškátový oříšek (pro zdobení)"
             ),
-            tutorial = "V shakeru smícháme tmavý rum, ananasovou šťávu, pomerančovou šťávu a kokosové mléko. Přidáme led a důkladně protřepeme. Nalijeme do sklenice naplněné ledem. Pokud chceme, můžeme ozdobit strouhaným muškátovým oříškem."
+            tutorial = "V shakeru smícháme tmavý rum, ananasovou šťávu, pomerančovou šťávu a kokosové mléko. Přidáme led a důkladně protřepeme. Nalijeme do sklenice naplněné ledem. Pokud chceme, můžeme ozdobit strouhaným muškátovým oříškem.",
+            madeByUser = false
         ),
         Drink(
             id = 99,
@@ -1601,7 +1699,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Pomerančový džus (6 cl)",
                 "Maraschino likér (1.5 cl)"
             ),
-            tutorial = "Do shakeru naplněného ledem přidáme Beefeater gin, apricot brandy, pomerančový džus a maraschino likér. Shaker důkladně protřepeme a přecedíme do sklenice na drink naplněné ledem. Ozdobíme pomerančovou kůrou nebo ananasovým klinem."
+            tutorial = "Do shakeru naplněného ledem přidáme Beefeater gin, apricot brandy, pomerančový džus a maraschino likér. Shaker důkladně protřepeme a přecedíme do sklenice na drink naplněné ledem. Ozdobíme pomerančovou kůrou nebo ananasovým klinem.",
+            madeByUser = false
         )
     )
 
@@ -1619,7 +1718,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Zázvorový sirup (1.5 cl)",
                 "Rašelinná whisky (float, 1.5 cl)"
             ),
-            tutorial = "Do shakeru naplněného ledem přidáme skotskou whisky, citronovou šťávu, medový sirup a zázvorový sirup. Shaker důkladně protřepeme a přecedíme do sklenice s velkým kamenem ledu. Nakonec přidáme rašelinovou whisky na float a ozdobíme kůrou z citronu."
+            tutorial = "Do shakeru naplněného ledem přidáme skotskou whisky, citronovou šťávu, medový sirup a zázvorový sirup. Shaker důkladně protřepeme a přecedíme do sklenice s velkým kamenem ledu. Nakonec přidáme rašelinovou whisky na float a ozdobíme kůrou z citronu.",
+            madeByUser = false
         ),
         Drink(
             id = 101,
@@ -1632,7 +1732,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Brusinkový džus (9 cl)",
                 "Grepový džus (3 cl)"
             ),
-            tutorial = "Do vysoké sklenice naplněného ledem nalijeme 4,5 cl vodky. Poté přidáme 9 cl brusinkového džusu a 3 cl grepového džusu. Vše důkladně promícháme a ozdobíme kouskem citronu nebo limetky."
+            tutorial = "Do vysoké sklenice naplněného ledem nalijeme 4,5 cl vodky. Poté přidáme 9 cl brusinkového džusu a 3 cl grepového džusu. Vše důkladně promícháme a ozdobíme kouskem citronu nebo limetky.",
+            madeByUser = false
         ),
         Drink(
             id = 102,
@@ -1646,7 +1747,8 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Čerstvě stlačená citronová šťáva (2 cl)",
                 "Kůra z citronu"
             ),
-            tutorial = "Do shakeru s ledem přidáme koňak, Cointreau a čerstvě stlačenou citronovou šťávu. Shaker pečlivě protřepeme a přecedíme do vychlazeného sklenice na koktejly. Ozdobíme kůrou z citronu a podáváme."
+            tutorial = "Do shakeru s ledem přidáme koňak, Cointreau a čerstvě stlačenou citronovou šťávu. Shaker pečlivě protřepeme a přecedíme do vychlazeného sklenice na koktejly. Ozdobíme kůrou z citronu a podáváme.",
+            madeByUser = false
         )
     )
 
