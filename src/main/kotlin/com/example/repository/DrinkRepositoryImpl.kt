@@ -59,7 +59,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             ingredients = listOf(
                 "Kahlúa (3 cl)",
                 "Baileys (2 cl)",
-                "Grand Marnier nebo Absinth nebo Stroh (3 cl)"
+                "Absinth (3 cl)"
             ),
             tutorial = "Ingredience opatrně nalijte do panáku skrze kávovou lžičku, tak, aby zůstaly nepromíchané. A to přesně v tomto pořadí: 1. likér Kahlúa, 2. likér Baileys, a nakonec 3. Grand Marnier či Absinth nebo Stroh . Těsně před konzumací zapálíme zapalovačem. Podáváme s tlustým brčkem.",
             madeByUser = false
@@ -90,7 +90,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             rating = 3.0,
             ingredients = listOf(
                 "Vodka (3 cl)",
-                "Likér Curaçao (3 cl)",
+                "Curaçao (3 cl)",
                 "Citrónová limonáda (12 cl)"
             ),
             tutorial = "Nalijte vodku do shakeru společně s Curaçaem a ledem. Důkladně protřepejte a přes sítko slijte do sklenice Highball Glass s ledem. Nakonec dolijte limonádou a ozdobte plátkem citrónu.",
