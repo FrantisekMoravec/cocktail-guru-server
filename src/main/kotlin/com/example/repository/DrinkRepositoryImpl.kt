@@ -574,7 +574,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             ingredients = listOf(
                 "Tmavý rum (6 cl)",
                 "Zázvorové pivo (15 cl)",
-                "Lime (1 ks)",
+                "Limetka (1 ks)",
                 "Led"
             ),
             tutorial = "Do sklenice s ledem nalijeme rum a přidáme šťávu z jedné limetky. Sklenici doplníme zázvorovým pivem a koktejl promícháme. Ozdobíme plátkem limetky a můžeme ihned podávat.",
@@ -587,7 +587,8 @@ class DrinkRepositoryImpl : DrinkRepository {
             description = "Hurikán je sladký a ovocný koktejl, který vznikl na začátku 20. století na Novém Orleansu. Nápoj se stal oblíbeným mezi turisty, kteří navštěvovali Bourbon Street, a během 60. let se rozšířil po celých USA. Hurikán je obvykle podáván v množství 300-400 ml a mívá velmi silnou chuť, kterou lze mírnit přidáním sodové vody nebo džusu.",
             rating = 4.5,
             ingredients = listOf(
-                "Světlý a tmavý rum (4 cl každý)",
+                "Světlý rum (4 cl)",
+                "Tmavý rum (4 cl)",
                 "Marakuja (4 cl)",
                 "Ananasový džus (2 cl)",
                 "Pomerančový džus (2 cl)",
@@ -622,10 +623,10 @@ class DrinkRepositoryImpl : DrinkRepository {
             description = "El Diablo je populární koktejl založený na tekile, který se poprvé objevil v roce 1946 v kalifornském baru Tommy's Mexican Restaurant. Jeho název v překladu znamená Ďábel a naráží na tmavou barvu nápoje a na to, že obsahuje zázvorový likér Ginger Ale, který dodává nápoji lehce pikantní chuť.",
             rating = 4.3,
             ingredients = listOf(
-                "Tekila (4 cl)",
+                "Tequila (4 cl)",
                 "Crème de Cassis (1,5 cl)",
                 "Limetková šťáva (1 cl)",
-                "Ginger Ale",
+                "Zázvorové pivo",
                 "Kostky ledu"
             ),
             tutorial = "Do shakeru přidáme tekilu, Crème de Cassis a limetkovou šťávu. Přidáme led a vše důkladně protřepeme. Nalijeme obsah shakeru do vysoké sklenice plné kostek ledu a dolijeme Ginger Ale. Koktejl můžeme ozdobit kouskem limetky nebo nakrájeným kouskem zázvoru.",
@@ -721,7 +722,7 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Gin (4 cl)",
                 "Citronová šťáva (2 cl)",
                 "Cukr (1 lžička)",
-                "Sodová voda (12 cl)",
+                "Perlivá voda (12 cl)",
                 "Led"
             ),
             tutorial = "Do vysokého sklenice vložíme led a přidáme gin, citronovou šťávu a cukr. Přilijeme sodovou vodu a vše opatrně promícháme lžičkou. Koktejl můžeme ozdobit kolečkem citronu nebo pomeranče a podávat s brčkem.",
@@ -735,7 +736,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             rating = 3.5,
             ingredients = listOf(
                 "Červené víno (100 ml)",
-                "Kola (100 ml)",
+                "Coca cola (100 ml)",
                 "Led",
                 "Citronová kůra (na ozdobu)"
             ),
@@ -943,7 +944,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             ingredients = listOf(
                 "Ginger ale",
                 "Grenadina",
-                "Stroužek citronu",
+                "Kus citronu",
                 "Led"
             ),
             tutorial = "Do sklenice s velkým množstvím ledu nejdříve nalijeme ginger ale. Poté přidáme grenadinu, která by se měla samovolně propadnout ke dnu sklenice, a zároveň jí to dává krásnou barvu. Nakonec přidáme stroužek citronu, kterým sklenici ozdobíme. Některé recepty doporučují také přidat trošku třešňového džusu nebo několik třešňových plodů pro vylepšení chuti a dekoraci.",
@@ -987,7 +988,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             rating = 3.5,
             ingredients = listOf(
                 "Suché bílé víno (10 cl)",
-                "Perlivá minerální voda (10 cl)",
+                "Perlivá voda (10 cl)",
                 "Led",
                 "Citronové kroužky (na ozdobu)"
             ),
@@ -1005,7 +1006,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             rating = 4.5,
             ingredients = listOf(
                 "Vodka (5 cl)",
-                "Čerstvě vylisovaný grapefruitový džus (5 cl)",
+                "Grapefruitový džus (5 cl)",
                 "Angostura (2-3 dash)",
                 "Cukr (1 lžička)",
                 "Soda (asi 10-15 cl)",
@@ -1053,7 +1054,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             rating = 4.0,
             ingredients = listOf(
                 "Vodka (5 cl)",
-                "Cranberry juice (5 cl)",
+                "Brusinkový džus (5 cl)",
                 "Grapefruitová šťáva (2 cl)",
                 "Malinová šťáva (2 cl)",
                 "Led"
@@ -1158,7 +1159,7 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Bílý rum (3 cl)",
                 "Čerstvě vymačkaná limetková šťáva (2 cl)",
                 "Pomerančový džus (6 cl)",
-                "Soda (doplnit dle chuti)",
+                "Perlivá voda (dle chuti)",
                 "Led"
             ),
             tutorial = "Do shakeru přidáme led a všechny tekuté ingredience kromě sody. Shaker důkladně protřepeme a přescedíme do sklenice s ledem. Přidáme sodu podle chuti. Nápoj můžeme ozdobit plátkem pomeranče a vanilkovou fazolkou. Na zdraví!",
@@ -1173,7 +1174,7 @@ class DrinkRepositoryImpl : DrinkRepository {
             ingredients = listOf(
                 "Smetanová vodka (4 cl)",
                 "Creme de cacao (4 cl)",
-                "Sodovka (2 cl)",
+                "Perlivá voda (2 cl)",
                 "Sahara (2 cl)",
                 "Led"
             ),
