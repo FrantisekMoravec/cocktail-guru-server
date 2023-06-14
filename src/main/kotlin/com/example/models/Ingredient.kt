@@ -9,5 +9,6 @@ data class Ingredient(
     val name: String,
     val image: String,
     val description: String,
+    val searchable: Boolean,
     val madeByUser: Boolean
 )
