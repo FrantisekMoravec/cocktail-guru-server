@@ -13,6 +13,7 @@ fun Application.configureRouting() {
         getAllDrinks()
         searchDrinks()
 
+        //nepracuje s ingrediencemi ale s ingredientFamilies
         getAllIngredients()
         searchIngredients()
 

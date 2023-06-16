@@ -7,8 +7,13 @@ import kotlinx.serialization.Serializable
 data class Ingredient(
     val id: Int,
     val name: String,
-    val image: String,
-    val description: String,
-    val searchable: Boolean,
-    val madeByUser: Boolean
+    val ingredientFamily: String
 )
+
+/*
+ingredientFamily - např. Skotská whisky a Irská whisky -> Whisky
+
+drinky se filtrují pomocí ingredientFamily(ne jmen ingrediencí)
+
+takže když si někdo rozklikne Whisky, tak mu tím pádem vyjedou všechny drinky s jakoukoliv whisky
+ */

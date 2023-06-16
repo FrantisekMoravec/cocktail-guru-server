@@ -49,18 +49,6 @@ interface IngredientRepository {
     val page38: List<Ingredient>
     val page39: List<Ingredient>
     val page40: List<Ingredient>
-    val page41: List<Ingredient>
-    val page42: List<Ingredient>
-    val page43: List<Ingredient>
-    val page44: List<Ingredient>
-    val page45: List<Ingredient>
-    /*
-    val page46: List<Ingredient>
-    val page47: List<Ingredient>
-    val page48: List<Ingredient>
-    val page49: List<Ingredient>
-    val page50: List<Ingredient>
-    */
 
     suspend fun getAllIngredients(page: Int = 1): IngredientApiResponse
     suspend fun searchIngredients(name: String?): IngredientApiResponse

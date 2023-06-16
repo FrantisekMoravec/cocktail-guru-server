@@ -1,9 +1,6 @@
 package com.example.di
 
-import com.example.repository.DrinkRepository
-import com.example.repository.DrinkRepositoryImpl
-import com.example.repository.IngredientRepository
-import com.example.repository.IngredientRepositoryImpl
+import com.example.repository.*
 import org.koin.dsl.module
 
 val koinModule = module {
@@ -13,5 +10,9 @@ val koinModule = module {
 
     single<IngredientRepository> {
         IngredientRepositoryImpl()
+    }
+
+    single<IngredientFamilyRepository> {
+        IngredientFamilyRepositoryImpl()
     }
 }

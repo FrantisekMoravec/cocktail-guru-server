@@ -391,11 +391,11 @@ class DrinkRepositoryImpl : DrinkRepository {
             image = "/images/drinks/kir_royale.jpg",
             description = "Kir Royale je elegantní francouzský koktejl, který vznikl v Burgundsku. Jeho vznik se datuje do 40. let minulého století, kdy byl původní Kir (založený na bílém víně) vylepšen přidáním šumivého vína. Nápoj je pojmenován po Félixi Kirovi, bývalém starostovi Dijonu a vášnivém propagátorovi burgundských vín. Je to skvělá volba pro ty, kteří preferují sladké nápoje s mírným alkoholovým obsahem.",
             ingredients = listOf(
-                "Bols Creme de Cassis (2 cl)",
-                "Šumivé víno (9 cl)",
+                "Crème de Cassis (2 cl)",
+                "Šampaňské (9 cl)",
                 "Maliny"
             ),
-            tutorial = "Nejprve do šampaňského poháru (nebo do sklenice na martini) přidáme 2 cl crème de cassis. Následně dolijeme šumivým vínem, nejlépe šampaňským, a to až k okraji sklenice. Nakonec můžeme do sklenice přidat několik čerstvých malin, které nápoj ještě oživí.",
+            tutorial = "Nejprve do sklednice přidáme crème de cassis. Následně dolijeme šampaňským a to až k okraji sklenice. Nakonec můžeme do sklenice přidat několik čerstvých malin, které nápoj ještě oživí.",
             madeByUser = false
         ),
         Drink(
@@ -927,11 +927,11 @@ class DrinkRepositoryImpl : DrinkRepository {
             image = "/images/drinks/spritzer.jpg",
             description = "Spritzer je osvěžující míchaný nápoj, který se skládá ze suchého bílého vína a perlivé minerální vody. Jeho původ je připisován středoevropské kuchyni, kde byl často podáván jako aperitiv.",
             ingredients = listOf(
-                "Suché bílé víno (10 cl)",
+                "Bílé víno (10 cl)",
                 "Perlivá voda (10 cl)",
                 "Led"
             ),
-            tutorial = "Do většího sklenice naplníme kameny ledu, nalijeme suché bílé víno a doplníme perlivou minerální vodou. Sklenici jemně promícháme lžičkou a ozdobíme kroužkem citronu. Podáváme ihned.",
+            tutorial = "Do většího sklenice dáme led, nalijeme bílé víno a doplníme perlivou minerální vodou. Sklenici jemně promícháme lžičkou a ozdobíme kroužkem citronu. Podáváme ihned.",
             madeByUser = false
         )
     )
