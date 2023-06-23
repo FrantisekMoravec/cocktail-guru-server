@@ -22,7 +22,6 @@ interface IngredientFamilyRepository {
     val page11: List<IngredientFamily>
     val page12: List<IngredientFamily>
     val page13: List<IngredientFamily>
-    val page14: List<IngredientFamily>
 
     suspend fun getAllIngredientFamilies(page: Int = 1): IngredientFamilyApiResponse
     suspend fun searchIngredientFamilies(name: String?): IngredientFamilyApiResponse

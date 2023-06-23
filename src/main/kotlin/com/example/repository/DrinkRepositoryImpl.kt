@@ -60,7 +60,7 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Baileys (2 cl)",
                 "Absinth (3 cl)"
             ),
-            tutorial = "Ingredience opatrně nalijte do panáku skrze kávovou lžičku, tak, aby zůstaly nepromíchané. A to přesně v tomto pořadí: 1. likér Kahlúa, 2. likér Baileys, a nakonec 3. Grand Marnier či Absinth nebo Stroh . Těsně před konzumací zapálíme zapalovačem. Podáváme s tlustým brčkem.",
+            tutorial = "Ingredience opatrně nalijte do panáku skrze kávovou lžičku, tak, aby zůstaly nepromíchané. A to přesně v tomto pořadí: Kahlúa, Baileys, a nakonec Absinth. Těsně před konzumací zapálíme zapalovačem. Podáváme s tlustým brčkem.",
             madeByUser = false
         ),
         Drink(
@@ -1102,11 +1102,10 @@ class DrinkRepositoryImpl : DrinkRepository {
                 "Vodka (4 cl)",
                 "Crème de cacao (4 cl)",
                 "Perlivá voda (2 cl)",
-                "Sahara (2 cl)",
                 "Smetana (1 cl)",
                 "Led"
             ),
-            tutorial = "Do shakeru přidáme led, vodku, metanu, crème de cacao, perlivou vodu a saharu. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Drink můžeme ozdobit kakaovým práškem nebo hřebíčkem.",
+            tutorial = "Do shakeru přidáme led, vodku, metanu, crème de cacao a perlivou vodu. Shaker důkladně protřepeme a poté přescedíme do sklenice naplněné ledem. Drink můžeme ozdobit kakaovým práškem nebo hřebíčkem.",
             madeByUser = false
         ),
         Drink(
