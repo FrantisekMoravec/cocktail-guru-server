@@ -1,7 +1,5 @@
 package com.example.repository
 
-import com.example.models.Ingredient
-import com.example.models.IngredientApiResponse
 import com.example.models.IngredientFamily
 import com.example.models.IngredientFamilyApiResponse
 

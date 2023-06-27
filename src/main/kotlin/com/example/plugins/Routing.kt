@@ -13,9 +13,10 @@ fun Application.configureRouting() {
         getAllDrinks()
         searchDrinks()
 
-        //nepracuje s ingrediencemi ale s ingredientFamilies
         getAllIngredients()
-        searchIngredients()
+
+        getAllIngredientFamilies()
+        searchIngredientFamilies()
 
         static("/images/drinks") {
             resources("/images/drinks")
