@@ -52,5 +52,6 @@ interface IngredientRepository {
 
     suspend fun getAllIngredients(page: Int = 1): IngredientApiResponse
     suspend fun searchIngredients(name: String?): IngredientApiResponse
+    suspend fun searchIngredientsByIngredientFamily(ingredientFamilyName: String?): IngredientApiResponse
 
 }

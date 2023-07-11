@@ -820,18 +820,42 @@ class IngredientRepositoryImpl : IngredientRepository {
         )
     }
 
+    override suspend fun searchIngredientsByIngredientFamily(ingredientFamilyName: String?): IngredientApiResponse {
+        return IngredientApiResponse(
+            success = true,
+            message = "ok",
+            ingredients = ingredientsByIngredientFamilyName(ingredientFamilyName = ingredientFamilyName)
+        )
+    }
+
+    private fun ingredientsByIngredientFamilyName(ingredientFamilyName: String?): List<Ingredient> {
+        val found = mutableListOf<Ingredient>()
+        return if (!ingredientFamilyName.isNullOrEmpty()) {
+            ingredients.forEach{(_, Ingredients) ->
+                Ingredients.forEach{ Ingredient ->
+                    if (Ingredient.ingredientFamily.lowercase().contains(ingredientFamilyName.lowercase())) {
+                        found.add(Ingredient)
+                    }
+                }
+            }
+            found
+        } else {
+            emptyList()
+        }
+    }
+
     /** tato metoda slouží k vyhledávání ingrediencí */
     private fun findIngredients(query: String?): List<Ingredient> {
-        val founded = mutableListOf<Ingredient>()
+        val found = mutableListOf<Ingredient>()
         return if (!query.isNullOrEmpty()) {
             ingredients.forEach { (_, Ingredients) ->
                 Ingredients.forEach { Ingredient ->
                     if (Ingredient.name.lowercase().contains(query.lowercase())) {
-                        founded.add(Ingredient)
+                        found.add(Ingredient)
                     }
                 }
             }
-            founded
+            found
         } else {
             emptyList()
         }
