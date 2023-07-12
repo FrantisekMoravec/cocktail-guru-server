@@ -7,6 +7,7 @@ import com.example.models.Drink
 
 const val NEXT_PAGE_DRINK_KEY = "nextPage"
 const val PREVIOUS_PAGE_DRINK_KEY = "prevPage"
+const val separator = "-"
 
 class DrinkRepositoryImpl : DrinkRepository {
 
@@ -1690,4 +1691,61 @@ class DrinkRepositoryImpl : DrinkRepository {
             emptyList()
         }
     }
+
+    override suspend fun searchDrinksByIngredientNames(ingredients: String?): DrinkApiResponse {
+
+        if (ingredients != null) {
+            return DrinkApiResponse(
+                success = true,
+                message = "ok",
+                drinks = findDrinksContainingIngredients(ingredients = ingredients.split(separator))
+            )
+        }else{
+            return DrinkApiResponse(
+                success = false
+            )
+        }
+    }
+
+    private fun findDrinksContainingIngredients(ingredients: List<String>): List<Drink> {
+        val found = mutableListOf<Drink>()
+        return if (!ingredients.isNullOrEmpty()) {
+            ingredients.forEach{ ingredient ->
+                drinks.forEach{(_, Drinks) ->
+                    Drinks.forEach{ Drink ->
+                        Drink.ingredients.forEach{
+                            if (it.lowercase().contains(ingredient)){
+                                found.add(Drink)
+                            }
+                        }
+                    }
+                }
+            }
+            found
+        } else {
+            emptyList()
+        }
+    }
+
+/*
+    private fun findDrinksContainingIngredients(ingredients: List<Ingredient>?): List<Drink> {
+        val found = mutableListOf<Drink>()
+        return if (!ingredients.isNullOrEmpty()) {
+            ingredients.forEach{ ingredient ->
+                drinks.forEach{(_, Drinks) ->
+                    Drinks.forEach{ Drink ->
+                        Drink.ingredients.forEach{
+                            if (it.lowercase().contains(ingredient.name)){
+                                found.add(Drink)
+                            }
+                        }
+                    }
+                }
+            }
+            found
+        } else {
+            emptyList()
+        }
+    }
+*/
 }

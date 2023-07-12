@@ -12,6 +12,7 @@ fun Application.configureRouting() {
 
         getAllDrinks()
         searchDrinks()
+        searchDrinksByIngredients()
 
         getAllIngredients()
         searchIngredientsByIngredientFamily()

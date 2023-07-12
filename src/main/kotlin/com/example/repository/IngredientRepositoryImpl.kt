@@ -828,6 +828,7 @@ class IngredientRepositoryImpl : IngredientRepository {
         )
     }
 
+    /** vyhledá ingredience které mají stejnou rodinu ingrediencí */
     private fun ingredientsByIngredientFamilyName(ingredientFamilyName: String?): List<Ingredient> {
         val found = mutableListOf<Ingredient>()
         return if (!ingredientFamilyName.isNullOrEmpty()) {

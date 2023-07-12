@@ -46,5 +46,6 @@ interface DrinkRepository {
 
     suspend fun getAllDrinks(page: Int = 1): DrinkApiResponse
     suspend fun searchDrinks(name: String?): DrinkApiResponse
+    suspend fun searchDrinksByIngredientNames(ingredients: String?): DrinkApiResponse
 
 }
