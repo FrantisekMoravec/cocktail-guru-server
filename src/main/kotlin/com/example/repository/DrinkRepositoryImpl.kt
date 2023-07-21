@@ -1,7 +1,7 @@
 package com.example.repository
 
-import com.example.models.DrinkApiResponse
 import com.example.models.Drink
+import com.example.models.DrinkApiResponse
 
 /** tato třída slouží k zadání hodnot do repozitáře */
 
@@ -1721,31 +1721,10 @@ class DrinkRepositoryImpl : DrinkRepository {
                     }
                 }
             }
-            found
+            found.toSet().toList() //tohle odstraní duplikáty
         } else {
             emptyList()
         }
     }
 
-/*
-    private fun findDrinksContainingIngredients(ingredients: List<Ingredient>?): List<Drink> {
-        val found = mutableListOf<Drink>()
-        return if (!ingredients.isNullOrEmpty()) {
-            ingredients.forEach{ ingredient ->
-                drinks.forEach{(_, Drinks) ->
-                    Drinks.forEach{ Drink ->
-                        Drink.ingredients.forEach{
-                            if (it.lowercase().contains(ingredient.name)){
-                                found.add(Drink)
-                            }
-                        }
-                    }
-                }
-            }
-            found
-        } else {
-            emptyList()
-        }
-    }
-*/
 }

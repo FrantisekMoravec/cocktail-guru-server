@@ -1,7 +1,7 @@
 package com.example
 
-import io.ktor.server.application.*
 import com.example.plugins.*
+import io.ktor.server.application.*
 
 /** hlavní metoda - spouští engine serveru - netty */
 fun main(args: Array<String>): Unit =
@@ -16,4 +16,5 @@ fun Application.module() {
     configureMonitoring()
     configureDefaultHeader()
     configureStatusPages()
+    configureLogging()
 }

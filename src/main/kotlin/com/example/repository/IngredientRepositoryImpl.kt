@@ -839,7 +839,7 @@ class IngredientRepositoryImpl : IngredientRepository {
                     }
                 }
             }
-            found
+            found.toSet().toList() //tohle odstraní duplikáty
         } else {
             emptyList()
         }
