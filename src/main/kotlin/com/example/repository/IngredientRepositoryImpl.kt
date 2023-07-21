@@ -821,20 +821,28 @@ class IngredientRepositoryImpl : IngredientRepository {
     }
 
     override suspend fun searchIngredientsByIngredientFamily(ingredientFamilyName: String?): IngredientApiResponse {
-        return IngredientApiResponse(
-            success = true,
-            message = "ok",
-            ingredients = ingredientsByIngredientFamilyName(ingredientFamilyName = ingredientFamilyName)
-        )
+        if (ingredientFamilyName != null){
+            return IngredientApiResponse(
+                success = true,
+                message = "ok",
+                ingredients = ingredientsByIngredientFamilyName(ingredientFamilyNames = ingredientFamilyName.split(separator))
+            )
+        } else {
+            return IngredientApiResponse(
+                success = false
+            )
+        }
     }
 
     /** vyhledá ingredience které mají stejnou rodinu ingrediencí */
-    private fun ingredientsByIngredientFamilyName(ingredientFamilyName: String?): List<Ingredient> {
+    private fun ingredientsByIngredientFamilyName(ingredientFamilyNames: List<String>): List<Ingredient> {
+        //ingredientFamilyNames.toMutableList().replaceAll{ it.lowercase() }
+
         val found = mutableListOf<Ingredient>()
-        return if (!ingredientFamilyName.isNullOrEmpty()) {
+        return if (!ingredientFamilyNames.isNullOrEmpty()) {
             ingredients.forEach{(_, Ingredients) ->
                 Ingredients.forEach{ Ingredient ->
-                    if (Ingredient.ingredientFamily.lowercase().contains(ingredientFamilyName.lowercase())) {
+                    if (ingredientFamilyNames.any { it.lowercase() in Ingredient.ingredientFamily.lowercase() }) {
                         found.add(Ingredient)
                     }
                 }

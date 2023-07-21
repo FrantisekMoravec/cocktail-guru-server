@@ -14,7 +14,7 @@ fun Route.searchDrinksByIngredients() {
     val ingredientRepository: IngredientRepository by inject()
     val drinkRepository: DrinkRepository by inject()
     
-    get("/ingredients/byingredientfamily") {
+    get("/drinks/byingredientfamily") {
         val ingredientFamilyName = call.request.queryParameters["ingredientFamilyName"]
         
         val apiResponse = ingredientRepository.searchIngredientsByIngredientFamily(ingredientFamilyName = ingredientFamilyName)
@@ -22,14 +22,14 @@ fun Route.searchDrinksByIngredients() {
         val ingredientList = mutableListOf<String>()
         apiResponse.ingredients.map { ingredient ->  ingredientList.add(ingredient.name.lowercase()) }
 
-        val stringBuilder = StringBuilder()
+        val stringBuilder2 = StringBuilder()
 
         for (item in ingredientList){
-            stringBuilder.append(item).append(separator)
+            stringBuilder2.append(item).append(separator)
         }
-        stringBuilder.setLength(stringBuilder.length - separator.length)
+        stringBuilder2.setLength(stringBuilder2.length - separator.length)
 
-        val ingredients = stringBuilder.toString()
+        val ingredients = stringBuilder2.toString()
 
         val apiResponse2 = drinkRepository.searchDrinksByIngredientNames(ingredients = ingredients)
         call.respond(
