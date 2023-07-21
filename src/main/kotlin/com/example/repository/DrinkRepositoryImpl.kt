@@ -1693,12 +1693,28 @@ class DrinkRepositoryImpl : DrinkRepository {
     }
 
     override suspend fun searchDrinksByIngredientNames(ingredients: String?): DrinkApiResponse {
+        var checkedIngredients: String = ""
 
         if (ingredients != null) {
+
+            //ošetření aby špatně napsaný dotaz nevrátil všechno
+            if (ingredients[ingredients.length - 1].toString() == separator){
+                checkedIngredients = ingredients.dropLast(1)
+            }
+
+            if (ingredients[0].toString() == separator){
+                checkedIngredients = ingredients.drop(1)
+            }
+
+            if (checkedIngredients == ""){
+                checkedIngredients = ingredients
+            }
+
+
             return DrinkApiResponse(
                 success = true,
                 message = "ok",
-                drinks = findDrinksContainingIngredients(ingredients = ingredients.split(separator))
+                drinks = findDrinksContainingIngredients(ingredients = checkedIngredients.split(separator))
             )
         }else{
             return DrinkApiResponse(

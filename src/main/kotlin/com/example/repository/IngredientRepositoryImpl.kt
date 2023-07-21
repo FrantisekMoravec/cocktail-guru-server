@@ -821,11 +821,26 @@ class IngredientRepositoryImpl : IngredientRepository {
     }
 
     override suspend fun searchIngredientsByIngredientFamily(ingredientFamilyName: String?): IngredientApiResponse {
+        var checkedIngredientFamilyName: String = ""
+
         if (ingredientFamilyName != null){
+            //ošetření aby špatně napsaný dotaz nevrátil všechno
+            if (ingredientFamilyName[ingredientFamilyName.length - 1].toString() == separator){
+                checkedIngredientFamilyName = ingredientFamilyName.dropLast(1)
+            }
+
+            if (ingredientFamilyName[0].toString() == separator){
+                checkedIngredientFamilyName = ingredientFamilyName.drop(1)
+            }
+
+            if (checkedIngredientFamilyName == ""){
+                checkedIngredientFamilyName = ingredientFamilyName
+            }
+
             return IngredientApiResponse(
                 success = true,
                 message = "ok",
-                ingredients = ingredientsByIngredientFamilyName(ingredientFamilyNames = ingredientFamilyName.split(separator))
+                ingredients = ingredientsByIngredientFamilyName(ingredientFamilyNames = checkedIngredientFamilyName.split(separator))
             )
         } else {
             return IngredientApiResponse(
