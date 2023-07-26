@@ -3,7 +3,6 @@ package com.example.repository
 import com.example.models.Drink
 import com.example.models.DrinkApiResponse
 
-/** tato třída slouží k zadání hodnot do repozitáře */
 
 const val NEXT_PAGE_DRINK_KEY = "nextPage"
 const val PREVIOUS_PAGE_DRINK_KEY = "prevPage"
@@ -1642,7 +1641,8 @@ class DrinkRepositoryImpl : DrinkRepository {
             prevPage = calculatePage(page = page)[PREVIOUS_PAGE_DRINK_KEY],
             nextPage = calculatePage(page = page)[NEXT_PAGE_DRINK_KEY],
             drinks = drinks[page]!!,
-            lastUpdated = System.currentTimeMillis()
+            lastUpdated = System.currentTimeMillis(),
+            drinksOnServer = drinks.size * 3
         )
     }
 
@@ -1667,12 +1667,37 @@ class DrinkRepositoryImpl : DrinkRepository {
     }
 
     /** tato metoda říká jak má vypadat odpověď pro každý drink co bude mít ve jméně text který uživatel vyhledá */
-    override suspend fun searchDrinks(name: String?): DrinkApiResponse {
-        return DrinkApiResponse(
-            success = true,
-            message = "ok",
-            drinks = findDrinks(query = name)
-        )
+    override suspend fun searchDrinks(name: String?): List<DrinkApiResponse> {
+
+        val searchResults = mutableListOf<DrinkApiResponse>()
+        val pages = mutableListOf<Int>()
+
+        findDrinks(query = name).forEach { drink ->
+            //print("drink: ${drink.name}  ")
+            //println("drink id: ${drink.id}")
+            val page: Int = (drink.id / 3) + 1
+            if (!pages.contains(page) && page in 1..34){
+                pages.add(page)
+            }
+        }
+
+        println("pages: $pages")
+
+        pages.forEach { page ->
+            searchResults.add(
+                DrinkApiResponse(
+                    success = true,
+                    message = "ok",
+                    prevPage = calculatePage(page = page)[PREVIOUS_PAGE_DRINK_KEY],
+                    nextPage = calculatePage(page = page)[NEXT_PAGE_DRINK_KEY],
+                    drinks = drinks[page]!!,
+                    lastUpdated = System.currentTimeMillis(),
+                    drinksOnServer = drinks.size * 3
+                )
+            )
+        }
+
+        return searchResults
     }
 
     /** tato metoda slouží k vyhledávání drinků */
@@ -1692,12 +1717,15 @@ class DrinkRepositoryImpl : DrinkRepository {
         }
     }
 
-    override suspend fun searchDrinksByIngredientNames(ingredients: String?): DrinkApiResponse {
+    override suspend fun searchDrinksByIngredientNames(ingredients: String?): List<DrinkApiResponse> {
+        val searchResults = mutableListOf<DrinkApiResponse>()
+        val pages = mutableListOf<Int>()
+
         var checkedIngredients: String = ""
 
         if (ingredients != null) {
 
-            //ošetření aby špatně napsaný dotaz nevrátil všechno
+            //ošetření aby špatně napsaný dotaz nevrátil všechno když bude dotaz začínat/končit separátorem nebo prázdný
             if (ingredients[ingredients.length - 1].toString() == separator){
                 checkedIngredients = ingredients.dropLast(1)
             }
@@ -1710,17 +1738,30 @@ class DrinkRepositoryImpl : DrinkRepository {
                 checkedIngredients = ingredients
             }
 
+            findDrinksContainingIngredients(ingredients = checkedIngredients.split(separator)).forEach { drink ->
+                val page: Int = (drink.id / 3) + 1
+                if (!pages.contains(page) && page in 1..34){
+                    pages.add(page)
+                }
+            }
 
-            return DrinkApiResponse(
-                success = true,
-                message = "ok",
-                drinks = findDrinksContainingIngredients(ingredients = checkedIngredients.split(separator))
-            )
-        }else{
-            return DrinkApiResponse(
-                success = false
-            )
+            println("pages: $pages")
+
+            pages.forEach { page ->
+                searchResults.add(
+                    DrinkApiResponse(
+                        success = true,
+                        message = "ok",
+                        prevPage = calculatePage(page = page)[PREVIOUS_PAGE_DRINK_KEY],
+                        nextPage = calculatePage(page = page)[NEXT_PAGE_DRINK_KEY],
+                        drinks = drinks[page]!!,
+                        lastUpdated = System.currentTimeMillis(),
+                        drinksOnServer = drinks.size * 3
+                    )
+                )
+            }
         }
+        return searchResults
     }
 
     private fun findDrinksContainingIngredients(ingredients: List<String>): List<Drink> {

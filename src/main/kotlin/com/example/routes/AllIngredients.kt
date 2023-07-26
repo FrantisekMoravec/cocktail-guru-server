@@ -9,8 +9,6 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import org.koin.ktor.ext.inject
 
-/** tato metoda nám říká co pošle uživateli který zadá adresu server/ingredients - pošle první stránku ingrediencí
- *  server/ingredients/page=2 - pošle druhou stránku a tak to jde dále dokud nám nedojdou stránky */
 fun Route.getAllIngredients() {
     val ingredientRepository: IngredientRepository by inject()
 

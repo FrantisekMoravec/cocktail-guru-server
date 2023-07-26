@@ -1,7 +1,7 @@
 package com.example.repository
 
-import com.example.models.DrinkApiResponse
 import com.example.models.Drink
+import com.example.models.DrinkApiResponse
 
 /** repozitář drinků - sem se ukládají drinky */
 interface DrinkRepository {
@@ -45,7 +45,7 @@ interface DrinkRepository {
     val page34: List<Drink>
 
     suspend fun getAllDrinks(page: Int = 1): DrinkApiResponse
-    suspend fun searchDrinks(name: String?): DrinkApiResponse
-    suspend fun searchDrinksByIngredientNames(ingredients: String?): DrinkApiResponse
+    suspend fun searchDrinks(name: String?): List<DrinkApiResponse>
+    suspend fun searchDrinksByIngredientNames(ingredients: String?): List<DrinkApiResponse>
 
 }

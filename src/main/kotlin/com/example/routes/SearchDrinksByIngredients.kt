@@ -31,13 +31,14 @@ fun Route.searchDrinksByIngredients() {
 
         val ingredients = stringBuilder2.toString()
 
-        val apiResponse2 = drinkRepository.searchDrinksByIngredientNames(ingredients = ingredients)
+        val apiResponses = drinkRepository.searchDrinksByIngredientNames(ingredients = ingredients)
         call.respond(
-            message = apiResponse2,
+            message = apiResponses,
             status = HttpStatusCode.OK
         )
 
         println("URI: ${call.request.uri}")
-        println("apiResponse: ${apiResponse2.drinks.map { drink -> drink.name }}")
+        println("počet stránek: ${apiResponses.size}")
+        //println("apiResponse: ${apiResponses.map { it.drinks.map { drink -> drink.name } }}")
     }
 }
